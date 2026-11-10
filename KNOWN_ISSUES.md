@@ -3,34 +3,48 @@
 Read this before drawing conclusions. These are defects in the capture or in the
 upstream API, not in your evaluation. Each one is reproducible.
 
-## 1. The API exposes 40% of its own declared morphisms
+## 1. The health count cannot be reconciled with the served data
 
-`/api/health` declares `morphisms: 92`. The snapshot captured **37**.
+`/api/health` declares `morphisms: 92`. The snapshot captured **37 records**,
+covering **34 distinct (math_id, physics_id) pairs** over 23 problems.
 
-How it was measured: `/api/morphisms/<id>` was queried for every id in
-`1..6000`. Twenty-three problem ids returned records, totalling 37. Spot checks at
-ids 6001, 7000, 9000 and 12000 returned zero, so the sweep range is not the
-binding constraint.
+How it was measured: `/api/morphisms/<id>` was queried for every id in `1..6000`.
+Twenty-three problem ids returned records. Spot checks at 6001, 7000, 9000 and
+12000 returned zero, so the sweep range is not the binding constraint. Both
+morphism families are served by the same route and both are captured: 11 curated
+(`mr-*`) and 26 generated (`MOR-*`), so this is not a case of a second route
+hiding records.
 
-Two hypotheses remain open:
+What is *not* established is data loss. Three explanations remain live and this
+capture cannot separate them:
 
-1. About 55 records reference `math_problem_id` values that are not addressable
-   through the `/api/morphisms/:id` route or are absent from the `problems`
-   table.
-2. `/api/health` counts rows that include soft-deleted or superseded records.
+1. `92` counts rows including historical or superseded versions. The records
+   carry several creation batches (`h2_session_2026-03-29`, `h2_session_2026-04-01`,
+   `h2_chimera_2026-04-16`, `agent`, …), so duplicates across sessions are
+   plausible. In that case 34 pairs is the real current set and only the counter
+   is loose.
+2. `92` counts a table this route does not serve, such as the physics-edge
+   `morphisms` table. Locally that table holds 54,203 rows, so it is not a
+   straight count of that either.
+3. About 55 records genuinely exist and are unreachable through the public
+   routes.
 
-It could not be resolved at capture time. The authoritative table is
-`atlas_morphism_records` in D1 `research-hub-auth`; the local
-`erdosatlas-workbench/erdosatlas.db` contains only a physics-edge `morphisms`
-table (`source_id`/`target_id`), not the morphism registry, and `wrangler` was
-unavailable in the capture environment.
+The authoritative source is `atlas_morphism_records` in D1 `research-hub-auth`.
+It was not reachable at capture time: the local `erdosatlas-workbench/erdosatlas.db`
+holds only physics edges, and `wrangler` was unavailable.
 
-**Consequence.** Do not treat 37 as the size of the atlas. If your evaluation
-reports "the corpus is thin", that may be an artefact of this gap rather than a
-property of the work. Report coverage-sensitive findings as conditional on it.
+**Consequence, stated narrowly.** This does not block evaluating any individual
+claim — each of the 37 stands or falls on its own record. It does block claims
+*about the corpus*, because those need a defensible denominator and there isn't
+one. If you find that 28 of 37 are `conjectured`, that speaks for the 37 and not
+for the atlas.
 
-**Owner action.** Either make the route return all records, or correct the health
-count, or state in the API docs why they differ.
+Use 34 distinct pairs, not 92, as the denominator, and say so explicitly.
+
+**Owner action.** Either reconcile the counter with what the route serves, or
+document why they differ. Option 1 needs no API change beyond honesty in
+`/api/health`.
+
 
 ## 2. Physics objects are captured only by reachability
 
