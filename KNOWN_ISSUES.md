@@ -65,7 +65,7 @@ Until then, ignore that claim; this snapshot is built from `/api/*` only.
 
 ## 5. `strength` does not have one meaning
 
-Across the 37 captured records, `strength` takes values including `proved`,
+Across the 71 captured records, `strength` takes values including `proved`,
 `conjectured` and `partial`. In at least one record (`mr-001`, a Sidon/radar
 correspondence) `proved` appears to credit classical results — Sidon 1938,
 Singer 1938 — rather than assert that a cross-domain transfer has been

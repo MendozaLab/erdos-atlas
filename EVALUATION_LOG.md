@@ -10,12 +10,12 @@ Copy this file, fill it in, and return it. Do not edit the original.
 | Date | |
 | Snapshot commit / manifest `snapshot_utc` | |
 | `tools/validate.py` result | |
-| Claims evaluated | of 37 |
+| Claims evaluated | of 71 |
 | Time spent | |
 
 ## Coverage caveat
 
-State here whether your conclusions are affected by the 40% morphism coverage gap
+State here whether your conclusions are affected by the 21% morphism coverage gap
 in `KNOWN_ISSUES.md`. Findings about *individual* claims are unaffected. Any
 finding about the corpus as a whole must be labelled conditional.
 

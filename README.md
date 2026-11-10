@@ -43,6 +43,29 @@ claim discipline around it.
 - The Prima Materia transfer-matrix framework.
 - Any problem statement not anchored in `anchors/GROUND_TRUTH.md`.
 - Live API behaviour. Anything that changes between runs is not evaluable.
+- **`atlas_formalization_coverage`.** The atlas separately tracks upstream
+  formal-conjectures progress (1,011 problems, 818 with solved declarations). That
+  is a claim about Lean coverage, not about morphisms, and it is not captured in
+  this snapshot. Do not read its absence as an omission in the atlas; evaluate it
+  separately or not at all.
+
+## Canonical numbers
+
+Use these denominators and quote them. Corpus-level findings are meaningless
+without one.
+
+| Quantity | Value | Note |
+|---|---|---|
+| Claims in this snapshot | **71** | captured at a pinned commit |
+| Records in the source table | **90** | 19 more exist but are unreachable — see `KNOWN_ISSUES.md` §1 |
+| Problems carrying claims | **54** | |
+| Claims with at least one citation | **12** (17%) | the other 59 carry an experiment note |
+| Claims with no transfer operator | **5** (7%) | marked `incomplete` in the database, not yet filtered from the API |
+| Physics objects in snapshot | **39** of 66 declared | captured by reachability only |
+
+The honest headline for any corpus-level statement is **71 served claims**, not
+90, not 92, and not 1011.
+
 
 ## The one rule that matters
 

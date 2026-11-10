@@ -26,7 +26,7 @@ be served.
 
 ## D2 — `evidence` conflates two different things
 
-The column is TEXT in all 37 records, but its contents are not the same kind of
+The column is TEXT in all 71 records, but its contents are not the same kind of
 thing:
 
 | Kind | Count | Example |
@@ -37,7 +37,7 @@ thing:
 
 Two problems in one. First, a structured array is being stored as a stringified
 JSON blob, so consumers must guess whether to parse it. Second, and worse, **only
-12 of 37 records (32%) carry any citation at all.** The remaining 23 carry a
+12 of 71 records (17%) carry any citation at all.** The remaining 59 carry a
 note about an internal experiment.
 
 That matters for evaluation: a reviewer checking "does the evidence support
@@ -63,7 +63,7 @@ MOR-505-PHYS-F-001-1776365642682    (same)
 + the two placeholders from D1
 ```
 
-That is 19% of the corpus. By the atlas's own definition a morphism consists of a
+That is 7% of the corpus. By the atlas's own definition a morphism consists of a
 correspondence *plus* a transfer operator *plus* a stated limit. These five have
 neither mechanism nor limit — they assert a resemblance and stop.
 
