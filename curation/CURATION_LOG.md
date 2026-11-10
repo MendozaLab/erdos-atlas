@@ -108,3 +108,41 @@ the problem inserts use `INSERT OR IGNORE` so no existing row can be overwritten
 No `math_status` value was changed. Upstream's `research solved` marks solved
 variants; `math_status` records the mathematical status of the main problem.
 Treating one as evidence for the other would have corrupted the catalogue.
+
+## 2026-11-10 — evidence split, refuted filter, non-numeric id resolver
+
+Three defects closed in the API and database.
+
+**C1 (D2) evidence split.** Added `citations` and `evidence_note` columns to
+`atlas_morphism_records` and backfilled: 13 rows carry a citation list, 77 carry a
+prose note. `evidence` retained for compatibility. Because the route selects
+`mr.*`, both new columns were exposed without a deploy.
+
+**C3 record_status exposure.** Also automatic via `mr.*`; the five incomplete
+records now return `record_status: incomplete`.
+
+**C2 non-numeric ids.** The route pattern was `^\d+$`, so `AIM-045` and nine
+siblings returned nothing. Widened to `[A-Za-z0-9_.-]+`. All ten now resolve and
+the 19 records they held are reachable — total served coverage went 71 -> 90 of 90.
+
+**C5 refuted filter.** `refuted-locally` records are excluded from default
+results and returned under `?include=refuted`.
+
+### Deploy incident, recorded
+
+The first deploy of C2/C5 returned HTTP 500 (worker error 1101) on every
+`/api/morphisms/*` request. Cause: I used `urlParams`, which is not in scope in
+that block; `url` is. `health` stayed green, so only a direct probe caught it.
+Fixed and redeployed within the same session; verified 200 before moving on.
+Lesson: probe the changed route itself, not just `/api/health`.
+
+Worker version: `edf3e5f7-7b74-4560-a879-33cc8bcec38b` (config `wrangler-api.toml`).
+
+### Verification
+
+```
+AIM-045 2  AIM-067 2  AIM-072 2  MW-037 2  MW-054 2
+SIM-003 2  SIM-004 2  SMA-007 1  SMA-010 2  SMA-011 2   = 19 records restored
+/api/morphisms/166              -> 1 (conjectured)
+/api/morphisms/166?include=refuted -> 2 (refuted-locally, conjectured)
+```

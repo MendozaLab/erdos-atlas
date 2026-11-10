@@ -1,6 +1,6 @@
 # Claims register
 
-71 claims, generated mechanically from `snapshot/morphisms.json`.
+90 claims, generated mechanically from `snapshot/morphisms.json`.
 Every field below is quoted from the morphism record; nothing was inferred.
 
 | Claim | Strength | Math side | Physics side |
@@ -76,6 +76,25 @@ Every field below is quoted from the morphism record; nothing was inferred.
 | `E910->PHYS-KVN-001` | partial | Connected subsets in R^n (#910) | PHYS-KVN-001 |
 | `E96->PHYS-C-004` | conjectured | unit distance pairs in convex n-gon | PHYS-C-004 |
 | `E97->PHYS-CL-003` | conjectured | equidistant vertex clusters in convex polygon | PHYS-CL-003 |
+| `EAIM-045->PHYS-RMT-001` | conjectured | Postcritically Finite Maps in Complex/Arithmetic Dynamics | PHYS-RMT-001 |
+| `EAIM-045->PHYS-T-003` | conjectured | Postcritically Finite | PHYS-T-003 |
+| `EAIM-067->PHYS-RMT-001` | conjectured | Markov Chain Mixing Times | PHYS-RMT-001 |
+| `EAIM-067->PHYS-T-003` | conjectured | Markov Mixing | PHYS-T-003 |
+| `EAIM-072->PHYS-RMT-001` | conjectured | Representation Stability | PHYS-RMT-001 |
+| `EAIM-072->PHYS-T-003` | conjectured | Representation Stability | PHYS-T-003 |
+| `EMW-037->PHYS-RMT-001` | conjectured | Invariant Subspace Problem (Millennium-adjacent, MW-037) | PHYS-RMT-001 |
+| `EMW-037->PHYS-T-003` | conjectured | ISP (MW-037) | PHYS-T-003 |
+| `EMW-054->PHYS-RMT-001` | conjectured | Banach-Ruziewicz Problem (resolved) | PHYS-RMT-001 |
+| `EMW-054->PHYS-T-003` | conjectured | Banach-Ruziewicz | PHYS-T-003 |
+| `ESIM-003->PHYS-RMT-001` | conjectured | Quantum Diffusion | PHYS-RMT-001 |
+| `ESIM-003->PHYS-T-003` | conjectured | Quantum Diffusion | PHYS-T-003 |
+| `ESIM-004->PHYS-RMT-001` | conjectured | Ten Martini Problem (Almost Mathieu Operator) | PHYS-RMT-001 |
+| `ESIM-004->PHYS-T-003` | conjectured | Ten Martini | PHYS-T-003 |
+| `ESMA-007->PHYS-CL-001` | conjectured | Thomson/Riesz energy minimization over point configs on sphere/interval | PHYS-CL-001 |
+| `ESMA-010->PHYS-RMT-001` | conjectured | Pughs Closing Lemma (higher smoothness) | PHYS-RMT-001 |
+| `ESMA-010->PHYS-T-003` | conjectured | Pugh Closing (C^r) | PHYS-T-003 |
+| `ESMA-011->PHYS-RMT-001` | conjectured | Is 1-D Dynamics Generally Hyperbolic? | PHYS-RMT-001 |
+| `ESMA-011->PHYS-T-003` | conjectured | 1-D Dynamics Hyperbolic? | PHYS-T-003 |
 
 ## How to read `asserted_strength`
 

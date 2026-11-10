@@ -1,16 +1,5 @@
 {
-  "count": 10,
-  "ids": [
-    "AIM-045",
-    "AIM-067",
-    "AIM-072",
-    "MW-037",
-    "MW-054",
-    "SIM-003",
-    "SIM-004",
-    "SMA-007",
-    "SMA-010",
-    "SMA-011"
-  ],
+  "count": 0,
+  "ids": [],
   "note": "ids probed that returned no morphisms; non-numeric ones indicate records held in the database but not reachable through this route"
 }

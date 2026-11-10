@@ -24,9 +24,13 @@ three times, and two of the three are these placeholders.
 **Fix:** delete them, and add a constraint or filter so placeholder rows cannot
 be served.
 
-## D2 — `evidence` conflates two different things
+## D2 — FIXED 2026-11-10 — `evidence` conflated two different things
 
-The column is TEXT in all 71 records, but its contents are not the same kind of
+Resolved: `citations` and `evidence_note` are now separate columns, backfilled
+(13 citation rows, 77 notes) and exposed through the API. `evidence` is retained
+for compatibility. The defect record below is kept as written.
+
+The column was TEXT in all records, but its contents were not the same kind of
 thing:
 
 | Kind | Count | Example |
@@ -37,7 +41,7 @@ thing:
 
 Two problems in one. First, a structured array is being stored as a stringified
 JSON blob, so consumers must guess whether to parse it. Second, and worse, **only
-12 of 71 records (17%) carry any citation at all.** The remaining 59 carry a
+13 of 90 records (14%) carry any citation at all.** The remaining 77 carry a
 note about an internal experiment.
 
 That matters for evaluation: a reviewer checking "does the evidence support
@@ -73,7 +77,10 @@ evaluator scoring them on the transfer-efficacy axis has nothing to score.
 **Fix:** either supply the missing operator and boundary, or mark them
 `incomplete` so they are excluded from corpus-level claims.
 
-## D4 — A locally refuted morphism is still exposed as live
+## D4 — FIXED 2026-11-10 — A locally refuted morphism was exposed as live
+
+Resolved: refuted morphisms are now excluded from default results and returned
+under `?include=refuted`.
 
 ```
 166 -> PHYS-KVN-001, strength: "refuted-locally"

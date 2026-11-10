@@ -56,15 +56,15 @@ without one.
 
 | Quantity | Value | Note |
 |---|---|---|
-| Claims in this snapshot | **71** | captured at a pinned commit |
-| Records in the source table | **90** | 19 more exist but are unreachable — see `KNOWN_ISSUES.md` §1 |
-| Problems carrying claims | **54** | |
-| Claims with at least one citation | **12** (17%) | the other 59 carry an experiment note |
-| Claims with no transfer operator | **5** (7%) | marked `incomplete` in the database, not yet filtered from the API |
+| Claims in this snapshot | **90** | captured at a pinned commit |
+| Records in the source table | **90** | all reachable — see `KNOWN_ISSUES.md` §1 |
+| Problems carrying claims | **64** | |
+| Claims with at least one citation | **13** (14%) | the other 77 carry an experiment note |
+| Claims with no transfer operator | **5** (6%) | marked `incomplete`; served with that status visible |
 | Physics objects in snapshot | **39** of 66 declared | captured by reachability only |
 
-The honest headline for any corpus-level statement is **71 served claims**, not
-90, not 92, and not 1011.
+The honest headline for any corpus-level statement is **90 served claims** over 64
+problems. Not 92, and not 1011.
 
 
 ## The one rule that matters

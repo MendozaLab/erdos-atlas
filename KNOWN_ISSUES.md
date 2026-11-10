@@ -3,42 +3,32 @@
 Read this before drawing conclusions. These are defects in the capture or in the
 upstream API, not in your evaluation. Each one is reproducible.
 
-## 1. Nineteen records are held in the database but not served
+## 1. FIXED 2026-11-10 — the route dropped non-numeric math ids
 
-Verified against D1 `research-hub-auth.atlas_morphism_records` on 2026-11-10:
-
-| | count |
-|---|---|
-| records in the table | 90 (was 92; two placeholders deleted, see `DATA_DEFECTS.md`) |
-| reachable via `/api/morphisms/:id` | 71 |
-| held but not served | 19 |
-
-The 19 are not scattered. They sit on ten math ids whose values are **not
-numeric**:
+`/api/morphisms/:id` matched `^\d+$`, so any math id that was not all digits
+returned nothing. Ten ids were affected:
 
 ```
 AIM-045  AIM-067  AIM-072  MW-037  MW-054
 SIM-003  SIM-004  SMA-007  SMA-010  SMA-011
 ```
 
-Those ids have rows in the table and return an empty list from the route. Every
-numeric id resolves. So the defect is narrow: the route handles numeric ids only,
-and non-numeric problem ids are silently invisible.
+Those ten ids held **19 records** that existed in `atlas_morphism_records` and
+were invisible to every API consumer. The pattern now accepts
+`[A-Za-z0-9_.-]+`, all ten resolve, and the snapshot captures **90 of 90**
+declared morphisms — previously 71.
 
-**An earlier claim in this repository was wrong and is retracted.** A first
-capture swept numeric ids 1..6000 and reported 37 of 92, and this file then
-suggested roughly 55 records were unreachable. That was a measurement error: the
-numeric id space runs to about 80590, and 31 problems with morphisms sit in the
-50184..80590 range, invisible to a sweep capped at 6000. Extending the probe
-raised the capture from 37 to 71. The residue is the 19 above.
+Two earlier claims in this repository were wrong and are retracted rather than
+quietly edited:
 
-**Consequence.** The denominator for any corpus-level finding is **71 served
-claims** over 54 problems, or **90** if you also count the unserved 19. State
-which you used. Individual claims are unaffected either way.
+1. A first capture reported 37 of 92 and suggested ~55 records were unreachable.
+   The cause was a sweep capped at numeric id 6000 while the id space runs to
+   ~80590, hiding 31 problems. That was a measurement error, not an API defect.
+2. A second pass blamed 19 records on "non-numeric ids the route will not
+   resolve" and treated that as an API limitation to be documented. It was a
+defect to be fixed, and it has been.
 
-**Owner action.** Make the route resolve non-numeric math ids, or document that
-it does not, or move those records to numeric ids. Nineteen silent records is a
-small enough set to fix properly.
+The denominator is now simply **90 claims over 64 problems**. No caveat needed.
 
 ## 2. Physics objects are captured only by reachability
 
@@ -65,7 +55,7 @@ Until then, ignore that claim; this snapshot is built from `/api/*` only.
 
 ## 5. `strength` does not have one meaning
 
-Across the 71 captured records, `strength` takes values including `proved`,
+Across the 90 captured records, `strength` takes values including `proved`,
 `conjectured` and `partial`. In at least one record (`mr-001`, a Sidon/radar
 correspondence) `proved` appears to credit classical results — Sidon 1938,
 Singer 1938 — rather than assert that a cross-domain transfer has been

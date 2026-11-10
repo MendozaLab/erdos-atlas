@@ -36,7 +36,9 @@ def get(path, timeout=25):
 
 
 def fetch_morphisms(pid):
-    status, body = get(f"/api/morphisms/{pid}")
+    # ?include=refuted so the snapshot captures everything the table holds;
+    # the API hides locally refuted morphisms from default results.
+    status, body = get(f"/api/morphisms/{pid}?include=refuted")
     if status != 200 or not isinstance(body, dict):
         return pid, []
     return pid, body.get("morphisms", []) or []

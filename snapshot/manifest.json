@@ -1,15 +1,15 @@
 {
-  "snapshot_utc": "2026-11-10T03:51:25+00:00",
+  "snapshot_utc": "2026-11-10T04:19:31+00:00",
   "api_base": "https://erdosatlas-api.dev-ef7.workers.dev",
   "method": "per-id probe for morphisms; union of physics_id fields for objects",
   "id_probe": {
     "source": "curation/all_math_ids.txt",
     "ids_probed": 64,
-    "ids_with_morphisms": 54,
-    "ids_without": 10
+    "ids_with_morphisms": 64,
+    "ids_without": 0
   },
   "declared_counts_health": {
-    "problems": 5496,
+    "problems": 5512,
     "physics": 66,
     "edges": 14095,
     "morphisms": 90,
@@ -17,14 +17,14 @@
     "lean_artifacts": 22
   },
   "captured": {
-    "morphisms": 71,
-    "problems_with_morphisms": 54,
+    "morphisms": 90,
+    "problems_with_morphisms": 64,
     "problems_top100": 100,
     "physics_objects": 39
   },
   "reconciliation": {
     "morphisms_declared": 90,
-    "morphisms_captured": 71,
+    "morphisms_captured": 90,
     "physics_declared": 66,
     "physics_captured": 39
   },
@@ -35,9 +35,9 @@
     "physics_objects counts objects reachable from captured morphisms, not all declared objects."
   ],
   "sha256": {
-    "morphisms.json": "86c60432058632129f56f29def3e1feebb9b1e786a2ea76c92555c16d297120a",
-    "unserved_ids.json": "82709f6893effab5f30f3df21411b16b3e6d0cbeba0ddcae128d0dbe706e60b2",
-    "problems_top100.json": "9b7dbdf2304dfd0dc97d55dc4e16d96e1021b644b3b8baea5c7f3e1b2e8c45d1",
+    "morphisms.json": "b8d9ec42b092a865b5d1052cd11c633beb6e38274e5ab04ff1866d9bb35d0362",
+    "unserved_ids.json": "d8d2b62609581c9019a2801557175a9e36072fb788c4cc86b9087698cf92ec89",
+    "problems_top100.json": "96595b7236435f504574e6028454fa0151d2c090c7674ba915f65076b2ac30b0",
     "physics_objects.json": "34c9d6a7ffc9a44c1bd552b1c0d6501acf833f7b4b6634bfe4113b8bb296f2b9"
   }
 }
