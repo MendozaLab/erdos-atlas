@@ -1,19 +1,15 @@
 {
   "generated_from": "snapshot/morphisms.json",
-  "claim_count": 37,
+  "claim_count": 71,
   "evidence_kind_counts": {
     "citation_list": 12,
-    "experiment_note": 23,
-    "test_placeholder": 2
+    "experiment_note": 59
   },
   "structural_defect_counts": {
-    "no transfer_operator": 7,
-    "no breakdown_boundary": 7,
-    "no math_invariant": 2,
-    "no physics_invariant": 2,
-    "placeholder record": 2
+    "no transfer_operator": 5,
+    "no breakdown_boundary": 5
   },
-  "claims_with_structural_defects": 7,
+  "claims_with_structural_defects": 5,
   "generation_note": "Statements are mechanical restatements of each morphism record's own fields. citations_verified is false for every claim at generation time; verifying them is part of the evaluation, not a precondition.",
   "claims": [
     {
@@ -182,68 +178,6 @@
       "anchor": "https://www.erdosproblems.com/114",
       "recorded_by": "mendozalab-session",
       "recorded_date": "2026-04-06",
-      "evaluation": {
-        "verdict": null,
-        "axes": null,
-        "note": null
-      }
-    },
-    {
-      "claim_id": "E114->PHYS-PT-001",
-      "source_record_id": "MOR-114-PHYS-PT-001-1775139177870",
-      "math_id": "114",
-      "physics_id": "PHYS-PT-001",
-      "asserted_strength": "conjectured",
-      "strength_reading": "is proposed but not established",
-      "claim": "None [None] corresponds to Logarithmic Capacity [None]",
-      "transfer_operator_claimed": null,
-      "breakdown_boundary": null,
-      "falsification_condition": "The record asserts that None corresponds to None. It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
-      "evidence_kind": "test_placeholder",
-      "evidence_raw": "test morphism",
-      "citations": [],
-      "citations_verified": false,
-      "structural_defects": [
-        "no transfer_operator: the record names no mechanism, so no result can cross",
-        "no breakdown_boundary: the record does not say where the correspondence fails",
-        "no math_invariant: the claim has no mathematical content",
-        "no physics_invariant: the claim has no physical content",
-        "placeholder record: evidence is 'test morphism'; this is test data in the corpus"
-      ],
-      "anchor": "https://www.erdosproblems.com/114",
-      "recorded_by": "agent",
-      "recorded_date": "2026-04-02",
-      "evaluation": {
-        "verdict": null,
-        "axes": null,
-        "note": null
-      }
-    },
-    {
-      "claim_id": "E114->PHYS-PT-001",
-      "source_record_id": "MOR-114-PHYS-PT-001-1775139177883",
-      "math_id": "114",
-      "physics_id": "PHYS-PT-001",
-      "asserted_strength": "conjectured",
-      "strength_reading": "is proposed but not established",
-      "claim": "None [None] corresponds to Logarithmic Capacity [None]",
-      "transfer_operator_claimed": null,
-      "breakdown_boundary": null,
-      "falsification_condition": "The record asserts that None corresponds to None. It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
-      "evidence_kind": "test_placeholder",
-      "evidence_raw": "test morphism",
-      "citations": [],
-      "citations_verified": false,
-      "structural_defects": [
-        "no transfer_operator: the record names no mechanism, so no result can cross",
-        "no breakdown_boundary: the record does not say where the correspondence fails",
-        "no math_invariant: the claim has no mathematical content",
-        "no physics_invariant: the claim has no physical content",
-        "placeholder record: evidence is 'test morphism'; this is test data in the corpus"
-      ],
-      "anchor": "https://www.erdosproblems.com/114",
-      "recorded_by": "agent",
-      "recorded_date": "2026-04-02",
       "evaluation": {
         "verdict": null,
         "axes": null,
@@ -784,6 +718,384 @@
       }
     },
     {
+      "claim_id": "E50184->PHYS-T-002",
+      "source_record_id": "MOR-CS-SALVO001-001-50184",
+      "math_id": "50184",
+      "physics_id": "PHYS-T-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [SAT decision threshold m/n; cluster complexity at criticality in CNF-SAT] corresponds to Phase Transitions [Order parameter in ferromagnetic phase transition; susceptibility divergence at T_c]",
+      "transfer_operator_claimed": "m/n <-> inverse temperature beta; unsatisfied clause count = energy; threshold m/n ~ 4.27 for random 3-SAT",
+      "breakdown_boundary": "Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
+      "falsification_condition": "The record asserts that SAT decision threshold m/n; cluster complexity at criticality in CNF-SAT corresponds to Order parameter in ferromagnetic phase transition; susceptibility divergence at T_c. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Mezard-Parisi-Zecchina 2002 replica cavity; Achlioptas 2005 threshold; Selman 1996 phase transition",
+      "citations": [
+        "Mezard-Parisi-Zecchina 2002 replica cavity; Achlioptas 2005 threshold; Selman 1996 phase transition"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50184",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50185->PHYS-T-004",
+      "source_record_id": "MOR-CS-SALVO001-002-50185",
+      "math_id": "50185",
+      "physics_id": "PHYS-T-004",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Complement asymmetry: UNSAT witness production vs NP certificate verifiability] corresponds to Entropy Production [Entropy production rate; broken time-reversal symmetry]",
+      "transfer_operator_claimed": "NP certificate <-> forward-time entropy sink; coNP UNSAT proof <-> backward trajectory requiring dissipation",
+      "breakdown_boundary": "NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
+      "falsification_condition": "The record asserts that Complement asymmetry: UNSAT witness production vs NP certificate verifiability corresponds to Entropy production rate; broken time-reversal symmetry. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Bennett 1982 reversible computation; Aaronson 2005 entropy-computation coupling; Vitanyi-Li 2000 Kolmogorov symmetry",
+      "citations": [
+        "Bennett 1982 reversible computation; Aaronson 2005 entropy-computation coupling; Vitanyi-Li 2000 Kolmogorov symmetry"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50185",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50187->PHYS-Q-001",
+      "source_record_id": "MOR-CS-SALVO001-025-50187",
+      "math_id": "50187",
+      "physics_id": "PHYS-Q-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Deterministic polynomial-time state trajectory; acceptance by halting configuration] corresponds to Quantum Superposition [Quantum superposition branch; computational history as coherent world-line in Hilbert space]",
+      "transfer_operator_claimed": "DTM step sequence -> unitary on quantum register; certificate existence -> measurement-collapse amplitude",
+      "breakdown_boundary": "Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
+      "falsification_condition": "The record asserts that Deterministic polynomial-time state trajectory; acceptance by halting configuration corresponds to Quantum superposition branch; computational history as coherent world-line in Hilbert space. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Deutsch 1985 quantum computing model; Aharonov-Vazirani 2013 BQP vs NP structure; P subset NP embedding",
+      "citations": [
+        "Deutsch 1985 quantum computing model; Aharonov-Vazirani 2013 BQP vs NP structure; P subset NP embedding"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50187",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50188->PHYS-Q-001",
+      "source_record_id": "MOR-CS-SALVO001-026-50188",
+      "math_id": "50188",
+      "physics_id": "PHYS-Q-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Deterministic rejection-by-halting; complement acceptance in coNP definition] corresponds to Quantum Superposition [Quantum conjugation (Hermitian involution) on branch amplitudes; time-reversal symmetry in world-line branching]",
+      "transfer_operator_claimed": "Complement condition not(phi(x)) -> conjugate state |psi_bar>; rejection becomes superposition-measurable observable",
+      "breakdown_boundary": "coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
+      "falsification_condition": "The record asserts that Deterministic rejection-by-halting; complement acceptance in coNP definition corresponds to Quantum conjugation (Hermitian involution) on branch amplitudes; time-reversal symmetry in world-line branching. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Aharonov-Vazirani 2013 coNP witness structure in quantum setting; P subset coNP embedding",
+      "citations": [
+        "Aharonov-Vazirani 2013 coNP witness structure in quantum setting; P subset coNP embedding"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50188",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50267->PHYS-QC-001",
+      "source_record_id": "MOR-CS-SALVO001-011-50267",
+      "math_id": "50267",
+      "physics_id": "PHYS-QC-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Subword complexity p(n)<=n+1; Sturmian slope theta from substitution matrix] corresponds to Quasicrystal Substitution Geometry [Meyer set density (cut-and-project); rank 2 lattice; cyclotomic Pisot eigenvalue]",
+      "transfer_operator_claimed": "Substitution matrix M=[[1,1],[0,1]] spectrum generates 1D aperiodic tiling via first-return partition",
+      "breakdown_boundary": "Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
+      "falsification_condition": "The record asserts that Subword complexity p(n)<=n+1; Sturmian slope theta from substitution matrix corresponds to Meyer set density (cut-and-project); rank 2 lattice; cyclotomic Pisot eigenvalue. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Queffelec 1987; Bombieri-Taylor 1986 aperiodic tilings; Senechal 1995 quasicrystals",
+      "citations": [
+        "Queffelec 1987; Bombieri-Taylor 1986 aperiodic tilings; Senechal 1995 quasicrystals"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50267",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50268->PHYS-QC-001",
+      "source_record_id": "MOR-CS-SALVO001-012-50268",
+      "math_id": "50268",
+      "physics_id": "PHYS-QC-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Sturmian word binary sequence; balancing Delta p = max(p(n+1)-p(n))=1] corresponds to Quasicrystal Substitution Geometry [Cut-and-project window omega in R^2 dual; projection density rho=|omega|/|Lambda*|]",
+      "transfer_operator_claimed": "Canonical projection pi: (Z^2,L)->omega x phi(omega); inverse M recovers sequence recurrence",
+      "breakdown_boundary": "|omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
+      "falsification_condition": "The record asserts that Sturmian word binary sequence; balancing Delta p = max(p(n+1)-p(n))=1 corresponds to Cut-and-project window omega in R^2 dual; projection density rho=|omega|/|Lambda*|. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: |omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Baake-Grimm 2013 Aperiodic Order; Hof 1995 diffraction; Pansiot 1984 linear p(n) iff Sturmian",
+      "citations": [
+        "Baake-Grimm 2013 Aperiodic Order; Hof 1995 diffraction; Pansiot 1984 linear p(n) iff Sturmian"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50268",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50269->PHYS-SS-001",
+      "source_record_id": "MOR-CS-SALVO001-013-50269",
+      "math_id": "50269",
+      "physics_id": "PHYS-SS-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Automorphism group G(sigma) of aperiodic subshift closure; rank r=dim Z[lambda]/<min poly>] corresponds to Substitution Dynamical System [Symmetry rank of tiling automorphisms; group order encodes rotational/reflectional degeneracies]",
+      "transfer_operator_claimed": "SDS action T: omega -> sigma(omega); Ruelle transfer L f(x)=sum_{sigma y=x} e^phi(y) f(y)",
+      "breakdown_boundary": "Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
+      "falsification_condition": "The record asserts that Automorphism group G(sigma) of aperiodic subshift closure; rank r=dim Z[lambda]/<min poly> corresponds to Symmetry rank of tiling automorphisms; group order encodes rotational/reflectional degeneracies. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Queffelec 1987; Durand 2011 tiling automorphism groups; Ruelle 1989 thermodynamic formalism",
+      "citations": [
+        "Queffelec 1987; Durand 2011 tiling automorphism groups; Ruelle 1989 thermodynamic formalism"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50269",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50270->PHYS-SH-001",
+      "source_record_id": "MOR-CS-SALVO001-014-50270",
+      "math_id": "50270",
+      "physics_id": "PHYS-SH-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Topological entropy h_top(sigma)=lim (1/n) log(#n-subwords)=log lambda_Perron] corresponds to Symbolic Shift / Topological Shift [Lyapunov exponent of symbolic flow; growth rate of phase-space volume in Poincare section]",
+      "transfer_operator_claimed": "Substitution matrix M; lambda_Perron largest eigenvalue; h(sigma)=log lambda_Perron",
+      "breakdown_boundary": "Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
+      "falsification_condition": "The record asserts that Topological entropy h_top(sigma)=lim (1/n) log(#n-subwords)=log lambda_Perron corresponds to Lyapunov exponent of symbolic flow; growth rate of phase-space volume in Poincare section. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Pansiot 1984; Lind-Marcus 1995 Symbolic Dynamics; Parry-Tuncel 1973 entropy of symbolic shifts",
+      "citations": [
+        "Pansiot 1984; Lind-Marcus 1995 Symbolic Dynamics; Parry-Tuncel 1973 entropy of symbolic shifts"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50270",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50271->PHYS-SM-001",
+      "source_record_id": "MOR-CS-SALVO001-015-50271",
+      "math_id": "50271",
+      "physics_id": "PHYS-SM-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Diffraction measure dmu(omega); pure-point vs singular-continuous decomposition; weak-mixing exponent] corresponds to Spectral Measure of Dynamical System [Power spectral density; Bragg peaks at Q in 2pi Z[lambda]; peak heights encode multiplicities]",
+      "transfer_operator_claimed": "Fourier coeffs mu_hat(k)=<chi_k,chi_0>_L2; eigenfunction expansion on l^2(N)",
+      "breakdown_boundary": "Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
+      "falsification_condition": "The record asserts that Diffraction measure dmu(omega); pure-point vs singular-continuous decomposition; weak-mixing exponent corresponds to Power spectral density; Bragg peaks at Q in 2pi Z[lambda]; peak heights encode multiplicities. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Bombieri-Taylor 1986; Baake 1997 spectral analysis of substitution tilings; Damanik 2005 p(n) controls Hausdorff dim",
+      "citations": [
+        "Bombieri-Taylor 1986; Baake 1997 spectral analysis of substitution tilings; Damanik 2005 p(n) controls Hausdorff dim"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50271",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50272->PHYS-D-001",
+      "source_record_id": "MOR-CS-SALVO001-016-50272",
+      "math_id": "50272",
+      "physics_id": "PHYS-D-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Generating function G(x) for #subword occurrences; zeros/poles encode growth; algebraic degree=substitution matrix rank] corresponds to Diffraction Intensity / Fourier Structure Function [Form factor |S(Q)|^2 = diffraction intensity at Q; poles/zeros match tiling recurrence]",
+      "transfer_operator_claimed": "Substitution-induced automorphism on homology; G(x) as character of action on H_1(R/Z[lambda])",
+      "breakdown_boundary": "Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
+      "falsification_condition": "The record asserts that Generating function G(x) for #subword occurrences; zeros/poles encode growth; algebraic degree=substitution matrix rank corresponds to Form factor |S(Q)|^2 = diffraction intensity at Q; poles/zeros match tiling recurrence. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Allouche-Shallit 2003 generating functions for automatic sequences; Gahler-Rhyno 1996 form factor; OEIS A6697",
+      "citations": [
+        "Allouche-Shallit 2003 generating functions for automatic sequences; Gahler-Rhyno 1996 form factor; OEIS A6697"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50272",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50351->PHYS-HS-001",
+      "source_record_id": "MOR-CS-SALVO001-006-50351",
+      "math_id": "50351",
+      "physics_id": "PHYS-HS-001",
+      "asserted_strength": "validated",
+      "strength_reading": "has unstated status",
+      "claim": "None [block_sensitivity bs(f); subcube restriction degree bound] corresponds to Hypercube Spectral Gap [lambda_2(G_f)/lambda_max(G_f); signed adjacency spectrum gap]",
+      "transfer_operator_claimed": "Signed adjacency A_f; bs(f) <-> spectral radius bound; Huang uses lambda_2 <= sqrt(n)",
+      "breakdown_boundary": "Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
+      "falsification_condition": "The record asserts that block_sensitivity bs(f); subcube restriction degree bound corresponds to lambda_2(G_f)/lambda_max(G_f); signed adjacency spectrum gap. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Huang 2019 resolved sensitivity conjecture via signed hypercube eigenvalue; bs(f) degree = sqrt(n) * sensitivity",
+      "citations": [
+        "Huang 2019 resolved sensitivity conjecture via signed hypercube eigenvalue; bs(f) degree = sqrt(n) * sensitivity"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50351",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50352->PHYS-FS-001",
+      "source_record_id": "MOR-CS-SALVO001-007-50352",
+      "math_id": "50352",
+      "physics_id": "PHYS-FS-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Fourier concentration on level k; L1 weight sum_{|S|<=k}|f_hat(S)|] corresponds to Fourier Spectrum Concentration [Energy density in low-frequency modes; thermal stability under Fourier truncation]",
+      "transfer_operator_claimed": "Boolean f -> Fourier heat kernel sum_S |f_hat(S)| exp(-t|S|); sensitivity <-> Fourier spreading",
+      "breakdown_boundary": "Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
+      "falsification_condition": "The record asserts that Fourier concentration on level k; L1 weight sum_{|S|<=k}|f_hat(S)| corresponds to Energy density in low-frequency modes; thermal stability under Fourier truncation. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Tal 2014, Hatami 2017 sensitivity lower-bounds Fourier weight on high levels; conjectured bs<=s^2 => Fourier on levels 0..sqrt(n)",
+      "citations": [
+        "Tal 2014, Hatami 2017 sensitivity lower-bounds Fourier weight on high levels; conjectured bs<=s^2 => Fourier on levels 0..sqrt(n)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50352",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50353->PHYS-Q-002",
+      "source_record_id": "MOR-CS-SALVO001-008-50353",
+      "math_id": "50353",
+      "physics_id": "PHYS-Q-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [quantum decision tree depth; adversary bound Adv(f)] corresponds to Quantum Entanglement [entanglement cost (ebits); quantum query entropy]",
+      "transfer_operator_claimed": "Embed decision tree in quantum superposition; sensitivity -> quantum query LB via adversary method; Adv -> sqrt(query complexity)",
+      "breakdown_boundary": "Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
+      "falsification_condition": "The record asserts that quantum decision tree depth; adversary bound Adv(f) corresponds to entanglement cost (ebits); quantum query entropy. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Hoyer-Lee-Spalek 2007 quantum adversary method; conjectured strong sensitivity => adversary tight; bs(f)~Adv(f)^2",
+      "citations": [
+        "Hoyer-Lee-Spalek 2007 quantum adversary method; conjectured strong sensitivity => adversary tight; bs(f)~Adv(f)^2"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50353",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50354->PHYS-IS-001",
+      "source_record_id": "MOR-CS-SALVO001-009-50354",
+      "math_id": "50354",
+      "physics_id": "PHYS-IS-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [decision-tree backbone; subcube constraints (disjunction-of-ANDs)] corresponds to Ising Glass Free Energy [disorder-induced gap in F(T); replica-symmetry-breaking cost]",
+      "transfer_operator_claimed": "Random Ising couplings {J_ij(omega)} indexed by constraint locations; s(f) <-> T_g ~ log s(f)",
+      "breakdown_boundary": "Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
+      "falsification_condition": "The record asserts that decision-tree backbone; subcube constraints (disjunction-of-ANDs) corresponds to disorder-induced gap in F(T); replica-symmetry-breaking cost. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Impagliazzo-Wigderson 1998 pseudorandomness hardens LBs; Boolean hardness <-> spin-glass hardness",
+      "citations": [
+        "Impagliazzo-Wigderson 1998 pseudorandomness hardens LBs; Boolean hardness <-> spin-glass hardness"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50354",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
       "claim_id": "E505->PHYS-F-001",
       "source_record_id": "MOR-505-PHYS-F-001-1776365642682",
       "math_id": "505",
@@ -807,6 +1119,276 @@
       "anchor": "https://www.erdosproblems.com/505",
       "recorded_by": "agent",
       "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50526->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-50526",
+      "math_id": "50526",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "validated",
+      "strength_reading": "has unstated status",
+      "claim": "Invariant Subspace Problem (#50526) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50526",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50526->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-50526",
+      "math_id": "50526",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "ISP (#50526) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50526",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50527->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-50527",
+      "math_id": "50527",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Invariant Subspace Problem (#50527) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50527",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50527->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-50527",
+      "math_id": "50527",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "ISP (#50527) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50527",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50528->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-50528",
+      "math_id": "50528",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Invariant Subspace Problem (#50528) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50528",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50528->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-50528",
+      "math_id": "50528",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "ISP (#50528) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50528",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50529->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-50529",
+      "math_id": "50529",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Invariant Subspace Problem (#50529) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50529",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50529->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-50529",
+      "math_id": "50529",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "ISP (#50529) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50529",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50530->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-50530",
+      "math_id": "50530",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Invariant Subspace Problem (#50530) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50530",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50530->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-50530",
+      "math_id": "50530",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "ISP (#50530) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50530",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
       "evaluation": {
         "verdict": null,
         "axes": null,
@@ -948,6 +1530,330 @@
       "anchor": "https://www.erdosproblems.com/755",
       "recorded_by": "h2_chimera_2026-04-16",
       "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80578->PHYS-SR-001",
+      "source_record_id": "MOR-CS-SALVO001-024-80578",
+      "math_id": "80578",
+      "physics_id": "PHYS-SR-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Tail exponent alpha of sum of i.i.d. unbounded-variance RVs (Nagaev moderate deviation)] corresponds to Stable Laws / Levy Flights [Stability index alpha in Levy-stable distribution; heavy-tailed diffusion exponent]",
+      "transfer_operator_claimed": "Heavy-tailed sum -> Levy-stable random walk; variance truncation -> jump-suppression threshold",
+      "breakdown_boundary": "alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
+      "falsification_condition": "The record asserts that Tail exponent alpha of sum of i.i.d. unbounded-variance RVs (Nagaev moderate deviation) corresponds to Stability index alpha in Levy-stable distribution; heavy-tailed diffusion exponent. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Gnedenko-Kolmogorov 1954 limit laws; Petrov 1975 moderate-deviation asymptotics; Mantegna-Stanley 1995 Levy flights in markets",
+      "citations": [
+        "Gnedenko-Kolmogorov 1954 limit laws; Petrov 1975 moderate-deviation asymptotics; Mantegna-Stanley 1995 Levy flights in markets"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80578",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80579->PHYS-T-003",
+      "source_record_id": "MOR-CS-SALVO001-003-80579",
+      "math_id": "80579",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Polynomial-time certification boundary; reduction network diameter; certificate-length scaling] corresponds to Critical Phenomena [Critical exponent in finite-size scaling near second-order transition]",
+      "transfer_operator_claimed": "Instance size n <-> linear dimension; certificate length <-> correlation length xi(T); NP-hardness <-> singular heat capacity at T_c",
+      "breakdown_boundary": "If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
+      "falsification_condition": "The record asserts that Polynomial-time certification boundary; reduction network diameter; certificate-length scaling corresponds to Critical exponent in finite-size scaling near second-order transition. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Achlioptas 2004 algorithmic phase transitions; Biroli-Monasson 2001 critical phenomena in random CSP; Zecchina 2002",
+      "citations": [
+        "Achlioptas 2004 algorithmic phase transitions; Biroli-Monasson 2001 critical phenomena in random CSP; Zecchina 2002"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80579",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80580->PHYS-SG-001",
+      "source_record_id": "MOR-CS-SALVO001-017-80580",
+      "math_id": "80580",
+      "physics_id": "PHYS-SG-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [0/1 knapsack capacity constraint + optimal value gap structure] corresponds to Spin Glass / Replica Symmetry Breaking [Spin-glass disorder energy landscape fragmentation at RSB threshold]",
+      "transfer_operator_claimed": "Z(beta)=sum_config exp(-beta E_disorder); replica trace Tr(Z^n)/n as n->0",
+      "breakdown_boundary": "beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
+      "falsification_condition": "The record asserts that 0/1 knapsack capacity constraint + optimal value gap structure corresponds to Spin-glass disorder energy landscape fragmentation at RSB threshold. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Mertens 2000 PRE 'Easiest Hard Problem'; Borgs-Chayes-Pittel 2001 random optimization; knapsack hardness <-> replica instability",
+      "citations": [
+        "Mertens 2000 PRE 'Easiest Hard Problem'; Borgs-Chayes-Pittel 2001 random optimization; knapsack hardness <-> replica instability"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80580",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80581->PHYS-TN-001",
+      "source_record_id": "MOR-CS-SALVO001-022-80581",
+      "math_id": "80581",
+      "physics_id": "PHYS-TN-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Code covering radius / direct-product test robustness under correlation] corresponds to Tensor Network Robustness [MPS bond dimension / entanglement entropy under channel noise]",
+      "transfer_operator_claimed": "Locally-testable code -> tensor-network state; correlation -> entanglement decay",
+      "breakdown_boundary": "Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
+      "falsification_condition": "The record asserts that Code covering radius / direct-product test robustness under correlation corresponds to MPS bond dimension / entanglement entropy under channel noise. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Cirac-Verstraete 2009 MPS robustness; Dinur-Reingold 2006 direct-product testing exhibits entanglement-like noise response",
+      "citations": [
+        "Cirac-Verstraete 2009 MPS robustness; Dinur-Reingold 2006 direct-product testing exhibits entanglement-like noise response"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80581",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80582->PHYS-QE-001",
+      "source_record_id": "MOR-CS-SALVO001-020-80582",
+      "math_id": "80582",
+      "physics_id": "PHYS-QE-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Pigeonhole density forcing: among 2^n subsets, partition equality inevitable under sum constraint] corresponds to Bose-Einstein Condensation / Occupancy Symmetry [Bose-Einstein occupancy constraint: identical-particle symmetry forces macroscopic state-sharing]",
+      "transfer_operator_claimed": "Z_BE(mu,T) for indistinguishable particles; chemical potential mu adjusts occupancy to match sum constraint",
+      "breakdown_boundary": "Density threshold where single ground-state dominates; pigeonhole forcing <-> Bose condensation at critical density",
+      "falsification_condition": "The record asserts that Pigeonhole density forcing: among 2^n subsets, partition equality inevitable under sum constraint corresponds to Bose-Einstein occupancy constraint: identical-particle symmetry forces macroscopic state-sharing. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Density threshold where single ground-state dominates; pigeonhole forcing <-> Bose condensation at critical density",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Erdos pigeonhole; occupancy <-> Bose-Einstein statistics; additive combinatorics (Tao-Vu, Green-Tao)",
+      "citations": [
+        "Erdos pigeonhole; occupancy <-> Bose-Einstein statistics; additive combinatorics (Tao-Vu, Green-Tao)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80582",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80583->PHYS-BR-001",
+      "source_record_id": "MOR-CS-SALVO001-021-80583",
+      "math_id": "80583",
+      "physics_id": "PHYS-BR-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Straight-line-program (PosSLP) complexity for sqrt-sum eval; algebraic degree of sqrt(a_i); Diophantine measure] corresponds to Borel Summability / Asymptotic Convergence Radius [Borel-summability radius of perturbation series; asymptoticity governs convergence of SLP algebraic-real arithmetic]",
+      "transfer_operator_claimed": "SLP composition depth <-> perturbation series order; spectral determinant det(lambda I - A) of mult. operator",
+      "breakdown_boundary": "Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
+      "falsification_condition": "The record asserts that Straight-line-program (PosSLP) complexity for sqrt-sum eval; algebraic degree of sqrt(a_i); Diophantine measure corresponds to Borel-summability radius of perturbation series; asymptoticity governs convergence of SLP algebraic-real arithmetic. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Koiran 2010 JACM; Ghys on real algebraic approximation; Borel summability as complexity proxy",
+      "citations": [
+        "Koiran 2010 JACM; Ghys on real algebraic approximation; Borel summability as complexity proxy"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80583",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80584->PHYS-EX-001",
+      "source_record_id": "MOR-CS-SALVO001-023-80584",
+      "math_id": "80584",
+      "physics_id": "PHYS-EX-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Sorting network depth in O(n) gates; mixing time of comparator graph] corresponds to Expander Mixing / Spectral Gap [Spectral gap lambda_1-lambda_2 of expander; mixing entropy production rate]",
+      "transfer_operator_claimed": "Stable-sorted permutations <-> invariant measure on expander; comparator steps <-> random walk mixing",
+      "breakdown_boundary": "lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
+      "falsification_condition": "The record asserts that Sorting network depth in O(n) gates; mixing time of comparator graph corresponds to Spectral gap lambda_1-lambda_2 of expander; mixing entropy production rate. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Ajtai-Komlos-Szemeredi 1983 sorting networks via expanders; Reingold-Wigderson-Wigderson 2000 eigenvalue bounds govern mixing",
+      "citations": [
+        "Ajtai-Komlos-Szemeredi 1983 sorting networks via expanders; Reingold-Wigderson-Wigderson 2000 eigenvalue bounds govern mixing"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80584",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80586->PHYS-LD-001",
+      "source_record_id": "MOR-CS-SALVO001-005-80586",
+      "math_id": "80586",
+      "physics_id": "PHYS-LD-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Space-time tradeoff; PSPACE reachability tree vs tape-reuse under certificate production] corresponds to Landauer Erasure / Reversibility Barrier [Landauer minimum dissipation per bit erased; reversibility cost under constant-factor memory]",
+      "transfer_operator_claimed": "PSPACE cells <-> degrees of freedom; work per reuse = k_B T ln 2; log-space => exponential erasures/decision",
+      "breakdown_boundary": "P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
+      "falsification_condition": "The record asserts that Space-time tradeoff; PSPACE reachability tree vs tape-reuse under certificate production corresponds to Landauer minimum dissipation per bit erased; reversibility cost under constant-factor memory. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Bennett 1982 Landauer-Bennett; Aaronson-Susskind 2016 holographic complexity; Chakraborty 2018 entropy gap",
+      "citations": [
+        "Bennett 1982 Landauer-Bennett; Aaronson-Susskind 2016 holographic complexity; Chakraborty 2018 entropy gap"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80586",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80587->PHYS-LD-001",
+      "source_record_id": "MOR-CS-SALVO001-018-80587",
+      "math_id": "80587",
+      "physics_id": "PHYS-LD-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [One-way function image-preimage imbalance: |f^-1(y)| sparse, |range(f)| large] corresponds to Landauer Erasure / Reversibility Barrier [Erasure entropy production DeltaS>=k_B ln 2 per bit; Gibbs free energy barrier]",
+      "transfer_operator_claimed": "Reversible cost W_rev(n) vs irreversible W_irrev=W_rev+n k_B T ln 2 for n-bit inversion",
+      "breakdown_boundary": "Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
+      "falsification_condition": "The record asserts that One-way function image-preimage imbalance: |f^-1(y)| sparse, |range(f)| large corresponds to Erasure entropy production DeltaS>=k_B ln 2 per bit; Gibbs free energy barrier. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Bennett 1973 IBM JRD logical reversibility; Reif 1985 optical computing limits; OWF <-> dissipation duality",
+      "citations": [
+        "Bennett 1973 IBM JRD logical reversibility; Reif 1985 optical computing limits; OWF <-> dissipation duality"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80587",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80588->PHYS-RNG-001",
+      "source_record_id": "MOR-CS-SALVO001-010-80588",
+      "math_id": "80588",
+      "physics_id": "PHYS-RNG-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [AM proof length L; entropy production log(1/epsilon)] corresponds to Pseudorandom Generator Phase Transition [free-energy cost F_sep(L)=I(verifier;prover); entropy separation]",
+      "transfer_operator_claimed": "AM game <-> random-energy glass with N~2^L; PRG existence <-> phase boundary",
+      "breakdown_boundary": "Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
+      "falsification_condition": "The record asserts that AM proof length L; entropy production log(1/epsilon) corresponds to free-energy cost F_sep(L)=I(verifier;prover); entropy separation. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Impagliazzo-Wigderson 1998 PRG from weak OWF; conjectured AM subset NP iff entropy-efficient derandomization at L~sqrt(n)",
+      "citations": [
+        "Impagliazzo-Wigderson 1998 PRG from weak OWF; conjectured AM subset NP iff entropy-efficient derandomization at L~sqrt(n)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80588",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80589->PHYS-CL-003",
+      "source_record_id": "MOR-CS-SALVO001-004-80589",
+      "math_id": "80589",
+      "physics_id": "PHYS-CL-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Randomness necessity; pseudorandom generator security; branching sensitivity] corresponds to Chaos / Lorenz System [Lyapunov exponent; ergodic mixing time]",
+      "transfer_operator_claimed": "Random bits <-> perturbation direction; derandomization cost <-> chaotic mixing time; BPP acceptance <-> basin volume at poly(n) cost",
+      "breakdown_boundary": "P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
+      "falsification_condition": "The record asserts that Randomness necessity; pseudorandom generator security; branching sensitivity corresponds to Lyapunov exponent; ergodic mixing time. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Aaronson 2005 BPP and PRGs; Trevisan-Vadhan 2000 pseudorandomness; Hastad 1999 hitting sets",
+      "citations": [
+        "Aaronson 2005 BPP and PRGs; Trevisan-Vadhan 2000 pseudorandomness; Hastad 1999 hitting sets"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80589",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80590->PHYS-T-002",
+      "source_record_id": "MOR-CS-SALVO001-019-80590",
+      "math_id": "80590",
+      "physics_id": "PHYS-T-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Random k-SAT clause density alpha=m/n at k=3; threshold alpha_c~4.267; refutation hardness emergence] corresponds to Phase Transitions [Critical point of ferromagnetic-spin-glass transition; cavity-method replica prediction of SAT/UNSAT boundary]",
+      "transfer_operator_claimed": "Bethe-Peierls cavity recursion on factor graph; MPZ replica-symmetric free energy f(alpha,beta)",
+      "breakdown_boundary": "Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
+      "falsification_condition": "The record asserts that Random k-SAT clause density alpha=m/n at k=3; threshold alpha_c~4.267; refutation hardness emergence corresponds to Critical point of ferromagnetic-spin-glass transition; cavity-method replica prediction of SAT/UNSAT boundary. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Mezard-Parisi-Zecchina 2002 Science 'Analytic and Algorithmic Solution of Random SAT'; cavity method; rigorous alpha_c=4.2667",
+      "citations": [
+        "Mezard-Parisi-Zecchina 2002 Science 'Analytic and Algorithmic Solution of Random SAT'; cavity method; rigorous alpha_c=4.2667"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80590",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
       "evaluation": {
         "verdict": null,
         "axes": null,

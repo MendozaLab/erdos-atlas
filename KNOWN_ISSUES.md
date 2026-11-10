@@ -3,57 +3,51 @@
 Read this before drawing conclusions. These are defects in the capture or in the
 upstream API, not in your evaluation. Each one is reproducible.
 
-## 1. The health count cannot be reconciled with the served data
+## 1. Nineteen records are held in the database but not served
 
-`/api/health` declares `morphisms: 92`. The snapshot captured **37 records**,
-covering **34 distinct (math_id, physics_id) pairs** over 23 problems.
+Verified against D1 `research-hub-auth.atlas_morphism_records` on 2026-11-10:
 
-How it was measured: `/api/morphisms/<id>` was queried for every id in `1..6000`.
-Twenty-three problem ids returned records. Spot checks at 6001, 7000, 9000 and
-12000 returned zero, so the sweep range is not the binding constraint. Both
-morphism families are served by the same route and both are captured: 11 curated
-(`mr-*`) and 26 generated (`MOR-*`), so this is not a case of a second route
-hiding records.
+| | count |
+|---|---|
+| records in the table | 90 (was 92; two placeholders deleted, see `DATA_DEFECTS.md`) |
+| reachable via `/api/morphisms/:id` | 71 |
+| held but not served | 19 |
 
-What is *not* established is data loss. Three explanations remain live and this
-capture cannot separate them:
+The 19 are not scattered. They sit on ten math ids whose values are **not
+numeric**:
 
-1. `92` counts rows including historical or superseded versions. The records
-   carry several creation batches (`h2_session_2026-03-29`, `h2_session_2026-04-01`,
-   `h2_chimera_2026-04-16`, `agent`, …), so duplicates across sessions are
-   plausible. In that case 34 pairs is the real current set and only the counter
-   is loose.
-2. `92` counts a table this route does not serve, such as the physics-edge
-   `morphisms` table. Locally that table holds 54,203 rows, so it is not a
-   straight count of that either.
-3. About 55 records genuinely exist and are unreachable through the public
-   routes.
+```
+AIM-045  AIM-067  AIM-072  MW-037  MW-054
+SIM-003  SIM-004  SMA-007  SMA-010  SMA-011
+```
 
-The authoritative source is `atlas_morphism_records` in D1 `research-hub-auth`.
-It was not reachable at capture time: the local `erdosatlas-workbench/erdosatlas.db`
-holds only physics edges, and `wrangler` was unavailable.
+Those ids have rows in the table and return an empty list from the route. Every
+numeric id resolves. So the defect is narrow: the route handles numeric ids only,
+and non-numeric problem ids are silently invisible.
 
-**Consequence, stated narrowly.** This does not block evaluating any individual
-claim — each of the 37 stands or falls on its own record. It does block claims
-*about the corpus*, because those need a defensible denominator and there isn't
-one. If you find that 28 of 37 are `conjectured`, that speaks for the 37 and not
-for the atlas.
+**An earlier claim in this repository was wrong and is retracted.** A first
+capture swept numeric ids 1..6000 and reported 37 of 92, and this file then
+suggested roughly 55 records were unreachable. That was a measurement error: the
+numeric id space runs to about 80590, and 31 problems with morphisms sit in the
+50184..80590 range, invisible to a sweep capped at 6000. Extending the probe
+raised the capture from 37 to 71. The residue is the 19 above.
 
-Use 34 distinct pairs, not 92, as the denominator, and say so explicitly.
+**Consequence.** The denominator for any corpus-level finding is **71 served
+claims** over 54 problems, or **90** if you also count the unserved 19. State
+which you used. Individual claims are unaffected either way.
 
-**Owner action.** Either reconcile the counter with what the route serves, or
-document why they differ. Option 1 needs no API change beyond honesty in
-`/api/health`.
-
+**Owner action.** Make the route resolve non-numeric math ids, or document that
+it does not, or move those records to numeric ids. Nineteen silent records is a
+small enough set to fix properly.
 
 ## 2. Physics objects are captured only by reachability
 
-`/api/health` declares `physics: 66`. The snapshot holds **20**, because objects
+`/api/health` declares `physics: 66`. The snapshot holds **39**, because objects
 were collected only if a captured morphism referenced them. There is no physics
 listing endpoint: `/api/physics`, `/api/objects/physics` and `/api/physics/top`
 all return 404.
 
-This is a capture limitation, not evidence that 46 objects are unused.
+This is a capture limitation, not evidence that the other 27 objects are unused.
 
 ## 3. There is no full problem catalogue
 

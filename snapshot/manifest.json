@@ -1,36 +1,43 @@
 {
-  "snapshot_utc": "2026-11-10T03:36:50+00:00",
+  "snapshot_utc": "2026-11-10T03:51:25+00:00",
   "api_base": "https://erdosatlas-api.dev-ef7.workers.dev",
-  "method": "problem-id sweep for morphisms; union of physics_id fields for objects",
-  "sweep_range": "1..6000",
+  "method": "per-id probe for morphisms; union of physics_id fields for objects",
+  "id_probe": {
+    "source": "curation/all_math_ids.txt",
+    "ids_probed": 64,
+    "ids_with_morphisms": 54,
+    "ids_without": 10
+  },
   "declared_counts_health": {
     "problems": 5496,
     "physics": 66,
     "edges": 14095,
-    "morphisms": 92,
+    "morphisms": 90,
     "solvent": 1190,
     "lean_artifacts": 22
   },
   "captured": {
-    "morphisms": 37,
-    "problems_with_morphisms": 23,
+    "morphisms": 71,
+    "problems_with_morphisms": 54,
     "problems_top100": 100,
-    "physics_objects": 20
+    "physics_objects": 39
   },
   "reconciliation": {
-    "morphisms_declared": 92,
-    "morphisms_captured": 37,
+    "morphisms_declared": 90,
+    "morphisms_captured": 71,
     "physics_declared": 66,
-    "physics_captured": 20
+    "physics_captured": 39
   },
   "known_gaps": [
     "The API exposes no full problem catalogue; only the top 100 by solvent index.",
-    "Morphisms are discoverable only per problem id, so the sweep is bounded by --max-id.",
+    "Morphisms are discoverable only per problem id. A numeric sweep must reach ~80590; an earlier capture capped at 6000 and missed 31 problems in the 50184..80590 range.",
+    "Records whose math_id is non-numeric (AIM-*, MW-*, SIM-*, SMA-*) are held in the database but return nothing from /api/morphisms/:id; see unserved_ids.json.",
     "physics_objects counts objects reachable from captured morphisms, not all declared objects."
   ],
   "sha256": {
-    "morphisms.json": "df567ea04f85571580df059de8a2a2f009f1aadedbef3d394dd3fd69ca3e437f",
+    "morphisms.json": "86c60432058632129f56f29def3e1feebb9b1e786a2ea76c92555c16d297120a",
+    "unserved_ids.json": "82709f6893effab5f30f3df21411b16b3e6d0cbeba0ddcae128d0dbe706e60b2",
     "problems_top100.json": "9b7dbdf2304dfd0dc97d55dc4e16d96e1021b644b3b8baea5c7f3e1b2e8c45d1",
-    "physics_objects.json": "8521d6d0f35251992305e4865c468d4442990801da530ae81961d078046b1c46"
+    "physics_objects.json": "34c9d6a7ffc9a44c1bd552b1c0d6501acf833f7b4b6634bfe4113b8bb296f2b9"
   }
 }

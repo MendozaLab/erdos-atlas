@@ -1,5 +1,18 @@
 {
   "objects": {
+    "PHYS-BR-001": {
+      "added_date": "2026-04-19",
+      "category": "Perturbation Theory / Algebraic Approximation",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Borel Summability / Asymptotic Convergence Radius",
+      "physics_id": "PHYS-BR-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
     "PHYS-C-004": {
       "added_date": "2026-03-29",
       "category": "Conservation Laws",
@@ -65,6 +78,32 @@
       "source": "h2_session",
       "structural_fingerprint": "{\"symmetry\":\"Cubic->hexagonal\",\"growth\":\"Phase-switch\",\"constraint\":\"Coordination-number\",\"extremal\":\"Lattice-energy minimum\",\"ratio\":\"sqrt2_to_sqrt3\",\"R_kin\":2.0,\"S_vn\":0.7,\"Hys_width\":0.5}"
     },
+    "PHYS-D-001": {
+      "added_date": "2026-04-19",
+      "category": "Spectral/Crystallography",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Diffraction Intensity / Fourier Structure Function",
+      "physics_id": "PHYS-D-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
+    "PHYS-EX-001": {
+      "added_date": "2026-04-19",
+      "category": "Discrete Dynamical Systems",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Expander Mixing / Spectral Gap",
+      "physics_id": "PHYS-EX-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
     "PHYS-F-001": {
       "added_date": "2026-03-29",
       "category": "Forces",
@@ -78,6 +117,45 @@
       "source": "original",
       "structural_fingerprint": "{\"symmetry\":\"Gauge\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Potential minimum\",\"R_kin\":8.0,\"S_vn\":0.1,\"Hys_width\":0.0}"
     },
+    "PHYS-FS-001": {
+      "added_date": "2026-04-19",
+      "category": "Harmonic Analysis",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Fourier Spectrum Concentration",
+      "physics_id": "PHYS-FS-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
+    "PHYS-HS-001": {
+      "added_date": "2026-04-19",
+      "category": "Graph Spectroscopy",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Hypercube Spectral Gap",
+      "physics_id": "PHYS-HS-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
+    "PHYS-IS-001": {
+      "added_date": "2026-04-19",
+      "category": "Spin Disorder",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Ising Glass Free Energy",
+      "physics_id": "PHYS-IS-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
     "PHYS-KVN-001": {
       "added_date": "2026-04-17",
       "category": "Bridges",
@@ -89,6 +167,19 @@
       "ratio_signature": null,
       "shannon_entropy": null,
       "source": "original",
+      "structural_fingerprint": null
+    },
+    "PHYS-LD-001": {
+      "added_date": "2026-04-19",
+      "category": "Thermodynamic Irreversibility",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Landauer Erasure / Reversibility Barrier",
+      "physics_id": "PHYS-LD-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
       "structural_fingerprint": null
     },
     "PHYS-PRIMON-001": {
@@ -129,6 +220,45 @@
       "shannon_entropy": 2.6418,
       "source": "original",
       "structural_fingerprint": "{\"symmetry\":\"Unitary\",\"growth\":\"Extremal\",\"constraint\":\"Sum/density\",\"extremal\":\"Ground state\",\"R_kin\":8.0,\"S_vn\":0.5,\"Hys_width\":0.0}"
+    },
+    "PHYS-Q-002": {
+      "added_date": "2026-03-29",
+      "category": "Quantum",
+      "description": "Non-separable correlations. Bell inequality violation. Monogamy of entanglement. Resource for quantum computation.",
+      "h2_spoke": null,
+      "hs_vector": "[3.0,3.0,4.0,2.0,1.0,1.0,1.0,0.0,6.0,0.7,0.2,0.0,0.0,3.0]",
+      "name": "Quantum Entanglement",
+      "physics_id": "PHYS-Q-002",
+      "ratio_signature": null,
+      "shannon_entropy": 3.0738,
+      "source": "original",
+      "structural_fingerprint": "{\"symmetry\":\"Unitary\",\"growth\":\"Asymptotic\",\"constraint\":\"Order/monotonicity\",\"extremal\":\"Ground state\",\"R_kin\":6.0,\"S_vn\":0.7,\"Hys_width\":0.0}"
+    },
+    "PHYS-QC-001": {
+      "added_date": "2026-04-19",
+      "category": "Aperiodic Order",
+      "description": "Pisot substitution tilings with singular-continuous diffraction; deterministic aperiodic order, non-repeating but long-range correlated.",
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Quasicrystal Substitution Geometry",
+      "physics_id": "PHYS-QC-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "original",
+      "structural_fingerprint": null
+    },
+    "PHYS-QE-001": {
+      "added_date": "2026-04-19",
+      "category": "Quantum Statistics / Pigeonhole Forcing",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Bose-Einstein Condensation / Occupancy Symmetry",
+      "physics_id": "PHYS-QE-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
     },
     "PHYS-R-002": {
       "added_date": "2026-03-29",
@@ -182,6 +312,45 @@
       "source": "original",
       "structural_fingerprint": null
     },
+    "PHYS-RNG-001": {
+      "added_date": "2026-04-19",
+      "category": "Derandomization",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Pseudorandom Generator Phase Transition",
+      "physics_id": "PHYS-RNG-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
+    "PHYS-SG-001": {
+      "added_date": "2026-04-19",
+      "category": "Disorder-driven Phase Transition",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Spin Glass / Replica Symmetry Breaking",
+      "physics_id": "PHYS-SG-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
+    "PHYS-SH-001": {
+      "added_date": "2026-04-19",
+      "category": "Dynamical Systems",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Symbolic Shift / Topological Shift",
+      "physics_id": "PHYS-SH-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
     "PHYS-SIG-001": {
       "added_date": "2026-03-29",
       "category": "Signal Processing",
@@ -194,6 +363,19 @@
       "shannon_entropy": 2.5,
       "source": "h2_session",
       "structural_fingerprint": "{\"symmetry\":\"Additive\",\"growth\":\"sqrt(N)-optimal\",\"constraint\":\"Unique-decode\",\"extremal\":\"Channel-capacity\",\"ratio\":\"sqrt_N\",\"R_kin\":8.0,\"S_vn\":0.2,\"Hys_width\":0.0}"
+    },
+    "PHYS-SM-001": {
+      "added_date": "2026-04-19",
+      "category": "Spectral Theory",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Spectral Measure of Dynamical System",
+      "physics_id": "PHYS-SM-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
     },
     "PHYS-SP-001": {
       "added_date": "2026-03-29",
@@ -221,6 +403,32 @@
       "source": "original",
       "structural_fingerprint": null
     },
+    "PHYS-SR-001": {
+      "added_date": "2026-04-19",
+      "category": "Anomalous Diffusion",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Stable Laws / Levy Flights",
+      "physics_id": "PHYS-SR-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
+    "PHYS-SS-001": {
+      "added_date": "2026-04-19",
+      "category": "Symbolic Dynamics",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Substitution Dynamical System",
+      "physics_id": "PHYS-SS-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
+    },
     "PHYS-T-001": {
       "added_date": "2026-03-29",
       "category": "Thermodynamic",
@@ -233,6 +441,19 @@
       "shannon_entropy": 2.1088,
       "source": "original",
       "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Free energy minimum\",\"R_kin\":10.0,\"S_vn\":0.2,\"Hys_width\":0.0}"
+    },
+    "PHYS-T-002": {
+      "added_date": "2026-03-29",
+      "category": "Thermodynamic",
+      "description": "Abrupt change in matter state. First-order: latent heat. Second-order: critical exponents, universality.",
+      "h2_spoke": null,
+      "hs_vector": "[3.0,2.0,1.0,3.0,1.0,1.0,1.0,0.0,2.0,0.8,0.3,0.4,0.35,6.0]",
+      "name": "Phase Transitions",
+      "physics_id": "PHYS-T-002",
+      "ratio_signature": null,
+      "shannon_entropy": 3.2055,
+      "source": "original",
+      "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Asymptotic\",\"constraint\":\"Sum/density\",\"extremal\":\"Free energy minimum\",\"R_kin\":2.0,\"S_vn\":0.8,\"Hys_width\":0.4}"
     },
     "PHYS-T-003": {
       "added_date": "2026-03-29",
@@ -247,6 +468,19 @@
       "source": "original",
       "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Conserved\",\"constraint\":\"Divisibility/modular\",\"extremal\":\"Free energy minimum\",\"R_kin\":1.0,\"S_vn\":0.9,\"Hys_width\":0.3}"
     },
+    "PHYS-T-004": {
+      "added_date": "2026-03-29",
+      "category": "Thermodynamic",
+      "description": "Second law: dS/dt >= 0. Irreversibility, arrow of time. Near equilibrium: sigma = sum J_k * X_k.",
+      "h2_spoke": null,
+      "hs_vector": "[0.0,0.0,1.0,2.0,1.0,0.0,1.0,0.0,7.0,0.7,0.4,0.2,0.15,7.0]",
+      "name": "Entropy Production",
+      "physics_id": "PHYS-T-004",
+      "ratio_signature": null,
+      "shannon_entropy": 2.4206,
+      "source": "original",
+      "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Free energy minimum\",\"R_kin\":7.0,\"S_vn\":0.7,\"Hys_width\":0.2}"
+    },
     "PHYS-T-005": {
       "added_date": "2026-03-29",
       "category": "Thermodynamic",
@@ -259,6 +493,19 @@
       "shannon_entropy": 2.9,
       "source": "h2_session",
       "structural_fingerprint": "{\"symmetry\":\"Broken-cubic\",\"growth\":\"Phase-switch\",\"constraint\":\"Geometric-packing\",\"extremal\":\"Bain-path saddle\",\"ratio\":\"sqrt2\",\"R_kin\":1.5,\"S_vn\":0.75,\"Hys_width\":0.55}"
+    },
+    "PHYS-TN-001": {
+      "added_date": "2026-04-19",
+      "category": "Quantum Information",
+      "description": null,
+      "h2_spoke": null,
+      "hs_vector": null,
+      "name": "Tensor Network Robustness",
+      "physics_id": "PHYS-TN-001",
+      "ratio_signature": null,
+      "shannon_entropy": null,
+      "source": "salvo-cs-001",
+      "structural_fingerprint": null
     }
   },
   "source": "https://erdosatlas-api.dev-ef7.workers.dev/api/query/physics/<id>"

@@ -34,6 +34,7 @@ claim discipline around it.
 | `KNOWN_ISSUES.md` | Defects in this substrate and its coverage, reproducible |
 | `DATA_DEFECTS.md` | Concrete defects found in the atlas data, with record ids and fixes |
 | `EVALUATION_LOG.md` | Fill this in with your findings |
+| `curation/` | Changes made to production data, with backups and verification |
 | `tools/` | The exporter and an integrity validator |
 
 ## What is out of scope

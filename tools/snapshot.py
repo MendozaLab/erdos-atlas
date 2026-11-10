@@ -45,7 +45,10 @@ def fetch_morphisms(pid):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="snapshot")
-    ap.add_argument("--max-id", type=int, default=6000)
+    ap.add_argument("--max-id", type=int, default=81000,
+                    help="numeric id ceiling for a public-only sweep (ids run to ~80590)")
+    ap.add_argument("--ids-file", default=None,
+                    help="explicit id list, one per line; overrides --max-id")
     ap.add_argument("--workers", type=int, default=32)
     args = ap.parse_args()
 
@@ -60,12 +63,21 @@ def main():
     _, top = get("/api/problems/top?n=100")
     problems = (top or {}).get("problems", [])
 
-    print(f"sweeping problem ids 1..{args.max_id} for morphisms ...", flush=True)
+    if args.ids_file:
+        ids = [ln.strip() for ln in pathlib.Path(args.ids_file).read_text().splitlines() if ln.strip()]
+        print(f"probing {len(ids)} ids from {args.ids_file} ...", flush=True)
+    else:
+        ids = list(range(1, args.max_id + 1))
+        print(f"sweeping numeric ids 1..{args.max_id} for morphisms ...", flush=True)
+
     by_math = {}
+    unserved = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as ex:
-        for pid, ms in ex.map(fetch_morphisms, range(1, args.max_id + 1)):
+        for pid, ms in ex.map(fetch_morphisms, ids):
             if ms:
                 by_math[str(pid)] = ms
+            else:
+                unserved.append(str(pid))
 
     morphisms = [m for ms in by_math.values() for m in ms]
     phys_ids = sorted({m.get("physics_id") for m in morphisms if m.get("physics_id")})
@@ -88,6 +100,12 @@ def main():
             "by_math_id": by_math,
             "flat": morphisms,
         },
+        "unserved_ids.json": {
+            "note": "ids probed that returned no morphisms; non-numeric ones indicate records "
+                    "held in the database but not reachable through this route",
+            "count": len(unserved),
+            "ids": unserved,
+        },
         "problems_top100.json": {"source": BASE + "/api/problems/top?n=100", "problems": problems},
         "physics_objects.json": {"source": BASE + "/api/query/physics/<id>", "objects": physics},
     }
@@ -100,8 +118,13 @@ def main():
     manifest = {
         "snapshot_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "api_base": BASE,
-        "method": "problem-id sweep for morphisms; union of physics_id fields for objects",
-        "sweep_range": f"1..{args.max_id}",
+        "method": "per-id probe for morphisms; union of physics_id fields for objects",
+        "id_probe": {
+            "source": args.ids_file or f"numeric sweep 1..{args.max_id}",
+            "ids_probed": len(ids),
+            "ids_with_morphisms": len(by_math),
+            "ids_without": len(unserved),
+        },
         "declared_counts_health": declared,
         "captured": {
             "morphisms": len(morphisms),
@@ -117,7 +140,10 @@ def main():
         },
         "known_gaps": [
             "The API exposes no full problem catalogue; only the top 100 by solvent index.",
-            "Morphisms are discoverable only per problem id, so the sweep is bounded by --max-id.",
+            "Morphisms are discoverable only per problem id. A numeric sweep must reach ~80590; "
+            "an earlier capture capped at 6000 and missed 31 problems in the 50184..80590 range.",
+            "Records whose math_id is non-numeric (AIM-*, MW-*, SIM-*, SMA-*) are held in the "
+            "database but return nothing from /api/morphisms/:id; see unserved_ids.json.",
             "physics_objects counts objects reachable from captured morphisms, not all declared objects.",
         ],
         "sha256": hashes,

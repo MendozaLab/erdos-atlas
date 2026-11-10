@@ -4,7 +4,10 @@ Concrete, reproducible defects in the atlas data as served. Each was checked
 against a live API call, not inferred. Reported so they can be fixed rather than
 silently evaluated.
 
-## D1 — Two placeholder records are in production
+## D1 — FIXED 2026-11-10 — Two placeholder records were in production
+
+Resolved: both rows deleted from D1 and confirmed gone through the API.
+See `curation/CURATION_LOG.md`. Retained below as the record of the defect.
 
 ```
 MOR-114-PHYS-PT-001-1775139177870
@@ -44,7 +47,12 @@ That matters for evaluation: a reviewer checking "does the evidence support
 **Fix:** split into `citations` (structured array) and `evidence_note` (text),
 and store citations as real JSON, not a serialised string.
 
-## D3 — Seven records have no transfer operator and no breakdown boundary
+## D3 — FIXED 2026-11-10 — Seven records had no transfer operator and no breakdown boundary
+
+Resolved for the five real records: a `record_status` column was added and those
+five are marked `incomplete`; the two placeholders were deleted under D1. The API
+does not yet surface the mark, so they are still served as active until a worker
+change lands. See `curation/CURATION_LOG.md`.
 
 ```
 MOR-96-PHYS-C-004-1776365646328     (no transfer_operator, no breakdown_boundary)
@@ -105,9 +113,9 @@ corpus.
 
 ## Priority
 
-1. **D1** — delete placeholder rows. Trivial, and test data in a served corpus
-   undermines everything else.
-2. **D3** — mark or complete the five incomplete records. They drag the corpus.
+1. ~~**D1** — delete placeholder rows.~~ Done 2026-11-10.
+2. ~~**D3** — mark or complete the five incomplete records.~~ Marked 2026-11-10;
+   still needs the worker to expose `record_status`.
 3. **D2** — split the evidence field. Mechanical, and it makes the 32%-cited
    figure visible instead of hidden.
 4. **D4** — filter refuted records out of default queries.
