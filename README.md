@@ -111,3 +111,15 @@ carry very different weight:
 
 A finding of type 3 is not a failure of your review and should be reported
 plainly; it is one of the things this exercise is designed to surface.
+
+## License
+
+Apache-2.0 for the tooling and documentation — see `LICENSE`. The snapshot data is
+captured from the public ErdosAtlas API and is redistributed here for evaluation;
+it is a dated copy, not a live feed, and the atlas remains the source of truth.
+
+## Status
+
+Prepared for external evaluation. The snapshot is pinned and `tools/validate.py`
+verifies it. Nothing in this repository is peer reviewed; `KNOWN_ISSUES.md` and
+`DATA_DEFECTS.md` state what is known to be wrong or missing.
