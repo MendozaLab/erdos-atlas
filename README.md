@@ -31,6 +31,8 @@ claim discipline around it.
 | `anchors/GROUND_TRUTH.md` | Where to check each claim against the outside world |
 | `rubric/MORPHISM_RUBRIC.md` | The judging criteria, so findings are comparable between evaluators |
 | `EVALUATION_BRIEF.md` | The task: what to do, in what order, what to return |
+| `KNOWN_ISSUES.md` | Defects in this substrate and its coverage, reproducible |
+| `DATA_DEFECTS.md` | Concrete defects found in the atlas data, with record ids and fixes |
 | `EVALUATION_LOG.md` | Fill this in with your findings |
 | `tools/` | The exporter and an integrity validator |
 

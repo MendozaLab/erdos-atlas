@@ -12,6 +12,7 @@ Usage:
 
 import argparse
 import json
+from collections import Counter
 import pathlib
 
 VERB = {
@@ -19,6 +20,46 @@ VERB = {
     "conjectured": "is proposed but not established",
     "partial": "is partially established",
 }
+
+
+def classify_evidence(raw):
+    """The `evidence` column is TEXT but holds two incompatible things.
+
+    Some records store a JSON-serialised list of citations; others store a
+    free-text experiment note. A few store the literal string "test morphism".
+    Return (kind, citations) so the register does not present a note as a citation.
+    """
+    if raw is None or raw == "":
+        return "absent", []
+    if isinstance(raw, list):
+        return "citation_list", raw
+    text = str(raw).strip()
+    if text.startswith("["):
+        try:
+            parsed = json.loads(text)
+            if isinstance(parsed, list):
+                return "citation_list", parsed
+        except json.JSONDecodeError:
+            return "unparseable_json", []
+    if "test morphism" in text.lower():
+        return "test_placeholder", []
+    return "experiment_note", [text]
+
+
+def structural_defects(m, kind):
+    """Record what is missing, rather than letting an evaluator infer it."""
+    out = []
+    if not m.get("transfer_operator"):
+        out.append("no transfer_operator: the record names no mechanism, so no result can cross")
+    if not m.get("breakdown_boundary"):
+        out.append("no breakdown_boundary: the record does not say where the correspondence fails")
+    if not m.get("math_invariant"):
+        out.append("no math_invariant: the claim has no mathematical content")
+    if not m.get("physics_invariant"):
+        out.append("no physics_invariant: the claim has no physical content")
+    if kind == "test_placeholder":
+        out.append("placeholder record: evidence is 'test morphism'; this is test data in the corpus")
+    return out
 
 
 def falsification(m):
@@ -58,6 +99,7 @@ def main():
     claims = []
     for m in sorted(morphisms, key=lambda x: (str(x.get("math_id")), str(x.get("physics_id")), str(x.get("id")))):
         mid = str(m.get("math_id"))
+        kind, cites = classify_evidence(m.get("evidence"))
         claims.append({
             "claim_id": f"E{m.get('math_id')}->{m.get('physics_id')}",
             "source_record_id": m.get("id"),
@@ -74,8 +116,11 @@ def main():
             "transfer_operator_claimed": m.get("transfer_operator"),
             "breakdown_boundary": m.get("breakdown_boundary"),
             "falsification_condition": falsification(m),
-            "citations_as_given": m.get("evidence", []),
+            "evidence_kind": kind,
+            "evidence_raw": m.get("evidence"),
+            "citations": cites,
             "citations_verified": False,
+            "structural_defects": structural_defects(m, kind),
             "anchor": f"https://www.erdosproblems.com/{mid}",
             "recorded_by": m.get("created_by"),
             "recorded_date": m.get("created_date"),
@@ -85,6 +130,11 @@ def main():
     register = {
         "generated_from": str(snap / "morphisms.json"),
         "claim_count": len(claims),
+        "evidence_kind_counts": dict(Counter(c["evidence_kind"] for c in claims)),
+        "structural_defect_counts": dict(
+            Counter(d.split(":")[0] for c in claims for d in c["structural_defects"])
+        ),
+        "claims_with_structural_defects": sum(1 for c in claims if c["structural_defects"]),
         "generation_note": (
             "Statements are mechanical restatements of each morphism record's own fields. "
             "citations_verified is false for every claim at generation time; verifying them "
