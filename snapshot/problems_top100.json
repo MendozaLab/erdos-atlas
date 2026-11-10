@@ -1,0 +1,1005 @@
+{
+  "problems": [
+    {
+      "domain": "probability",
+      "math_status": "solved",
+      "phys_sim": 0.9134,
+      "problem_id": "1166",
+      "si_rank": 1,
+      "si_v1_score": 0.998728,
+      "title": "Erdős Problem #1166",
+      "top_physics": "Three-Body Problem, Chaos / Lorenz System, Strong Nuclear Force, Weak Nuclear Force, Quantum Entanglement, Quantum Tunneling, SU(3) Color Symmetry, Phase Transitions, Critical Phenomena, Entropy Production, Quantum Tunneling, U(1) Gauge Symmetry, Lorentz Symmetry, Critical Phenomena, Carnot Cycle, Three-Body Problem"
+    },
+    {
+      "domain": "discrepancy",
+      "math_status": "solved",
+      "phys_sim": 0.6637,
+      "problem_id": "67",
+      "si_rank": 2,
+      "si_v1_score": 0.998394,
+      "title": "Erdős Problem #67",
+      "top_physics": "Lepton Number Conservation, Foucault Pendulum, Glueball, Energy Conservation, Three-Body Problem"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.9323,
+      "problem_id": "165",
+      "si_rank": 57,
+      "si_v1_score": 0.998005,
+      "title": "Erdős Problem #165",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Lorentz Symmetry, Carnot Cycle, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Phase Transitions, Critical Phenomena, Angular Momentum Conservation"
+    },
+    {
+      "domain": "probability",
+      "math_status": "solved",
+      "phys_sim": 0.831,
+      "problem_id": "1164",
+      "si_rank": 3,
+      "si_v1_score": 0.997808,
+      "title": "Erdős Problem #1164",
+      "top_physics": "Three-Body Problem, Chaos / Lorenz System, Strong Nuclear Force, Quantum Entanglement, Quantum Tunneling, Phase Transitions, Critical Phenomena, Entropy Production, Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, Quantum Tunneling, Lamb Shift, Quantum Superposition, Three-Body Problem"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "disproven",
+      "phys_sim": 0.8087,
+      "problem_id": "231",
+      "si_rank": 51,
+      "si_v1_score": 0.99768,
+      "title": "Erdős Problem #231",
+      "top_physics": "Lepton Number Conservation, Glueball, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Carnot Cycle, Glueball, Momentum Conservation, Charge Conservation, Baryon Number Conservation, Kepler Orbits, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Quantum Superposition, Quantum Tunneling, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Carnot Cycle, Phase Transitions"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.9386,
+      "problem_id": "765",
+      "si_rank": 4,
+      "si_v1_score": 0.996164,
+      "title": "Erdős Problem #765",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Lorentz Symmetry, Carnot Cycle, Angular Momentum Conservation, Kepler Orbits, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Angular Momentum Conservation"
+    },
+    {
+      "domain": "probability",
+      "math_status": "solved",
+      "phys_sim": 0.725,
+      "problem_id": "1165",
+      "si_rank": 5,
+      "si_v1_score": 0.995594,
+      "title": "Erdős Problem #1165",
+      "top_physics": "Chaos / Lorenz System, Quantum Tunneling, Glueball, Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, Quantum Tunneling, Lamb Shift, Foucault Pendulum, U(1) Gauge Symmetry, Lorentz Symmetry, CPT Symmetry, Quantum Entanglement, CPT Symmetry, Carnot Cycle, Three-Body Problem"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "open",
+      "phys_sim": 0.8615,
+      "problem_id": "161",
+      "si_rank": 183,
+      "si_v1_score": 0.994336,
+      "title": "Erdős Problem #161",
+      "top_physics": "Three-Body Problem, Chaos / Lorenz System, Weak Nuclear Force, Quantum Tunneling, Phase Transitions, Critical Phenomena, Entropy Production, Foucault Pendulum, Three-Body Problem, Weak Nuclear Force, Helmholtz Resonator, Phase Transitions, Entropy Production"
+    },
+    {
+      "domain": "additive combinatorics",
+      "math_status": "disproven",
+      "phys_sim": 0.9498,
+      "problem_id": "707",
+      "si_rank": 50,
+      "si_v1_score": 0.994039,
+      "title": "Erdős Problem #707",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, Carnot Cycle, Carnot Cycle, Momentum Conservation, Three-Body Problem, Chaos / Lorenz System, Electromagnetism, Weak Nuclear Force"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.9198,
+      "problem_id": "217",
+      "si_rank": 156,
+      "si_v1_score": 0.993414,
+      "title": "Erdős Problem #217",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Electromagnetism, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, Lorentz Symmetry, Carnot Cycle, Quantum Tunneling, Baryon Number Conservation, Chaos / Lorenz System, Quantum Superposition, Quantum Entanglement, Lorentz Symmetry"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "open",
+      "phys_sim": 0.7426,
+      "problem_id": "20",
+      "si_rank": 62,
+      "si_v1_score": 0.992735,
+      "title": "Erdős Problem #20",
+      "top_physics": "Lepton Number Conservation, Foucault Pendulum, Energy Conservation, Momentum Conservation, Charge Conservation, Kepler Orbits, Three-Body Problem, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Entanglement, Foucault Pendulum, LC Circuit, Lorentz Symmetry, CPT Symmetry, Carnot Cycle, Phase Transitions"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.8754,
+      "problem_id": "905",
+      "si_rank": 6,
+      "si_v1_score": 0.991701,
+      "title": "Erdős Problem #905",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, U(1) Gauge Symmetry, Gauge Invariance, Kepler Orbits, Momentum Conservation, Gravity (Newtonian)"
+    },
+    {
+      "domain": "additive combinatorics",
+      "math_status": "open",
+      "phys_sim": 0.9193,
+      "problem_id": "138",
+      "si_rank": 95,
+      "si_v1_score": 0.991456,
+      "title": "Erdős Problem #138",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Entanglement, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(3) Color Symmetry, Lorentz Symmetry, Phase Transitions, Critical Phenomena, Quantum Entanglement, Three-Body Problem, Chaos / Lorenz System, Electromagnetism, Weak Nuclear Force, Quantum Entanglement, Quantum Tunneling, Lamb Shift, SU(2) Symmetry, CPT Symmetry, Carnot Cycle, Entropy Production"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.8707,
+      "problem_id": "166",
+      "si_rank": 7,
+      "si_v1_score": 0.991439,
+      "title": "Erdős Problem #166",
+      "top_physics": "Angular Momentum Conservation, Weak Nuclear Force, Harmonic Oscillator, Lorentz Symmetry, Quantum Tunneling, Carnot Cycle, Phase Transitions, Angular Momentum Conservation"
+    },
+    {
+      "domain": "analysis",
+      "math_status": "open",
+      "phys_sim": 0.939,
+      "problem_id": "671",
+      "si_rank": 144,
+      "si_v1_score": 0.991349,
+      "title": "Erdős Problem #671",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, Lorentz Symmetry, Carnot Cycle, Quantum Superposition, Quantum Entanglement"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "solved",
+      "phys_sim": 0.754,
+      "problem_id": "83",
+      "si_rank": 8,
+      "si_v1_score": 0.988608,
+      "title": "Erdős Problem #83",
+      "top_physics": "Lepton Number Conservation, Kepler Orbits, Tidal Forces, Strong Nuclear Force, Three-Body Problem, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Foucault Pendulum, LC Circuit, Lorentz Symmetry"
+    },
+    {
+      "domain": "probability",
+      "math_status": "solved",
+      "phys_sim": 0.5903,
+      "problem_id": "526",
+      "si_rank": 9,
+      "si_v1_score": 0.987243,
+      "title": "Erdős Problem #526",
+      "top_physics": "Glueball, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Tunneling, Lamb Shift, LC Circuit, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Glueball, Lamb Shift, Three-Body Problem"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "disproven",
+      "phys_sim": 0.9143,
+      "problem_id": "147",
+      "si_rank": 52,
+      "si_v1_score": 0.984668,
+      "title": "Erdős Problem #147",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, CPT Symmetry, Gauge Invariance, Quantum Superposition, Angular Momentum Conservation"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "solved",
+      "phys_sim": 0.6274,
+      "problem_id": "703",
+      "si_rank": 10,
+      "si_v1_score": 0.984586,
+      "title": "Erdős Problem #703",
+      "top_physics": "Lepton Number Conservation, Quantum Superposition, Lepton Number Conservation, Three-Body Problem, Tidal Forces, Strong Nuclear Force, Quantum Tunneling, Lamb Shift, Harmonic Oscillator, LC Circuit, SU(3) Color Symmetry, Gauge Invariance, Carnot Cycle, Phase Transitions, Critical Phenomena, Entropy Production, Glueball"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "solved",
+      "phys_sim": 0.7565,
+      "problem_id": "755",
+      "si_rank": 11,
+      "si_v1_score": 0.984004,
+      "title": "Erdős Problem #755",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Quantum Tunneling, Foucault Pendulum, Quantum Superposition"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.9378,
+      "problem_id": "975",
+      "si_rank": 242,
+      "si_v1_score": 0.982871,
+      "title": "Erdős Problem #975",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Entanglement, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(3) Color Symmetry, Lorentz Symmetry, Carnot Cycle, Phase Transitions, Critical Phenomena, Energy Conservation, Charge Conservation, Tidal Forces, Gravity (Newtonian), Electromagnetism, Weak Nuclear Force, Quantum Entanglement, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, CPT Symmetry, Gauge Invariance, Glueball, Energy Conservation, Charge Conservation, Kepler Orbits, Three-Body Problem, Weak Nuclear Force, Harmonic Oscillator"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8983,
+      "problem_id": "712",
+      "si_rank": 230,
+      "si_v1_score": 0.982253,
+      "title": "Erdős Problem #712",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, CPT Symmetry, Gauge Invariance, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Carnot Cycle, Phase Transitions, Critical Phenomena, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, CPT Symmetry"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "disproven",
+      "phys_sim": 0.782,
+      "problem_id": "505",
+      "si_rank": 92,
+      "si_v1_score": 0.980692,
+      "title": "Erdős Problem #505",
+      "top_physics": "Gravity (Newtonian), Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, Kepler Orbits, Quantum Tunneling, Lamb Shift, Energy Conservation"
+    },
+    {
+      "domain": "polynomials",
+      "math_status": "open",
+      "phys_sim": 0.9463,
+      "problem_id": "114",
+      "si_rank": 43,
+      "si_v1_score": 0.980655,
+      "title": "Erdős Problem #114",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Quantum Superposition, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, Lorentz Symmetry, Carnot Cycle, Charge Conservation, Kepler Orbits, Tidal Forces, Carnot Cycle, Glueball, Energy Conservation, Three-Body Problem"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "open",
+      "phys_sim": 0.7262,
+      "problem_id": "120",
+      "si_rank": 64,
+      "si_v1_score": 0.980552,
+      "title": "Erdős Problem #120",
+      "top_physics": "Entropy Production, Chaos / Lorenz System, Energy Conservation"
+    },
+    {
+      "domain": "analysis",
+      "math_status": "solved",
+      "phys_sim": 0.9187,
+      "problem_id": "228",
+      "si_rank": 12,
+      "si_v1_score": 0.980108,
+      "title": "Erdős Problem #228",
+      "top_physics": "Lepton Number Conservation, Three-Body Problem, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Lamb Shift, SU(3) Color Symmetry, Phase Transitions, Critical Phenomena, Entropy Production, Glueball, Glueball, Quantum Entanglement"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8519,
+      "problem_id": "713",
+      "si_rank": 59,
+      "si_v1_score": 0.979973,
+      "title": "Erdős Problem #713",
+      "top_physics": "Baryon Number Conservation, Quantum Superposition, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Tidal Forces, Gravity (Newtonian), Quantum Entanglement, Harmonic Oscillator, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Critical Phenomena, Glueball"
+    },
+    {
+      "domain": "additive combinatorics",
+      "math_status": "solved",
+      "phys_sim": 0.9365,
+      "problem_id": "140",
+      "si_rank": 13,
+      "si_v1_score": 0.97995,
+      "title": "Erdős Problem #140",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(3) Color Symmetry, Lorentz Symmetry, Carnot Cycle, Phase Transitions, Critical Phenomena, Quantum Entanglement, Quantum Tunneling, Lamb Shift, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, Energy Conservation, Charge Conservation, Lamb Shift, LC Circuit, Helmholtz Resonator, Carnot Cycle"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "solved",
+      "phys_sim": 0.8558,
+      "problem_id": "144",
+      "si_rank": 14,
+      "si_v1_score": 0.979145,
+      "title": "Erdős Problem #144",
+      "top_physics": "Lorentz Symmetry, Chaos / Lorenz System, Lorentz Symmetry"
+    },
+    {
+      "domain": "discrepancy",
+      "math_status": "disproven",
+      "phys_sim": 0.9333,
+      "problem_id": "992",
+      "si_rank": 220,
+      "si_v1_score": 0.978955,
+      "title": "Erdős Problem #992",
+      "top_physics": "Three-Body Problem, Chaos / Lorenz System, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, SU(3) Color Symmetry, Phase Transitions, Critical Phenomena, Entropy Production, Harmonic Oscillator, Foucault Pendulum, Foucault Pendulum, Three-Body Problem"
+    },
+    {
+      "domain": "additive combinatorics",
+      "math_status": "solved",
+      "phys_sim": 0.9511,
+      "problem_id": "139",
+      "si_rank": 15,
+      "si_v1_score": 0.978236,
+      "title": "Erdős Problem #139",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Quantum Superposition, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, U(1) Gauge Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Carnot Cycle, Quantum Entanglement, Harmonic Oscillator, Helmholtz Resonator, Charge Conservation, Gravity (Newtonian)"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "solved",
+      "phys_sim": 0.8558,
+      "problem_id": "941",
+      "si_rank": 16,
+      "si_v1_score": 0.977932,
+      "title": "Erdős Problem #941",
+      "top_physics": "Lorentz Symmetry, Lepton Number Conservation, Lamb Shift, Entropy Production, Angular Momentum Conservation"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.8004,
+      "problem_id": "779",
+      "si_rank": 270,
+      "si_v1_score": 0.977625,
+      "title": "Erdős Problem #779",
+      "top_physics": "Electromagnetism, Glueball, Electromagnetism"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.898,
+      "problem_id": "7",
+      "si_rank": 88,
+      "si_v1_score": 0.976237,
+      "title": "Erdős Problem #7",
+      "top_physics": "Kepler Orbits, Tidal Forces, Baryon Number Conservation, Lepton Number Conservation, Kepler Orbits, Energy Conservation"
+    },
+    {
+      "domain": "additive combinatorics",
+      "math_status": "disproven",
+      "phys_sim": 0.8954,
+      "problem_id": "198",
+      "si_rank": 325,
+      "si_v1_score": 0.976045,
+      "title": "Erdős Problem #198",
+      "top_physics": "Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Lamb Shift, SU(3) Color Symmetry, Carnot Cycle, Critical Phenomena, Three-Body Problem, Electromagnetism"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "disproven",
+      "phys_sim": 0.9242,
+      "problem_id": "426",
+      "si_rank": 46,
+      "si_v1_score": 0.974759,
+      "title": "Erdős Problem #426",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, CPT Symmetry, Gauge Invariance, Entropy Production, SU(3) Color Symmetry"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "solved",
+      "phys_sim": 0.6816,
+      "problem_id": "21",
+      "si_rank": 17,
+      "si_v1_score": 0.974296,
+      "title": "Erdős Problem #21",
+      "top_physics": "Lepton Number Conservation, Kepler Orbits, Foucault Pendulum, Momentum Conservation, Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Carnot Cycle, Phase Transitions"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "disproven",
+      "phys_sim": 0.9461,
+      "problem_id": "113",
+      "si_rank": 53,
+      "si_v1_score": 0.974084,
+      "title": "Erdős Problem #113",
+      "top_physics": "Energy Conservation, Momentum Conservation, Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Quantum Superposition, Momentum Conservation, Angular Momentum Conservation, Gravity (Newtonian), Strong Nuclear Force, U(1) Gauge Symmetry, Critical Phenomena"
+    },
+    {
+      "domain": "additive combinatorics",
+      "math_status": "open",
+      "phys_sim": 0.9486,
+      "problem_id": "241",
+      "si_rank": 138,
+      "si_v1_score": 0.973782,
+      "title": "Erdős Problem #241",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Quantum Superposition, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, U(1) Gauge Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Carnot Cycle, Carnot Cycle, Baryon Number Conservation, Weak Nuclear Force, Quantum Tunneling, Lamb Shift, Helmholtz Resonator"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.7734,
+      "problem_id": "184",
+      "si_rank": 239,
+      "si_v1_score": 0.972921,
+      "title": "Erdős Problem #184",
+      "top_physics": "U(1) Gauge Symmetry, SU(2) Symmetry, CPT Symmetry, Gauge Invariance, Phase Transitions, Momentum Conservation, Angular Momentum Conservation, Gravity (Newtonian)"
+    },
+    {
+      "domain": "polynomials",
+      "math_status": "solved",
+      "phys_sim": 0.9206,
+      "problem_id": "1114",
+      "si_rank": 18,
+      "si_v1_score": 0.972743,
+      "title": "Erdős Problem #1114",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, SU(2) Symmetry, Lorentz Symmetry, Carnot Cycle, Phase Transitions, Critical Phenomena, Kepler Orbits, Chaos / Lorenz System, Three-Body Problem"
+    },
+    {
+      "domain": "analysis",
+      "math_status": "open",
+      "phys_sim": 0.7119,
+      "problem_id": "119",
+      "si_rank": 148,
+      "si_v1_score": 0.972081,
+      "title": "Erdős Problem #119",
+      "top_physics": "Quantum Tunneling, Quantum Superposition, Quantum Tunneling, Lamb Shift, Quantum Superposition"
+    },
+    {
+      "domain": "polynomials",
+      "math_status": "solved",
+      "phys_sim": 0.8866,
+      "problem_id": "115",
+      "si_rank": 19,
+      "si_v1_score": 0.971562,
+      "title": "Erdős Problem #115",
+      "top_physics": "Angular Momentum Conservation, Tidal Forces, Weak Nuclear Force, Quantum Entanglement, Harmonic Oscillator, Foucault Pendulum, SU(2) Symmetry, Lorentz Symmetry, Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Kepler Orbits, Energy Conservation, Three-Body Problem"
+    },
+    {
+      "domain": "polynomials",
+      "math_status": "solved",
+      "phys_sim": 0.9126,
+      "problem_id": "116",
+      "si_rank": 20,
+      "si_v1_score": 0.971305,
+      "title": "Erdős Problem #116",
+      "top_physics": "Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Weak Nuclear Force, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, Helmholtz Resonator, SU(3) Color Symmetry, Lorentz Symmetry, Critical Phenomena, Charge Conservation, Quantum Entanglement, Quantum Tunneling, Lamb Shift, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, CPT Symmetry, Glueball, Electromagnetism, Three-Body Problem"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7761,
+      "problem_id": "101",
+      "si_rank": 98,
+      "si_v1_score": 0.970231,
+      "title": "Erdős Problem #101",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Gravity (Newtonian), Strong Nuclear Force, Lorentz Symmetry"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.9317,
+      "problem_id": "500",
+      "si_rank": 104,
+      "si_v1_score": 0.9699,
+      "title": "Erdős Problem #500",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, CPT Symmetry, Gauge Invariance, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Carnot Cycle, Angular Momentum Conservation"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.9028,
+      "problem_id": "283",
+      "si_rank": 106,
+      "si_v1_score": 0.969349,
+      "title": "Erdős Problem #283",
+      "top_physics": "Energy Conservation, Momentum Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Foucault Pendulum, LC Circuit, Helmholtz Resonator, Lorentz Symmetry, Gravity (Newtonian), Energy Conservation"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8663,
+      "problem_id": "183",
+      "si_rank": 134,
+      "si_v1_score": 0.969213,
+      "title": "Erdős Problem #183",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, CPT Symmetry, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Lamb Shift, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, CPT Symmetry, Gauge Invariance, Glueball, Angular Momentum Conservation, Tidal Forces, Electromagnetism, Strong Nuclear Force, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Entropy Production, Glueball"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.8804,
+      "problem_id": "72",
+      "si_rank": 21,
+      "si_v1_score": 0.966833,
+      "title": "Erdős Problem #72",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, Gauge Invariance, Chaos / Lorenz System, Tidal Forces, Strong Nuclear Force, Weak Nuclear Force, Carnot Cycle, Phase Transitions, Angular Momentum Conservation, U(1) Gauge Symmetry, Glueball"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "solved",
+      "phys_sim": 0.8333,
+      "problem_id": "384",
+      "si_rank": 22,
+      "si_v1_score": 0.965313,
+      "title": "Erdős Problem #384",
+      "top_physics": "Tidal Forces, Three-Body Problem, Electromagnetism"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.887,
+      "problem_id": "582",
+      "si_rank": 23,
+      "si_v1_score": 0.962003,
+      "title": "Erdős Problem #582",
+      "top_physics": "Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, U(1) Gauge Symmetry, SU(2) Symmetry, CPT Symmetry, Gauge Invariance, Glueball, Glueball, Momentum Conservation, Angular Momentum Conservation, Gravity (Newtonian), Strong Nuclear Force, U(1) Gauge Symmetry, Glueball"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.8824,
+      "problem_id": "88",
+      "si_rank": 24,
+      "si_v1_score": 0.961011,
+      "title": "Erdős Problem #88",
+      "top_physics": "Three-Body Problem, Chaos / Lorenz System, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Lamb Shift, SU(3) Color Symmetry, Phase Transitions, Critical Phenomena, Entropy Production, Quantum Superposition, Angular Momentum Conservation, Tidal Forces, SU(3) Color Symmetry, Critical Phenomena, Glueball"
+    },
+    {
+      "domain": "discrepancy",
+      "math_status": "solved",
+      "phys_sim": 0.8364,
+      "problem_id": "988",
+      "si_rank": 25,
+      "si_v1_score": 0.960811,
+      "title": "Erdős Problem #988",
+      "top_physics": "Lepton Number Conservation, Entropy Production, Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Lepton Number Conservation, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, U(1) Gauge Symmetry, Lorentz Symmetry, CPT Symmetry, Critical Phenomena, Entropy Production, Three-Body Problem, Chaos / Lorenz System, Strong Nuclear Force, Weak Nuclear Force, SU(2) Symmetry, SU(3) Color Symmetry, Phase Transitions, Entropy Production, Three-Body Problem"
+    },
+    {
+      "domain": "discrepancy",
+      "math_status": "solved",
+      "phys_sim": 0.8364,
+      "problem_id": "991",
+      "si_rank": 26,
+      "si_v1_score": 0.960811,
+      "title": "Erdős Problem #991",
+      "top_physics": "Lepton Number Conservation, Entropy Production, Momentum Conservation, Harmonic Oscillator, Foucault Pendulum, Critical Phenomena, Entropy Production, Three-Body Problem, Quantum Tunneling, LC Circuit, Gauge Invariance, Phase Transitions, Three-Body Problem"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "solved",
+      "phys_sim": 0.8644,
+      "problem_id": "446",
+      "si_rank": 27,
+      "si_v1_score": 0.960802,
+      "title": "Erdős Problem #446",
+      "top_physics": "Kepler Orbits, Chaos / Lorenz System, Entropy Production, Chaos / Lorenz System"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8542,
+      "problem_id": "146",
+      "si_rank": 146,
+      "si_v1_score": 0.960461,
+      "title": "Erdős Problem #146",
+      "top_physics": "Baryon Number Conservation, Three-Body Problem, Momentum Conservation, U(1) Gauge Symmetry"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8706,
+      "problem_id": "625",
+      "si_rank": 47,
+      "si_v1_score": 0.958207,
+      "title": "Erdős Problem #625",
+      "top_physics": "Lepton Number Conservation, Three-Body Problem, Strong Nuclear Force, Phase Transitions, Critical Phenomena, Glueball, Quantum Tunneling, Tidal Forces, SU(3) Color Symmetry, Critical Phenomena"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.816,
+      "problem_id": "99",
+      "si_rank": 154,
+      "si_v1_score": 0.954932,
+      "title": "Erdős Problem #99",
+      "top_physics": "Energy Conservation, Kepler Orbits, Three-Body Problem, Gravity (Newtonian), Charge Conservation, Baryon Number Conservation, Carnot Cycle, Entropy Production"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "solved",
+      "phys_sim": 0.8051,
+      "problem_id": "211",
+      "si_rank": 28,
+      "si_v1_score": 0.953972,
+      "title": "Erdős Problem #211",
+      "top_physics": "Kepler Orbits, Three-Body Problem, Helmholtz Resonator, Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Charge Conservation, Baryon Number Conservation, Electromagnetism, Strong Nuclear Force, Foucault Pendulum, CPT Symmetry"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.781,
+      "problem_id": "234",
+      "si_rank": 402,
+      "si_v1_score": 0.953539,
+      "title": "Erdős Problem #234",
+      "top_physics": "Foucault Pendulum, Chaos / Lorenz System, Quantum Superposition, Energy Conservation, Kepler Orbits, Electromagnetism"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8371,
+      "problem_id": "128",
+      "si_rank": 56,
+      "si_v1_score": 0.949357,
+      "title": "Erdős Problem #128",
+      "top_physics": "Charge Conservation, Three-Body Problem, Angular Momentum Conservation"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "disproven",
+      "phys_sim": 0.8833,
+      "problem_id": "2",
+      "si_rank": 107,
+      "si_v1_score": 0.948905,
+      "title": "Erdős Problem #2",
+      "top_physics": "Kepler Orbits, Helmholtz Resonator, Kepler Orbits, Gravity (Newtonian), Electromagnetism"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.8189,
+      "problem_id": "770",
+      "si_rank": 348,
+      "si_v1_score": 0.948333,
+      "title": "Erdős Problem #770",
+      "top_physics": "Foucault Pendulum, Quantum Tunneling, Lepton Number Conservation, Kepler Orbits, Three-Body Problem, Electromagnetism, LC Circuit, CPT Symmetry"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "solved",
+      "phys_sim": 0.8309,
+      "problem_id": "825",
+      "si_rank": 29,
+      "si_v1_score": 0.947387,
+      "title": "Erdős Problem #825",
+      "top_physics": "Tidal Forces, Energy Conservation, Charge Conservation, Tidal Forces, Electromagnetism, CPT Symmetry, Entropy Production, Energy Conservation, Kepler Orbits"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.9145,
+      "problem_id": "948",
+      "si_rank": 345,
+      "si_v1_score": 0.947058,
+      "title": "Erdős Problem #948",
+      "top_physics": "Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, SU(3) Color Symmetry, Carnot Cycle, Phase Transitions, Critical Phenomena, Quantum Superposition, Foucault Pendulum, Strong Nuclear Force"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.856,
+      "problem_id": "564",
+      "si_rank": 149,
+      "si_v1_score": 0.945386,
+      "title": "Erdős Problem #564",
+      "top_physics": "Baryon Number Conservation, Quantum Tunneling, Tidal Forces, Gravity (Newtonian), U(1) Gauge Symmetry, Critical Phenomena, Glueball"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.7734,
+      "problem_id": "19",
+      "si_rank": 60,
+      "si_v1_score": 0.944653,
+      "title": "Erdős Problem #19",
+      "top_physics": "Charge Conservation, Foucault Pendulum, Phase Transitions, Momentum Conservation, Angular Momentum Conservation, Gravity (Newtonian)"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.8084,
+      "problem_id": "1100",
+      "si_rank": 332,
+      "si_v1_score": 0.944511,
+      "title": "Erdős Problem #1100",
+      "top_physics": "Foucault Pendulum, Quantum Tunneling, Three-Body Problem, Chaos / Lorenz System, Harmonic Oscillator"
+    },
+    {
+      "domain": "combinatorics",
+      "math_status": "open",
+      "phys_sim": 0.7949,
+      "problem_id": "725",
+      "si_rank": 238,
+      "si_v1_score": 0.943863,
+      "title": "Erdős Problem #725",
+      "top_physics": "Quantum Tunneling, Entropy Production, Momentum Conservation, Angular Momentum Conservation, Baryon Number Conservation, Lepton Number Conservation, Kepler Orbits, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Critical Phenomena, Electromagnetism"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "solved",
+      "phys_sim": 0.8237,
+      "problem_id": "220",
+      "si_rank": 30,
+      "si_v1_score": 0.943733,
+      "title": "Erdős Problem #220",
+      "top_physics": "Gravity (Newtonian), Three-Body Problem, Foucault Pendulum"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "disproven",
+      "phys_sim": 0.7765,
+      "problem_id": "16",
+      "si_rank": 79,
+      "si_v1_score": 0.943253,
+      "title": "Erdős Problem #16",
+      "top_physics": "Quantum Tunneling, Entropy Production, Three-Body Problem, Chaos / Lorenz System, Tidal Forces, Strong Nuclear Force, Weak Nuclear Force, SU(2) Symmetry, Electromagnetism"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.7767,
+      "problem_id": "1101",
+      "si_rank": 333,
+      "si_v1_score": 0.9431,
+      "title": "Erdős Problem #1101",
+      "top_physics": "Gravity (Newtonian), Harmonic Oscillator, Foucault Pendulum, Lorentz Symmetry"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.751,
+      "problem_id": "92",
+      "si_rank": 168,
+      "si_v1_score": 0.9429,
+      "title": "Erdős Problem #92",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Quantum Superposition, Quantum Tunneling, Three-Body Problem, Foucault Pendulum, LC Circuit, Carnot Cycle, Phase Transitions"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "disproven",
+      "phys_sim": 0.7764,
+      "problem_id": "105",
+      "si_rank": 185,
+      "si_v1_score": 0.942233,
+      "title": "Erdős Problem #105",
+      "top_physics": "Lorentz Symmetry, Three-Body Problem, Electromagnetism"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.8182,
+      "problem_id": "601",
+      "si_rank": 199,
+      "si_v1_score": 0.941592,
+      "title": "Erdős Problem #601",
+      "top_physics": "Lepton Number Conservation, Three-Body Problem, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Lamb Shift, SU(3) Color Symmetry, Critical Phenomena, Glueball, Tidal Forces, Carnot Cycle, Phase Transitions, Critical Phenomena, Angular Momentum Conservation"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "disproven",
+      "phys_sim": 0.9168,
+      "problem_id": "27",
+      "si_rank": 110,
+      "si_v1_score": 0.939834,
+      "title": "Erdős Problem #27",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Lamb Shift, Foucault Pendulum, LC Circuit, Helmholtz Resonator, Carnot Cycle, Phase Transitions, Critical Phenomena, Chaos / Lorenz System, Charge Conservation, Lepton Number Conservation, Three-Body Problem, Tidal Forces, Weak Nuclear Force, Quantum Entanglement, Quantum Tunneling, Harmonic Oscillator, LC Circuit, Helmholtz Resonator, Gauge Invariance, Phase Transitions, Critical Phenomena, Entropy Production"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7975,
+      "problem_id": "89",
+      "si_rank": 91,
+      "si_v1_score": 0.939595,
+      "title": "Erdős Problem #89 — Distinct Distances",
+      "top_physics": "Gravity (Newtonian), Quantum Tunneling, Energy Conservation, Momentum Conservation, Chaos / Lorenz System, Foucault Pendulum"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7949,
+      "problem_id": "661",
+      "si_rank": 169,
+      "si_v1_score": 0.939347,
+      "title": "Erdős Problem #661",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Quantum Superposition, Foucault Pendulum"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.7647,
+      "problem_id": "1106",
+      "si_rank": 247,
+      "si_v1_score": 0.938078,
+      "title": "Erdős Problem #1106",
+      "top_physics": "Lorentz Symmetry, Gravity (Newtonian), Energy Conservation, Momentum Conservation, Baryon Number Conservation, Chaos / Lorenz System, Electromagnetism, CPT Symmetry"
+    },
+    {
+      "domain": "discrepancy",
+      "math_status": "solved",
+      "phys_sim": 0.7635,
+      "problem_id": "989",
+      "si_rank": 31,
+      "si_v1_score": 0.938053,
+      "title": "Erdős Problem #989",
+      "top_physics": "Chaos / Lorenz System, Quantum Tunneling, Critical Phenomena, Entropy Production, Glueball, Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Baryon Number Conservation, Lepton Number Conservation, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, Entropy Production, Energy Conservation, Three-Body Problem"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7613,
+      "problem_id": "104",
+      "si_rank": 188,
+      "si_v1_score": 0.936669,
+      "title": "Erdős Problem #104",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Quantum Superposition"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.7961,
+      "problem_id": "1",
+      "si_rank": 70,
+      "si_v1_score": 0.934,
+      "title": "Erdős Problem #1",
+      "top_physics": "Gravity (Newtonian), Baryon Number Conservation, Lepton Number Conservation, Lorentz Symmetry"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "solved",
+      "phys_sim": 0.8074,
+      "problem_id": "95",
+      "si_rank": 32,
+      "si_v1_score": 0.933674,
+      "title": "Erdős Problem #95",
+      "top_physics": "Gravity (Newtonian), Three-Body Problem, Energy Conservation"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "open",
+      "phys_sim": 0.6692,
+      "problem_id": "944",
+      "si_rank": 61,
+      "si_v1_score": 0.931116,
+      "title": "Erdős Problem #944",
+      "top_physics": "SU(2) Symmetry, Phase Transitions, Carnot Cycle, Phase Transitions, Critical Phenomena, Momentum Conservation, Angular Momentum Conservation, Tidal Forces, Foucault Pendulum, U(1) Gauge Symmetry"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "solved",
+      "phys_sim": 0.7998,
+      "problem_id": "607",
+      "si_rank": 33,
+      "si_v1_score": 0.930966,
+      "title": "Erdős Problem #607",
+      "top_physics": "Harmonic Oscillator, Three-Body Problem, Quantum Tunneling, Lamb Shift, Quantum Superposition"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.8348,
+      "problem_id": "306",
+      "si_rank": 339,
+      "si_v1_score": 0.929631,
+      "title": "Erdős Problem #306",
+      "top_physics": "Tidal Forces, Three-Body Problem, Quantum Superposition"
+    },
+    {
+      "domain": "graph theory",
+      "math_status": "solved",
+      "phys_sim": 0.7622,
+      "problem_id": "720",
+      "si_rank": 34,
+      "si_v1_score": 0.929375,
+      "title": "Erdős Problem #720",
+      "top_physics": "SU(2) Symmetry, CPT Symmetry, Glueball, Carnot Cycle, SU(3) Color Symmetry"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.832,
+      "problem_id": "1052",
+      "si_rank": 159,
+      "si_v1_score": 0.926518,
+      "title": "Erdős Problem #1052",
+      "top_physics": "Kepler Orbits, Lepton Number Conservation, Entropy Production, Charge Conservation, Gravity (Newtonian), Harmonic Oscillator"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.7785,
+      "problem_id": "708",
+      "si_rank": 244,
+      "si_v1_score": 0.926284,
+      "title": "Erdős Problem #708",
+      "top_physics": "Foucault Pendulum, Quantum Superposition, Quantum Tunneling, Harmonic Oscillator, Lorentz Symmetry"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.9512,
+      "problem_id": "976",
+      "si_rank": 90,
+      "si_v1_score": 0.924182,
+      "title": "Erdős Problem #976",
+      "top_physics": "Energy Conservation, Momentum Conservation, Angular Momentum Conservation, Kepler Orbits, Three-Body Problem, Tidal Forces, Gravity (Newtonian), Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, Carnot Cycle, Phase Transitions, Critical Phenomena, Quantum Superposition, Charge Conservation, Harmonic Oscillator, Phase Transitions, Entropy Production"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "disproven",
+      "phys_sim": 0.611,
+      "problem_id": "189",
+      "si_rank": 65,
+      "si_v1_score": 0.923972,
+      "title": "Erdős Problem #189",
+      "top_physics": "Chaos / Lorenz System, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, U(1) Gauge Symmetry, SU(2) Symmetry, SU(3) Color Symmetry, Lorentz Symmetry, CPT Symmetry, Gauge Invariance, Glueball, Baryon Number Conservation, Electromagnetism, Strong Nuclear Force, SU(3) Color Symmetry"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.8189,
+      "problem_id": "50",
+      "si_rank": 229,
+      "si_v1_score": 0.920879,
+      "title": "Erdős Problem #50",
+      "top_physics": "Foucault Pendulum, Chaos / Lorenz System, Quantum Superposition, Quantum Tunneling, Energy Conservation, Momentum Conservation, Charge Conservation, Kepler Orbits, Three-Body Problem, Chaos / Lorenz System, Electromagnetism, Strong Nuclear Force, Weak Nuclear Force, Quantum Entanglement, Quantum Tunneling, Lamb Shift, Lorentz Symmetry"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.7493,
+      "problem_id": "12",
+      "si_rank": 123,
+      "si_v1_score": 0.920551,
+      "title": "Erdős Problem #12",
+      "top_physics": "Entropy Production, Energy Conservation, Quantum Entanglement, Three-Body Problem"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.751,
+      "problem_id": "90",
+      "si_rank": 86,
+      "si_v1_score": 0.920536,
+      "title": "Erdős Problem #90",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Foucault Pendulum, Momentum Conservation, Angular Momentum Conservation, Three-Body Problem, Chaos / Lorenz System, Electromagnetism, Strong Nuclear Force, Quantum Entanglement, Foucault Pendulum, Lorentz Symmetry"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7244,
+      "problem_id": "188",
+      "si_rank": 117,
+      "si_v1_score": 0.919406,
+      "title": "Erdős Problem #188",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Tidal Forces, Electromagnetism, Weak Nuclear Force, Harmonic Oscillator, SU(2) Symmetry, Lorentz Symmetry, Gauge Invariance, Critical Phenomena, Momentum Conservation, Charge Conservation, Baryon Number Conservation, Chaos / Lorenz System, Gravity (Newtonian), Strong Nuclear Force, Weak Nuclear Force, Quantum Superposition, Quantum Entanglement, Quantum Tunneling, Lamb Shift, Harmonic Oscillator, Foucault Pendulum, LC Circuit, Helmholtz Resonator, SU(2) Symmetry, SU(3) Color Symmetry, CPT Symmetry, Gauge Invariance, Carnot Cycle, Phase Transitions, Glueball"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7698,
+      "problem_id": "604",
+      "si_rank": 136,
+      "si_v1_score": 0.916781,
+      "title": "Erdős Problem #604",
+      "top_physics": "Angular Momentum Conservation, Three-Body Problem, Foucault Pendulum"
+    },
+    {
+      "domain": "geometry",
+      "math_status": "open",
+      "phys_sim": 0.7613,
+      "problem_id": "588",
+      "si_rank": 105,
+      "si_v1_score": 0.912304,
+      "title": "Erdős Problem #588",
+      "top_physics": "Foucault Pendulum, Three-Body Problem, Baryon Number Conservation, Kepler Orbits, Gravity (Newtonian)"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "disproven",
+      "phys_sim": 0.826,
+      "problem_id": "56",
+      "si_rank": 160,
+      "si_v1_score": 0.911016,
+      "title": "Erdős Problem #56",
+      "top_physics": "Gravity (Newtonian), Harmonic Oscillator, Helmholtz Resonator, Phase Transitions, Critical Phenomena, Energy Conservation, Three-Body Problem"
+    },
+    {
+      "domain": "number theory",
+      "math_status": "open",
+      "phys_sim": 0.7959,
+      "problem_id": "389",
+      "si_rank": 298,
+      "si_v1_score": 0.908708,
+      "title": "Erdős Problem #389",
+      "top_physics": "Foucault Pendulum, Tidal Forces, Helmholtz Resonator, Quantum Superposition"
+    },
+    {
+      "domain": "discrepancy",
+      "math_status": "solved",
+      "phys_sim": 0.7273,
+      "problem_id": "178",
+      "si_rank": 35,
+      "si_v1_score": 0.908642,
+      "title": "Erdős Problem #178",
+      "top_physics": "Chaos / Lorenz System, Quantum Tunneling, Glueball, Foucault Pendulum, Energy Conservation, Three-Body Problem"
+    }
+  ],
+  "source": "https://erdosatlas-api.dev-ef7.workers.dev/api/problems/top?n=100"
+}
