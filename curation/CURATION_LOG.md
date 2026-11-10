@@ -92,3 +92,19 @@ a capture cap, not the API. See `KNOWN_ISSUES.md` §1 for the retraction: the
 numeric id space runs to ~80590, and the earlier sweep stopped at 6000. The
 snapshot has been rebuilt from the authoritative id list and now captures 71 of
 90, with the remaining 19 identified as records on non-numeric math ids.
+
+## 2026-11-10 — atlas formalization refresh
+
+Added `atlas_formalization_coverage` (1,011 rows) and inserted 16 Erdős problems
+(1201-1221, non-contiguous) that formal-conjectures now covers but the catalogue
+lacked. Applied with `wrangler d1 execute --file`, `changes: 1028`.
+
+Full method, counts and queries: `FORMALIZATION_REFRESH_2026-11-10.md`.
+Reproduction SQL: `atlas_formalization_refresh_2026-11-10.sql`.
+
+Both statements are idempotent — the coverage table is cleared and refilled, and
+the problem inserts use `INSERT OR IGNORE` so no existing row can be overwritten.
+
+No `math_status` value was changed. Upstream's `research solved` marks solved
+variants; `math_status` records the mathematical status of the main problem.
+Treating one as evidence for the other would have corrupted the catalogue.
