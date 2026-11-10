@@ -190,7 +190,40 @@ def main():
         "",
     ]
     (out / "CLAIMS_REGISTER.md").write_text("\n".join(lines))
-    print(f"wrote {len(claims)} claims to {out}/")
+
+    # A monolithic 65 KB JSON silently truncates in many readers: one reviewer saw
+    # only 14 of 90 records. Emit a compact index plus fixed-size parts so the whole
+    # register is readable regardless of tool limits.
+    index = [
+        "# Claims index",
+        "",
+        f"All {len(claims)} claims, one row each. Small enough to read in full.",
+        "Full records are in `parts/` (20 claims per file) and in `CLAIMS_REGISTER.json`.",
+        "",
+        "| # | Claim | Strength | Evidence |",
+        "|---|---|---|---|",
+    ]
+    for i, c in enumerate(claims, 1):
+        index.append(
+            f"| {i} | `{c['claim_id']}` | {c['asserted_strength']} | {c['evidence_kind']} |"
+        )
+    (out / "INDEX.md").write_text("\n".join(index) + "\n")
+
+    parts_dir = out / "parts"
+    parts_dir.mkdir(exist_ok=True)
+    for old in parts_dir.glob("part_*.json"):
+        old.unlink()
+    per = 8
+    n_parts = 0
+    for i in range(0, len(claims), per):
+        chunk = claims[i:i + per]
+        n_parts += 1
+        name = f"part_{n_parts:02d}.json"
+        (parts_dir / name).write_text(json.dumps(
+            {"part": n_parts, "of": (len(claims) + per - 1) // per,
+             "claim_range": [i + 1, i + len(chunk)], "claims": chunk},
+            indent=2, ensure_ascii=False) + "\n")
+    print(f"wrote {len(claims)} claims to {out}/ (+ INDEX.md and {n_parts} parts)")
 
 
 if __name__ == "__main__":

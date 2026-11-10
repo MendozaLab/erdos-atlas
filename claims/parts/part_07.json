@@ -1,0 +1,234 @@
+{
+  "part": 7,
+  "of": 12,
+  "claim_range": [
+    49,
+    56
+  ],
+  "claims": [
+    {
+      "claim_id": "E50530->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-50530",
+      "math_id": "50530",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Invariant Subspace Problem (#50530) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50530",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50530->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-50530",
+      "math_id": "50530",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "ISP (#50530) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50530",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E509->PHYS-CRYSTAL-001",
+      "source_record_id": "mr-012",
+      "math_id": "509",
+      "physics_id": "PHYS-CRYSTAL-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Lemniscate arclength extremizer: z^n-1 maximizes arclength among monic degree-n polynomials [Extremal polynomial z^n-1 has maximal symmetry (n-fold rotational); lemniscate components merge at critical radius — topological phase transition in sublevel set structure] corresponds to BCC-FCC Crystal Phase Transition [Bain path: tetragonal distortion parameterized by c/a ratio; minimum-energy path passes through √2 saddle where cubic symmetry is maximally broken then restored]",
+      "transfer_operator_claimed": "Both are symmetry-constrained extremal problems where the optimizer transitions through a topological/geometric singularity. The Erdős-Pommerenke conjecture asserts z^n-1 is extremal — analogous to BCC→FCC being the minimum-energy path.",
+      "breakdown_boundary": "Breaks at continuous vs discrete: lemniscate is continuous polynomial geometry; Bain path is discrete lattice transformation. The √2 in #1038 (sublevel measure) provides the quantitative bridge that #509 alone lacks.",
+      "falsification_condition": "The record asserts that Extremal polynomial z^n-1 has maximal symmetry (n-fold rotational); lemniscate components merge at critical radius — topological phase transition in sublevel set structure corresponds to Bain path: tetragonal distortion parameterized by c/a ratio; minimum-energy path passes through √2 saddle where cubic symmetry is maximally broken then restored. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at continuous vs discrete: lemniscate is continuous polynomial geometry; Bain path is discrete lattice transformation. The √2 in #1038 (sublevel measure) provides the quantitative bridge that #509 alone lacks.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Erdős-Pommerenke 1969\",\"Bain 1924\",\"SQRT2_BRITTLENESS 2026-03-29\",\"Mendoza sublevel cluster 2026\"]",
+      "citations": [
+        "Erdős-Pommerenke 1969",
+        "Bain 1924",
+        "SQRT2_BRITTLENESS 2026-03-29",
+        "Mendoza sublevel cluster 2026"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/509",
+      "recorded_by": "h2_session_2026-04-01",
+      "recorded_date": "2026-04-01",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E509->PHYS-PT-001",
+      "source_record_id": "mr-010",
+      "math_id": "509",
+      "physics_id": "PHYS-PT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Erdős #509: lemniscate arclength extremals on unit disk [Arclength of lemniscate {|p(z)|=1} for degree-n poly with leading coeff 1; conjectured extremal is p(z)=z^n-1 (Erdős–Pommerenke)] corresponds to Logarithmic Capacity [cap({|p| ≤ 1}) = 1 for monic poly of degree n; Böttcher coordinate φ(z) = z·(p(z)/z^n)^{1/n} maps exterior conformally]",
+      "transfer_operator_claimed": "Böttcher-Koopman duality: lemniscate arclength is controlled by the conformal map exterior to the sublevel set, whose dynamics are governed by logarithmic capacity. This connects #509 arclength extremals to #114 integral means via the same potential-theoretic infrastructure.",
+      "breakdown_boundary": "Breaks when lemniscate has multiple components (disconnected sublevel sets); the Böttcher coordinate is only well-defined exterior to the connected lemniscate hull",
+      "falsification_condition": "The record asserts that Arclength of lemniscate {|p(z)|=1} for degree-n poly with leading coeff 1; conjectured extremal is p(z)=z^n-1 (Erdős–Pommerenke) corresponds to cap({|p| ≤ 1}) = 1 for monic poly of degree n; Böttcher coordinate φ(z) = z·(p(z)/z^n)^{1/n} maps exterior conformally. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks when lemniscate has multiple components (disconnected sublevel sets); the Böttcher coordinate is only well-defined exterior to the connected lemniscate hull",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Erdős-Pommerenke 1969\",\"Pommerenke 1961\",\"Cartan 1928\",\"Mendoza Lemniscate Duality preprint 2026\"]",
+      "citations": [
+        "Erdős-Pommerenke 1969",
+        "Pommerenke 1961",
+        "Cartan 1928",
+        "Mendoza Lemniscate Duality preprint 2026"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/509",
+      "recorded_by": "h2_session_2026-04-01",
+      "recorded_date": "2026-04-01",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E6->PHYS-RMT-GUE-001",
+      "source_record_id": "MOR-GUE-6",
+      "math_id": "6",
+      "physics_id": "PHYS-RMT-GUE-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Prime gaps (#6) [Fluctuation statistics of prime gaps p_{n+1} - p_n - log p_n] corresponds to Gaussian Unitary Ensemble (GUE) [Number variance Sigma^2(L) and Dyson-Mehta Delta_3 of unfolded GUE eigenvalues]",
+      "transfer_operator_claimed": "Explicit formula (von Mangoldt) connects prime-gap fluctuations to oscillatory sums over zeta-zeros",
+      "breakdown_boundary": "Finite-N effects at gamma <= 400; conjecture only, requires Odlyzko-scale data",
+      "falsification_condition": "The record asserts that Fluctuation statistics of prime gaps p_{n+1} - p_n - log p_n corresponds to Number variance Sigma^2(L) and Dyson-Mehta Delta_3 of unfolded GUE eigenvalues. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Finite-N effects at gamma <= 400; conjecture only, requires Odlyzko-scale data",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "L4-07 establishes zero -> GUE edge (upstream leg)",
+      "citations": [
+        "L4-07 establishes zero -> GUE edge (upstream leg)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/6",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E755->PHYS-KVN-001",
+      "source_record_id": "MOR-KVN-755",
+      "math_id": "755",
+      "physics_id": "PHYS-KVN-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "B_h[g] sequences (#755) [extremal density of B_2[g] in {1,...,N}; critical exponent 1/2 with constant c(g)] corresponds to Koopman-von Neumann Operator [lattice-gas transfer matrix T_{W,g} with local exclusion rule diff_count[d] <= g]",
+      "transfer_operator_claimed": "Koopman operator of the shift on locally legal windows; T_{W,g} = restriction to periodic sector",
+      "breakdown_boundary": "g -> infinity (constraint saturates into unconstrained lattice gas)",
+      "falsification_condition": "The record asserts that extremal density of B_2[g] in {1,...,N}; critical exponent 1/2 with constant c(g) corresponds to lattice-gas transfer matrix T_{W,g} with local exclusion rule diff_count[d] <= g. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: g -> infinity (constraint saturates into unconstrained lattice gas)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "PMF session 2026-04-16",
+      "citations": [
+        "PMF session 2026-04-16"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/755",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E755->PHYS-RADAR-001",
+      "source_record_id": "MOR-RADAR-755",
+      "math_id": "755",
+      "physics_id": "PHYS-RADAR-001",
+      "asserted_strength": "partial",
+      "strength_reading": "is partially established",
+      "claim": "B_h[g] sequences (#755) [B_2[g] sequences: difference multiset bounded by g] corresponds to Frequency-Hopping Radar Codes [Frequency-hopping radar codes tolerating up to g-fold pulse-pair collisions]",
+      "transfer_operator_claimed": "A -> frequency-hopping pattern f_A(t); auto-ambiguity peak count <-> max difference multiplicity",
+      "breakdown_boundary": "g = 0 (degenerate: no pulses); Doppler-shifted echoes break translation invariance",
+      "falsification_condition": "The record asserts that B_2[g] sequences: difference multiset bounded by g corresponds to Frequency-hopping radar codes tolerating up to g-fold pulse-pair collisions. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: g = 0 (degenerate: no pulses); Doppler-shifted echoes break translation invariance",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "PMF session 2026-04-16",
+      "citations": [
+        "PMF session 2026-04-16"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/755",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80578->PHYS-SR-001",
+      "source_record_id": "MOR-CS-SALVO001-024-80578",
+      "math_id": "80578",
+      "physics_id": "PHYS-SR-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Tail exponent alpha of sum of i.i.d. unbounded-variance RVs (Nagaev moderate deviation)] corresponds to Stable Laws / Levy Flights [Stability index alpha in Levy-stable distribution; heavy-tailed diffusion exponent]",
+      "transfer_operator_claimed": "Heavy-tailed sum -> Levy-stable random walk; variance truncation -> jump-suppression threshold",
+      "breakdown_boundary": "alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
+      "falsification_condition": "The record asserts that Tail exponent alpha of sum of i.i.d. unbounded-variance RVs (Nagaev moderate deviation) corresponds to Stability index alpha in Levy-stable distribution; heavy-tailed diffusion exponent. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Gnedenko-Kolmogorov 1954 limit laws; Petrov 1975 moderate-deviation asymptotics; Mantegna-Stanley 1995 Levy flights in markets",
+      "citations": [
+        "Gnedenko-Kolmogorov 1954",
+        "Petrov 1975",
+        "Mantegna-Stanley 1995"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80578",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

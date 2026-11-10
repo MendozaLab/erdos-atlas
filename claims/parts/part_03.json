@@ -1,0 +1,240 @@
+{
+  "part": 3,
+  "of": 12,
+  "claim_range": [
+    17,
+    24
+  ],
+  "claims": [
+    {
+      "claim_id": "E228->PHYS-Q-001",
+      "source_record_id": "MOR-228-PHYS-Q-001-1776362984670",
+      "math_id": "228",
+      "physics_id": "PHYS-Q-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Rudin-Shapiro ±1 polynomial recursion on unit circle [L4/L2^2 purity ratio = 4/3 (Rudin-Shapiro flatness limit)] corresponds to Quantum Superposition [Quantum state purity Tr(rho^2) = 4/3 under iterated Hadamard with phase]",
+      "transfer_operator_claimed": "R-S recursion matrix M_k(z)/sqrt(2) = phase-twisted Hadamard gate; M†M=2I on unit circle; Koopman propagator T_n = prod M_k/sqrt(2) is SU(2)-valued",
+      "breakdown_boundary": "Non-±1 coefficients break qubit analogy; fails for evaluation off unit circle; does not address L4 lower bound (BBMST 2019)",
+      "falsification_condition": "The record asserts that L4/L2^2 purity ratio = 4/3 (Rudin-Shapiro flatness limit) corresponds to Quantum state purity Tr(rho^2) = 4/3 under iterated Hadamard with phase. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Non-±1 coefficients break qubit analogy; fails for evaluation off unit circle; does not address L4 lower bound (BBMST 2019)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-228-KVN-SALVO (2026-04-16): (1) M†M=2I verified, eigenvalue |lambda| std=3.93e-16; (2) L4/L2^2 purity converges to 4/3 analytically: int|R_n|^4 = (4/3)N^2 - N/3; (3) Koopman propagator eigenvalues ALL on unit circle. R-S 30% flatter than random ±1. Hadamard Toll = 1/3 (analog of Holevo Pinch for #30).",
+      "citations": [
+        "EXP-228-KVN-SALVO (2026-04-16): (1) M†M=2I verified, eigenvalue |lambda| std=3.93e-16; (2) L4/L2^2 purity converges to 4/3 analytically: int|R_n|^4 = (4/3)N^2 - N/3; (3) Koopman propagator eigenvalues ALL on unit circle. R-S 30% flatter than random ±1. Hadamard Toll = 1/3 (analog of Holevo Pinch for #30)."
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/228",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E233->PHYS-PRIMON-001",
+      "source_record_id": "MOR-PRIMON-233",
+      "math_id": "233",
+      "physics_id": "PHYS-PRIMON-001",
+      "asserted_strength": "partial",
+      "strength_reading": "is partially established",
+      "claim": "Gap sums (#233) [Gap sum Sum_{n<=N} d_n^2 <= C N (log N)^2 (Erdos conjecture #233); Lean-verified scaffold] corresponds to Julia Primon Gas [Second moment of log-energy differences in the primon gas; fluctuation-dissipation theorem]",
+      "transfer_operator_claimed": "Heat-capacity C_V(beta) = beta^2 Var(log N) is the primon-gas mean-square gap analog",
+      "breakdown_boundary": "Requires interacting primon gas to capture two-point gap correlations",
+      "falsification_condition": "The record asserts that Gap sum Sum_{n<=N} d_n^2 <= C N (log N)^2 (Erdos conjecture #233); Lean-verified scaffold corresponds to Second moment of log-energy differences in the primon gas; fluctuation-dissipation theorem. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Requires interacting primon gas to capture two-point gap correlations",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "L4-06 thermodynamic test T3 (mean energy = -zeta'/zeta)",
+      "citations": [
+        "L4-06 thermodynamic test T3 (mean energy = -zeta'/zeta)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/233",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E233->PHYS-RMT-001",
+      "source_record_id": "MOR-233-RMT001-primeon",
+      "math_id": "233",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Prime gap sum: Σ_{n≤N} d_n² where d_n = p_{n+1} - p_n [Gap sum growth rate: conjectured O(N(log N)²). Cramér bound O(N(log N)⁴) conditional on RH. The second moment of prime spacing distribution.] corresponds to Marchenko-Pastur Spectral Envelope [GUE number variance σ²(L) ~ (1/π²) log L. The second moment of eigenvalue spacing. Controls fluctuations in counting function.]",
+      "transfer_operator_claimed": "Prime gap d_n maps to energy spacing via d_n → (log p_{n+1} - log p_n) ≈ d_n/p_n. Gap sum Σd_n² maps to number variance Σ(ΔE)². The exponent 2 in N(log N)² matches the GUE logarithmic growth rate. Montgomery (1973) pair correlation theorem provides the spectral-statistical bridge.",
+      "breakdown_boundary": "Breaks quantitatively: number variance coefficient is 46× GUE prediction (4.67 vs 0.101). Spacing distribution P(s) matches Poisson better than GUE by factor 500× in chi-squared. Structural form (logarithmic growth, level repulsion) is correct but primes carry excess arithmetic correlations absent from pure GUE. The morphism maps gap sums to number variance at the functional-form level, not at the coefficient level. For exact GUE matching, the correct comparison is zeta zeros (Montgomery-Odlyzko), not prime gaps directly.",
+      "falsification_condition": "The record asserts that Gap sum growth rate: conjectured O(N(log N)²). Cramér bound O(N(log N)⁴) conditional on RH. The second moment of prime spacing distribution. corresponds to GUE number variance σ²(L) ~ (1/π²) log L. The second moment of eigenvalue spacing. Controls fluctuations in counting function.. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks quantitatively: number variance coefficient is 46× GUE prediction (4.67 vs 0.101). Spacing distribution P(s) matches Poisson better than GUE by factor 500× in chi-squared. Structural form (logarithmic growth, level repulsion) is correct but primes carry excess arithmetic correlations absent from pure GUE. The morphism maps gap sums to number variance at the functional-form level, not at the coefficient level. For exact GUE matching, the correct comparison is zeta zeros (Montgomery-Odlyzko), not prime gaps directly.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Montgomery 1973 pair correlation\", \"Odlyzko 1987 numerical verification\", \"Cramér 1936 conditional bound\", \"Goldston-Pintz-Yildirim 2009 small gaps\", \"Problem 233 Lean formalization: 0 sorry, 16 theorems (local DB)\", \"LEG 4 RESULT (2026-04-05): PARTIAL PASS — gap sum Σd²/N(logN)² → 2.14 (stable); logarithmic number variance confirmed but coefficient 46× GUE prediction; level repulsion P(s<0.1)=0 (stronger than GUE); spacing distribution closer to Poisson than GUE (500×). Primes are NOT GUE eigenvalues but share functional form. Correct Leg 4 target is zeta zeros, not prime gaps.\"]",
+      "citations": [
+        "Montgomery 1973 pair correlation",
+        "Odlyzko 1987 numerical verification",
+        "Cramér 1936 conditional bound",
+        "Goldston-Pintz-Yildirim 2009 small gaps",
+        "Problem 233 Lean formalization: 0 sorry, 16 theorems (local DB)",
+        "LEG 4 RESULT (2026-04-05): PARTIAL PASS — gap sum Σd²/N(logN)² → 2.14 (stable); logarithmic number variance confirmed but coefficient 46× GUE prediction; level repulsion P(s<0.1)=0 (stronger than GUE); spacing distribution closer to Poisson than GUE (500×). Primes are NOT GUE eigenvalues but share functional form. Correct Leg 4 target is zeta zeros, not prime gaps."
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/233",
+      "recorded_by": "primeon_gas_analysis_2026-04-05",
+      "recorded_date": "2026-04-05",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E30->PHYS-CL-002",
+      "source_record_id": "MOR-30-PHYS-CL-002-1776363021396",
+      "math_id": "30",
+      "physics_id": "PHYS-CL-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Sidon set B2 property in additive combinatorics [Spectral distance set D_n = {2sin(pi*m/n)} satisfies B2 (Sidon) for all n=3..29; first failure at n=30 via golden ratio identity] corresponds to Three-Body Problem [Koopman eigenvalue pairwise distances for Z_n choreographies; failures at n=2*3*p (highly composite) where algebraic relations create sum collisions]",
+      "transfer_operator_claimed": "D_n = {|lambda_j - lambda_k| : j<k} where lambda_k = exp(2pi*i*k/n) are Koopman eigenvalues of Z_n-choreography. Sidon bound |A|<=sqrt(N) constrains stable choreography count.",
+      "breakdown_boundary": "Fails at n=30 (golden ratio identity: sin(pi/10)+1=sin(pi/6)+sin(3pi/10)), n=42, n=60. All failures at n=2^a*3*p with many small prime factors.",
+      "falsification_condition": "The record asserts that Spectral distance set D_n = {2sin(pi*m/n)} satisfies B2 (Sidon) for all n=3..29; first failure at n=30 via golden ratio identity corresponds to Koopman eigenvalue pairwise distances for Z_n choreographies; failures at n=2*3*p (highly composite) where algebraic relations create sum collisions. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Fails at n=30 (golden ratio identity: sin(pi/10)+1=sin(pi/6)+sin(3pi/10)), n=42, n=60. All failures at n=2^a*3*p with many small prime factors.",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-TDP-SIDON-001 (2026-04-16): Computed D_n for n=3..80. Sidon for 27/28 values in [3,30]. Only 3 failures in [3,80]: n=30,42,60. First bridge between additive combinatorics and celestial mechanics via Koopman spectral theory. No prior literature found.",
+      "citations": [
+        "EXP-TDP-SIDON-001 (2026-04-16): Computed D_n for n=3..80. Sidon for 27/28 values in [3,30]. Only 3 failures in [3,80]: n=30,42,60. First bridge between additive combinatorics and celestial mechanics via Koopman spectral theory. No prior literature found."
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/30",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E30->PHYS-SIG-001",
+      "source_record_id": "mr-001",
+      "math_id": "30",
+      "physics_id": "PHYS-SIG-001",
+      "asserted_strength": "proved",
+      "strength_reading": "is established",
+      "claim": "Sidon set in {1,...,N} [all pairwise sums a+b are distinct (a,b in A, a!=b)] corresponds to Radar Ambiguity / Sidon Codes [no two range-velocity pairs produce identical return signal]",
+      "transfer_operator_claimed": "Shannon sum-channel capacity ~ sqrt(N); Singer construction achieves this bound exactly",
+      "breakdown_boundary": "Breaks at Doppler/rate: math is density in {1,...,N}; physics adds velocity dimension not in Sidon conjecture. Thermal noise has no math analog.",
+      "falsification_condition": "The record asserts that all pairwise sums a+b are distinct (a,b in A, a!=b) corresponds to no two range-velocity pairs produce identical return signal. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at Doppler/rate: math is density in {1,...,N}; physics adds velocity dimension not in Sidon conjecture. Thermal noise has no math analog.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Singer 1938\",\"Sidon 1932\",\"Wichmann 1963 radar\",\"Erdos-Turan 1941\"]",
+      "citations": [
+        "Singer 1938",
+        "Sidon 1932",
+        "Wichmann 1963 radar",
+        "Erdos-Turan 1941"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/30",
+      "recorded_by": "h2_session_2026-03-29",
+      "recorded_date": "2026-03-29",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E389->PHYS-R-002",
+      "source_record_id": "MOR-389-PHYS-R-002-1776364597284",
+      "math_id": "389",
+      "physics_id": "PHYS-R-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "carry chain in base-p shift-addition [valuation excess sum across k consecutive shifts] corresponds to Foucault Pendulum [precession period 24h/sin(lat)]",
+      "transfer_operator_claimed": null,
+      "breakdown_boundary": null,
+      "falsification_condition": "The record asserts that valuation excess sum across k consecutive shifts corresponds to precession period 24h/sin(lat). It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-FOUCAULT-KVN-001: Cross-correlation 0.84 with #396. Spectral Jaccard 0.58. Phase coherence 0.72. Bad interval = anti-resonance window. Foucault autocorrelation CONFIRMED.",
+      "citations": [
+        "EXP-FOUCAULT-KVN-001: Cross-correlation 0.84 with #396. Spectral Jaccard 0.58. Phase coherence 0.72. Bad interval = anti-resonance window. Foucault autocorrelation CONFIRMED."
+      ],
+      "citations_verified": false,
+      "structural_defects": [
+        "no transfer_operator: the record names no mechanism, so no result can cross",
+        "no breakdown_boundary: the record does not say where the correspondence fails"
+      ],
+      "anchor": "https://www.erdosproblems.com/389",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E396->PHYS-R-002",
+      "source_record_id": "MOR-396-PHYS-R-002-1776364596453",
+      "math_id": "396",
+      "physics_id": "PHYS-R-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "carry chain in base-p self-addition (Kummer) [carry chain length in n+n base p] corresponds to Foucault Pendulum [precession period 24h/sin(lat)]",
+      "transfer_operator_claimed": null,
+      "breakdown_boundary": null,
+      "falsification_condition": "The record asserts that carry chain length in n+n base p corresponds to precession period 24h/sin(lat). It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-FOUCAULT-KVN-001: Foucault autocorrelation confirmed (p=2: 0.45, p=3: 0.53, p=5: 0.64). Precession index resonant with p^k for 5/6 primes. Phase coherence 0.72 with #389.",
+      "citations": [
+        "EXP-FOUCAULT-KVN-001: Foucault autocorrelation confirmed (p=2: 0.45, p=3: 0.53, p=5: 0.64). Precession index resonant with p^k for 5/6 primes. Phase coherence 0.72 with #389."
+      ],
+      "citations_verified": false,
+      "structural_defects": [
+        "no transfer_operator: the record names no mechanism, so no result can cross",
+        "no breakdown_boundary: the record does not say where the correspondence fails"
+      ],
+      "anchor": "https://www.erdosproblems.com/396",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E4->PHYS-PRIMON-001",
+      "source_record_id": "MOR-PRIMON-4",
+      "math_id": "4",
+      "physics_id": "PHYS-PRIMON-001",
+      "asserted_strength": "partial",
+      "strength_reading": "is partially established",
+      "claim": "Twin primes (#4) [Bounded prime gaps: liminf (p_{n+1} - p_n) < infty (Zhang 2013, Maynard-Tao 2013)] corresponds to Julia Primon Gas [Primon condensation near beta = 1: mean primon number diverges via PNT]",
+      "transfer_operator_claimed": "Prime-gap explicit formula relates p_{n+1} - p_n to oscillatory sum over primes weighted by log p",
+      "breakdown_boundary": "Short-range correlations (twin primes) require interacting primon gas (proposed L4-08)",
+      "falsification_condition": "The record asserts that Bounded prime gaps: liminf (p_{n+1} - p_n) < infty (Zhang 2013, Maynard-Tao 2013) corresponds to Primon condensation near beta = 1: mean primon number diverges via PNT. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Short-range correlations (twin primes) require interacting primon gas (proposed L4-08)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "L4-06 condensate test T5 confirms -log(beta-1) scaling",
+      "citations": [
+        "L4-06 condensate test T5 confirms -log(beta-1) scaling"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/4",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

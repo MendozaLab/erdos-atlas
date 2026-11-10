@@ -1,0 +1,234 @@
+{
+  "part": 8,
+  "of": 12,
+  "claim_range": [
+    57,
+    64
+  ],
+  "claims": [
+    {
+      "claim_id": "E80579->PHYS-T-003",
+      "source_record_id": "MOR-CS-SALVO001-003-80579",
+      "math_id": "80579",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Polynomial-time certification boundary; reduction network diameter; certificate-length scaling] corresponds to Critical Phenomena [Critical exponent in finite-size scaling near second-order transition]",
+      "transfer_operator_claimed": "Instance size n <-> linear dimension; certificate length <-> correlation length xi(T); NP-hardness <-> singular heat capacity at T_c",
+      "breakdown_boundary": "If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
+      "falsification_condition": "The record asserts that Polynomial-time certification boundary; reduction network diameter; certificate-length scaling corresponds to Critical exponent in finite-size scaling near second-order transition. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Achlioptas 2004 algorithmic phase transitions; Biroli-Monasson 2001 critical phenomena in random CSP; Zecchina 2002",
+      "citations": [
+        "Achlioptas 2004",
+        "Biroli-Monasson 2001",
+        "Zecchina 2002"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80579",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80580->PHYS-SG-001",
+      "source_record_id": "MOR-CS-SALVO001-017-80580",
+      "math_id": "80580",
+      "physics_id": "PHYS-SG-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [0/1 knapsack capacity constraint + optimal value gap structure] corresponds to Spin Glass / Replica Symmetry Breaking [Spin-glass disorder energy landscape fragmentation at RSB threshold]",
+      "transfer_operator_claimed": "Z(beta)=sum_config exp(-beta E_disorder); replica trace Tr(Z^n)/n as n->0",
+      "breakdown_boundary": "beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
+      "falsification_condition": "The record asserts that 0/1 knapsack capacity constraint + optimal value gap structure corresponds to Spin-glass disorder energy landscape fragmentation at RSB threshold. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Mertens 2000 PRE 'Easiest Hard Problem'; Borgs-Chayes-Pittel 2001 random optimization; knapsack hardness <-> replica instability",
+      "citations": [
+        "Mertens 2000",
+        "Borgs-Chayes-Pittel 2001"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80580",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80581->PHYS-TN-001",
+      "source_record_id": "MOR-CS-SALVO001-022-80581",
+      "math_id": "80581",
+      "physics_id": "PHYS-TN-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Code covering radius / direct-product test robustness under correlation] corresponds to Tensor Network Robustness [MPS bond dimension / entanglement entropy under channel noise]",
+      "transfer_operator_claimed": "Locally-testable code -> tensor-network state; correlation -> entanglement decay",
+      "breakdown_boundary": "Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
+      "falsification_condition": "The record asserts that Code covering radius / direct-product test robustness under correlation corresponds to MPS bond dimension / entanglement entropy under channel noise. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Cirac-Verstraete 2009 MPS robustness; Dinur-Reingold 2006 direct-product testing exhibits entanglement-like noise response",
+      "citations": [
+        "Cirac-Verstraete 2009",
+        "Dinur-Reingold 2006"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80581",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80582->PHYS-QE-001",
+      "source_record_id": "MOR-CS-SALVO001-020-80582",
+      "math_id": "80582",
+      "physics_id": "PHYS-QE-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Pigeonhole density forcing: among 2^n subsets, partition equality inevitable under sum constraint] corresponds to Bose-Einstein Condensation / Occupancy Symmetry [Bose-Einstein occupancy constraint: identical-particle symmetry forces macroscopic state-sharing]",
+      "transfer_operator_claimed": "Z_BE(mu,T) for indistinguishable particles; chemical potential mu adjusts occupancy to match sum constraint",
+      "breakdown_boundary": "Density threshold where single ground-state dominates; pigeonhole forcing <-> Bose condensation at critical density",
+      "falsification_condition": "The record asserts that Pigeonhole density forcing: among 2^n subsets, partition equality inevitable under sum constraint corresponds to Bose-Einstein occupancy constraint: identical-particle symmetry forces macroscopic state-sharing. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Density threshold where single ground-state dominates; pigeonhole forcing <-> Bose condensation at critical density",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Erdos pigeonhole; occupancy <-> Bose-Einstein statistics; additive combinatorics (Tao-Vu, Green-Tao)",
+      "citations": [
+        "Erdos pigeonhole; occupancy <-> Bose-Einstein statistics; additive combinatorics (Tao-Vu, Green-Tao)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80582",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80583->PHYS-BR-001",
+      "source_record_id": "MOR-CS-SALVO001-021-80583",
+      "math_id": "80583",
+      "physics_id": "PHYS-BR-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Straight-line-program (PosSLP) complexity for sqrt-sum eval; algebraic degree of sqrt(a_i); Diophantine measure] corresponds to Borel Summability / Asymptotic Convergence Radius [Borel-summability radius of perturbation series; asymptoticity governs convergence of SLP algebraic-real arithmetic]",
+      "transfer_operator_claimed": "SLP composition depth <-> perturbation series order; spectral determinant det(lambda I - A) of mult. operator",
+      "breakdown_boundary": "Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
+      "falsification_condition": "The record asserts that Straight-line-program (PosSLP) complexity for sqrt-sum eval; algebraic degree of sqrt(a_i); Diophantine measure corresponds to Borel-summability radius of perturbation series; asymptoticity governs convergence of SLP algebraic-real arithmetic. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Koiran 2010 JACM; Ghys on real algebraic approximation; Borel summability as complexity proxy",
+      "citations": [
+        "Koiran 2010"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80583",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80584->PHYS-EX-001",
+      "source_record_id": "MOR-CS-SALVO001-023-80584",
+      "math_id": "80584",
+      "physics_id": "PHYS-EX-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Sorting network depth in O(n) gates; mixing time of comparator graph] corresponds to Expander Mixing / Spectral Gap [Spectral gap lambda_1-lambda_2 of expander; mixing entropy production rate]",
+      "transfer_operator_claimed": "Stable-sorted permutations <-> invariant measure on expander; comparator steps <-> random walk mixing",
+      "breakdown_boundary": "lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
+      "falsification_condition": "The record asserts that Sorting network depth in O(n) gates; mixing time of comparator graph corresponds to Spectral gap lambda_1-lambda_2 of expander; mixing entropy production rate. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Ajtai-Komlos-Szemeredi 1983 sorting networks via expanders; Reingold-Wigderson-Wigderson 2000 eigenvalue bounds govern mixing",
+      "citations": [
+        "Ajtai-Komlos-Szemeredi 1983",
+        "Reingold-Wigderson-Wigderson 2000"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80584",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80586->PHYS-LD-001",
+      "source_record_id": "MOR-CS-SALVO001-005-80586",
+      "math_id": "80586",
+      "physics_id": "PHYS-LD-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Space-time tradeoff; PSPACE reachability tree vs tape-reuse under certificate production] corresponds to Landauer Erasure / Reversibility Barrier [Landauer minimum dissipation per bit erased; reversibility cost under constant-factor memory]",
+      "transfer_operator_claimed": "PSPACE cells <-> degrees of freedom; work per reuse = k_B T ln 2; log-space => exponential erasures/decision",
+      "breakdown_boundary": "P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
+      "falsification_condition": "The record asserts that Space-time tradeoff; PSPACE reachability tree vs tape-reuse under certificate production corresponds to Landauer minimum dissipation per bit erased; reversibility cost under constant-factor memory. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Bennett 1982 Landauer-Bennett; Aaronson-Susskind 2016 holographic complexity; Chakraborty 2018 entropy gap",
+      "citations": [
+        "Bennett 1982",
+        "Aaronson-Susskind 2016",
+        "Chakraborty 2018"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80586",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80587->PHYS-LD-001",
+      "source_record_id": "MOR-CS-SALVO001-018-80587",
+      "math_id": "80587",
+      "physics_id": "PHYS-LD-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [One-way function image-preimage imbalance: |f^-1(y)| sparse, |range(f)| large] corresponds to Landauer Erasure / Reversibility Barrier [Erasure entropy production DeltaS>=k_B ln 2 per bit; Gibbs free energy barrier]",
+      "transfer_operator_claimed": "Reversible cost W_rev(n) vs irreversible W_irrev=W_rev+n k_B T ln 2 for n-bit inversion",
+      "breakdown_boundary": "Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
+      "falsification_condition": "The record asserts that One-way function image-preimage imbalance: |f^-1(y)| sparse, |range(f)| large corresponds to Erasure entropy production DeltaS>=k_B ln 2 per bit; Gibbs free energy barrier. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Bennett 1973 IBM JRD logical reversibility; Reif 1985 optical computing limits; OWF <-> dissipation duality",
+      "citations": [
+        "Bennett 1973",
+        "Reif 1985"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80587",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

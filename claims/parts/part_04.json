@@ -1,0 +1,237 @@
+{
+  "part": 4,
+  "of": 12,
+  "claim_range": [
+    25,
+    32
+  ],
+  "claims": [
+    {
+      "claim_id": "E495->PHYS-KVN-001",
+      "source_record_id": "MOR-KVN-495",
+      "math_id": "495",
+      "physics_id": "PHYS-KVN-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Littlewood conjecture (#495) [lim inf n ||n alpha|| ||n beta||] corresponds to Koopman-von Neumann Operator [Two-frequency Koopman operator spectrum on T^2; atom-at-zero of spectral measure]",
+      "transfer_operator_claimed": "Diagonal lift: f(x,y) |-> f(x + alpha t, y + beta t); spectrum = {e^{i 2 pi (m alpha + n beta) t}}",
+      "breakdown_boundary": "Liouville-exceptional pairs (alpha, beta)",
+      "falsification_condition": "The record asserts that lim inf n ||n alpha|| ||n beta|| corresponds to Two-frequency Koopman operator spectrum on T^2; atom-at-zero of spectral measure. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Liouville-exceptional pairs (alpha, beta)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "chimera session 2026-04-16",
+      "citations": [
+        "chimera session 2026-04-16"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/495",
+      "recorded_by": "h2_chimera_tao_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50184->PHYS-T-002",
+      "source_record_id": "MOR-CS-SALVO001-001-50184",
+      "math_id": "50184",
+      "physics_id": "PHYS-T-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [SAT decision threshold m/n; cluster complexity at criticality in CNF-SAT] corresponds to Phase Transitions [Order parameter in ferromagnetic phase transition; susceptibility divergence at T_c]",
+      "transfer_operator_claimed": "m/n <-> inverse temperature beta; unsatisfied clause count = energy; threshold m/n ~ 4.27 for random 3-SAT",
+      "breakdown_boundary": "Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
+      "falsification_condition": "The record asserts that SAT decision threshold m/n; cluster complexity at criticality in CNF-SAT corresponds to Order parameter in ferromagnetic phase transition; susceptibility divergence at T_c. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Mezard-Parisi-Zecchina 2002 replica cavity; Achlioptas 2005 threshold; Selman 1996 phase transition",
+      "citations": [
+        "Mezard-Parisi-Zecchina 2002",
+        "Achlioptas 2005",
+        "Selman 1996"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50184",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50185->PHYS-T-004",
+      "source_record_id": "MOR-CS-SALVO001-002-50185",
+      "math_id": "50185",
+      "physics_id": "PHYS-T-004",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Complement asymmetry: UNSAT witness production vs NP certificate verifiability] corresponds to Entropy Production [Entropy production rate; broken time-reversal symmetry]",
+      "transfer_operator_claimed": "NP certificate <-> forward-time entropy sink; coNP UNSAT proof <-> backward trajectory requiring dissipation",
+      "breakdown_boundary": "NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
+      "falsification_condition": "The record asserts that Complement asymmetry: UNSAT witness production vs NP certificate verifiability corresponds to Entropy production rate; broken time-reversal symmetry. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Bennett 1982 reversible computation; Aaronson 2005 entropy-computation coupling; Vitanyi-Li 2000 Kolmogorov symmetry",
+      "citations": [
+        "Bennett 1982",
+        "Aaronson 2005",
+        "Vitanyi-Li 2000"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50185",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50187->PHYS-Q-001",
+      "source_record_id": "MOR-CS-SALVO001-025-50187",
+      "math_id": "50187",
+      "physics_id": "PHYS-Q-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Deterministic polynomial-time state trajectory; acceptance by halting configuration] corresponds to Quantum Superposition [Quantum superposition branch; computational history as coherent world-line in Hilbert space]",
+      "transfer_operator_claimed": "DTM step sequence -> unitary on quantum register; certificate existence -> measurement-collapse amplitude",
+      "breakdown_boundary": "Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
+      "falsification_condition": "The record asserts that Deterministic polynomial-time state trajectory; acceptance by halting configuration corresponds to Quantum superposition branch; computational history as coherent world-line in Hilbert space. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Deutsch 1985 quantum computing model; Aharonov-Vazirani 2013 BQP vs NP structure; P subset NP embedding",
+      "citations": [
+        "Deutsch 1985",
+        "Aharonov-Vazirani 2013"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50187",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50188->PHYS-Q-001",
+      "source_record_id": "MOR-CS-SALVO001-026-50188",
+      "math_id": "50188",
+      "physics_id": "PHYS-Q-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Deterministic rejection-by-halting; complement acceptance in coNP definition] corresponds to Quantum Superposition [Quantum conjugation (Hermitian involution) on branch amplitudes; time-reversal symmetry in world-line branching]",
+      "transfer_operator_claimed": "Complement condition not(phi(x)) -> conjugate state |psi_bar>; rejection becomes superposition-measurable observable",
+      "breakdown_boundary": "coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
+      "falsification_condition": "The record asserts that Deterministic rejection-by-halting; complement acceptance in coNP definition corresponds to Quantum conjugation (Hermitian involution) on branch amplitudes; time-reversal symmetry in world-line branching. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Aharonov-Vazirani 2013 coNP witness structure in quantum setting; P subset coNP embedding",
+      "citations": [
+        "Aharonov-Vazirani 2013"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50188",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50267->PHYS-QC-001",
+      "source_record_id": "MOR-CS-SALVO001-011-50267",
+      "math_id": "50267",
+      "physics_id": "PHYS-QC-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Subword complexity p(n)<=n+1; Sturmian slope theta from substitution matrix] corresponds to Quasicrystal Substitution Geometry [Meyer set density (cut-and-project); rank 2 lattice; cyclotomic Pisot eigenvalue]",
+      "transfer_operator_claimed": "Substitution matrix M=[[1,1],[0,1]] spectrum generates 1D aperiodic tiling via first-return partition",
+      "breakdown_boundary": "Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
+      "falsification_condition": "The record asserts that Subword complexity p(n)<=n+1; Sturmian slope theta from substitution matrix corresponds to Meyer set density (cut-and-project); rank 2 lattice; cyclotomic Pisot eigenvalue. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Queffelec 1987; Bombieri-Taylor 1986 aperiodic tilings; Senechal 1995 quasicrystals",
+      "citations": [
+        "Queffelec 1987",
+        "Bombieri-Taylor 1986",
+        "Senechal 1995"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50267",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50268->PHYS-QC-001",
+      "source_record_id": "MOR-CS-SALVO001-012-50268",
+      "math_id": "50268",
+      "physics_id": "PHYS-QC-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Sturmian word binary sequence; balancing Delta p = max(p(n+1)-p(n))=1] corresponds to Quasicrystal Substitution Geometry [Cut-and-project window omega in R^2 dual; projection density rho=|omega|/|Lambda*|]",
+      "transfer_operator_claimed": "Canonical projection pi: (Z^2,L)->omega x phi(omega); inverse M recovers sequence recurrence",
+      "breakdown_boundary": "|omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
+      "falsification_condition": "The record asserts that Sturmian word binary sequence; balancing Delta p = max(p(n+1)-p(n))=1 corresponds to Cut-and-project window omega in R^2 dual; projection density rho=|omega|/|Lambda*|. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: |omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Baake-Grimm 2013 Aperiodic Order; Hof 1995 diffraction; Pansiot 1984 linear p(n) iff Sturmian",
+      "citations": [
+        "Baake-Grimm 2013",
+        "Hof 1995",
+        "Pansiot 1984"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50268",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50269->PHYS-SS-001",
+      "source_record_id": "MOR-CS-SALVO001-013-50269",
+      "math_id": "50269",
+      "physics_id": "PHYS-SS-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Automorphism group G(sigma) of aperiodic subshift closure; rank r=dim Z[lambda]/<min poly>] corresponds to Substitution Dynamical System [Symmetry rank of tiling automorphisms; group order encodes rotational/reflectional degeneracies]",
+      "transfer_operator_claimed": "SDS action T: omega -> sigma(omega); Ruelle transfer L f(x)=sum_{sigma y=x} e^phi(y) f(y)",
+      "breakdown_boundary": "Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
+      "falsification_condition": "The record asserts that Automorphism group G(sigma) of aperiodic subshift closure; rank r=dim Z[lambda]/<min poly> corresponds to Symmetry rank of tiling automorphisms; group order encodes rotational/reflectional degeneracies. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Queffelec 1987; Durand 2011 tiling automorphism groups; Ruelle 1989 thermodynamic formalism",
+      "citations": [
+        "Queffelec 1987",
+        "Durand 2011",
+        "Ruelle 1989"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50269",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

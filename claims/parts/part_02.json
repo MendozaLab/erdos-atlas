@@ -1,0 +1,230 @@
+{
+  "part": 2,
+  "of": 12,
+  "claim_range": [
+    9,
+    16
+  ],
+  "claims": [
+    {
+      "claim_id": "E114->PHYS-T-001",
+      "source_record_id": "mr-011",
+      "math_id": "114",
+      "physics_id": "PHYS-T-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "EHP integral means spectrum β(t) infimum for univalent functions [β(t) ≥ β_0(t) for all univalent f; the extremal function minimizes growth — analogous to extremal engine minimizing entropy production] corresponds to Carnot Cycle [η ≤ 1-Tc/Th for all heat engines; Carnot cycle achieves equality as the reversible (zero entropy production) limit]",
+      "transfer_operator_claimed": "Proof architecture transfer: both are extremal bounds proved via convexity. Carnot uses dS ≥ 0; EHP needs log-convexity of integral means. The sublevel measure functional M(μ) connecting #1038 provides the intermediate object.",
+      "breakdown_boundary": "EHP is about function-theoretic growth; Carnot is about thermodynamic work. The convexity arguments are structurally parallel but the underlying spaces (Hardy space vs state space) are fundamentally different.",
+      "falsification_condition": "The record asserts that β(t) ≥ β_0(t) for all univalent f; the extremal function minimizes growth — analogous to extremal engine minimizing entropy production corresponds to η ≤ 1-Tc/Th for all heat engines; Carnot cycle achieves equality as the reversible (zero entropy production) limit. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: EHP is about function-theoretic growth; Carnot is about thermodynamic work. The convexity arguments are structurally parallel but the underlying spaces (Hardy space vs state space) are fundamentally different.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Hayman 1989\",\"Carnot 1824\",\"EXP-MATH-ERDOS1038-001\",\"Mendoza sublevel cluster 2026\"]",
+      "citations": [
+        "Hayman 1989",
+        "Carnot 1824",
+        "EXP-MATH-ERDOS1038-001",
+        "Mendoza sublevel cluster 2026"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/114",
+      "recorded_by": "h2_session_2026-04-01",
+      "recorded_date": "2026-04-01",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E1147->PHYS-KVN-001",
+      "source_record_id": "MOR-KVN-1147",
+      "math_id": "1147",
+      "physics_id": "PHYS-KVN-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Waring bases (#1147) [density/distribution of {n : ||alpha n^2|| < 1/log n}; additive basis of order 2] corresponds to Koopman-von Neumann Operator [Koopman point spectrum {e^{i 2 pi alpha n}} of harmonic oscillator with irrational frequency alpha]",
+      "transfer_operator_claimed": "Weyl equidistribution: e_n(x) = exp(i 2 pi n x); sum_{n<=N} e_n(alpha m) <-> spectral projection on U_t eigenmode",
+      "breakdown_boundary": "alpha of infinite irrationality type (Liouville numbers)",
+      "falsification_condition": "The record asserts that density/distribution of {n : ||alpha n^2|| < 1/log n}; additive basis of order 2 corresponds to Koopman point spectrum {e^{i 2 pi alpha n}} of harmonic oscillator with irrational frequency alpha. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: alpha of infinite irrationality type (Liouville numbers)",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "chimera session 2026-04-16",
+      "citations": [
+        "chimera session 2026-04-16"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/1147",
+      "recorded_by": "h2_chimera_tao_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E15->PHYS-PRIMON-001",
+      "source_record_id": "MOR-PRIMON-15",
+      "math_id": "15",
+      "physics_id": "PHYS-PRIMON-001",
+      "asserted_strength": "partial",
+      "strength_reading": "is partially established",
+      "claim": "Prime series (#15) [Dirichlet series Sum_{N>=1} a(N) N^{-beta}; alternating prime series] corresponds to Julia Primon Gas [Canonical partition function Z(beta) of non-interacting Bose gas of primons with energies {log p}]",
+      "transfer_operator_claimed": "Bijection {multisets of primons} <-> {positive integers} via unique factorization; log-energy E(state) = log(integer)",
+      "breakdown_boundary": "beta = 1 (Hagedorn / Riemann pole); critical strip requires analytic continuation",
+      "falsification_condition": "The record asserts that Dirichlet series Sum_{N>=1} a(N) N^{-beta}; alternating prime series corresponds to Canonical partition function Z(beta) of non-interacting Bose gas of primons with energies {log p}. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: beta = 1 (Hagedorn / Riemann pole); critical strip requires analytic continuation",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "L4-06 collider experiment, 5/5 tests PASS",
+      "citations": [
+        "L4-06 collider experiment, 5/5 tests PASS"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/15",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E15->PHYS-RMT-GUE-001",
+      "source_record_id": "MOR-GUE-15",
+      "math_id": "15",
+      "physics_id": "PHYS-RMT-GUE-001",
+      "asserted_strength": "partial",
+      "strength_reading": "is partially established",
+      "claim": "Prime series / Riemann zeros (#15) [Unfolded imaginary parts of non-trivial zeros of zeta(s) on critical line] corresponds to Gaussian Unitary Ensemble (GUE) [Nearest-neighbour eigenvalue spacing of large GUE matrices; pair correlation R_2(r) = 1 - sinc^2(pi r)]",
+      "transfer_operator_claimed": "Riemann-von Mangoldt unfold places zeros at unit mean density; compare to GUE pair correlation",
+      "breakdown_boundary": "Finite-height corrections at moderate gamma; asymptotic only",
+      "falsification_condition": "The record asserts that Unfolded imaginary parts of non-trivial zeros of zeta(s) on critical line corresponds to Nearest-neighbour eigenvalue spacing of large GUE matrices; pair correlation R_2(r) = 1 - sinc^2(pi r). It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Finite-height corrections at moderate gamma; asymptotic only",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "L4-07 collider experiment, 3/4 tests PASS: KS(zeros,GUE)=0.072 vs KS(zeros,Poisson)=0.353",
+      "citations": [
+        "L4-07 collider experiment, 3/4 tests PASS: KS(zeros,GUE)=0.072 vs KS(zeros,Poisson)=0.353"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/15",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E165->PHYS-SP-001",
+      "source_record_id": "MOR-165-SP001-agent",
+      "math_id": "165",
+      "physics_id": "PHYS-SP-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Maximum triangle-free graph on R(3,k) vertices [Spectral gap δ(G) of Ramsey-critical triangle-free graph] corresponds to Spectral Gap (Laplacian) [Spectral gap Δ of discrete Laplacian]",
+      "transfer_operator_claimed": "Triangle-freeness as energy constraint → eigenvalue bound (Alon): λ₂ ≤ 2√(n-1) for triangle-free regular graphs. Phase transition at R(3,k) scale maps to spectral gap closing.",
+      "breakdown_boundary": "Breaks down for non-regular or sparse triangle-free graphs where Alon bound is not tight. Also limited to k ≤ 9 where exact R(3,k) known.",
+      "falsification_condition": "The record asserts that Spectral gap δ(G) of Ramsey-critical triangle-free graph corresponds to Spectral gap Δ of discrete Laplacian. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks down for non-regular or sparse triangle-free graphs where Alon bound is not tight. Also limited to k ≤ 9 where exact R(3,k) known.",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "Physics similarity 0.564 (semantic). Computational fit c≈0.925 from exact values. Three testable predictions with pass/fail criteria defined.",
+      "citations": [
+        "Physics similarity 0.564 (semantic). Computational fit c≈0.925 from exact values. Three testable predictions with pass/fail criteria defined."
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/165",
+      "recorded_by": "comet-agent",
+      "recorded_date": "2026-04-02",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E165->PHYS-T-003",
+      "source_record_id": "MOR-165-T003-agent",
+      "math_id": "165",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Triangle-free process on K_n [Edge count at which triangle-free process terminates] corresponds to Critical Phenomena [Critical temperature / order parameter discontinuity]",
+      "transfer_operator_claimed": "Triangle density as order parameter → discontinuous jump at critical edge density maps to first-order phase transition. Finite-size scaling exponent γ predicts variance peak scaling as n^γ.",
+      "breakdown_boundary": "Mapping assumes triangle-free process is well-modeled by mean-field theory; real process has correlations that may shift critical exponents.",
+      "falsification_condition": "The record asserts that Edge count at which triangle-free process terminates corresponds to Critical temperature / order parameter discontinuity. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Mapping assumes triangle-free process is well-modeled by mean-field theory; real process has correlations that may shift critical exponents.",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Physics similarity 0.745. Bohman 2009 and Fiz Pontiveros-Griffiths-Morris 2020 both analyze the process using differential equations — structural parallel to mean-field physics.",
+      "citations": [
+        "Bohman 2009",
+        "Pontiveros-Griffiths-Morris 2020"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/165",
+      "recorded_by": "comet-agent",
+      "recorded_date": "2026-04-02",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E166->PHYS-KVN-001",
+      "source_record_id": "MOR-KVN-NEG-166",
+      "math_id": "166",
+      "physics_id": "PHYS-KVN-001",
+      "asserted_strength": "refuted-locally",
+      "strength_reading": "has unstated status",
+      "claim": "Sum-free sets (#166) [extremal density 1/2 (Cameron-Erdos, proved by Green 2004 / Sapozhenko 2003)] corresponds to Koopman-von Neumann Operator [attempted lattice-gas transfer matrix with local sum-free constraint]",
+      "transfer_operator_claimed": "Window-local TM T_W: lambda_max(T_W) = 1 for all W (DEGENERATE). Local KvN bridge fails.",
+      "breakdown_boundary": "a + b = c is non-local: constraint couples arbitrarily distant sites",
+      "falsification_condition": "The record asserts that extremal density 1/2 (Cameron-Erdos, proved by Green 2004 / Sapozhenko 2003) corresponds to attempted lattice-gas transfer matrix with local sum-free constraint. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: a + b = c is non-local: constraint couples arbitrarily distant sites",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "PMF session 2026-04-16 NEGATIVE CONTROL",
+      "citations": [
+        "PMF session 2026-04-16 NEGATIVE CONTROL"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/166",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E166->PHYS-SPIN-002",
+      "source_record_id": "MOR-SPIN-166",
+      "math_id": "166",
+      "physics_id": "PHYS-SPIN-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Sum-free sets (#166) [Cameron-Erdos count 2^{N/2+o(N)}; extremal sum-free family = all odds + shifts] corresponds to Frustrated Ising Chain (3-body) [1D frustrated Ising-like chain with 3-body interaction; ground-state degeneracy 2^{N/2}]",
+      "transfer_operator_claimed": "NOT local TM. Proposed: non-local tensor contraction over sum triples (a,b,a+b); rank decomposition",
+      "breakdown_boundary": "Finite temperature (T>0) destroys exact 1/2 density; torus changes exponent slightly",
+      "falsification_condition": "The record asserts that Cameron-Erdos count 2^{N/2+o(N)}; extremal sum-free family = all odds + shifts corresponds to 1D frustrated Ising-like chain with 3-body interaction; ground-state degeneracy 2^{N/2}. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Finite temperature (T>0) destroys exact 1/2 density; torus changes exponent slightly",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "PMF session 2026-04-16",
+      "citations": [
+        "PMF session 2026-04-16"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/166",
+      "recorded_by": "h2_chimera_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

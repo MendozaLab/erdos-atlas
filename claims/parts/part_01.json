@@ -1,0 +1,239 @@
+{
+  "part": 1,
+  "of": 12,
+  "claim_range": [
+    1,
+    8
+  ],
+  "claims": [
+    {
+      "claim_id": "E1026->PHYS-T-005",
+      "source_record_id": "mr-004",
+      "math_id": "1026",
+      "physics_id": "PHYS-T-005",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Weighted Erdos-Szekeres extremizer [square-geometry order type is the extremizer: zero-slack means any perturbation breaks convex position bound] corresponds to Martensitic Transformation [BCC is the extremizer: any shear finds Bain path to FCC; zero slack in square geometry]",
+      "transfer_operator_claimed": "sqrt(2) brittleness: both systems at saddle in config space; orthogonal geometry is the unique critical point",
+      "breakdown_boundary": "Breaks at dimensionality: WES is finite point sets in R^2; martensitic is infinite periodic lattice in R^3.",
+      "falsification_condition": "The record asserts that square-geometry order type is the extremizer: zero-slack means any perturbation breaks convex position bound corresponds to BCC is the extremizer: any shear finds Bain path to FCC; zero slack in square geometry. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at dimensionality: WES is finite point sets in R^2; martensitic is infinite periodic lattice in R^3.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Erdos-Szekeres 1935\",\"SQRT2_BRITTLENESS 2026-03-29\"]",
+      "citations": [
+        "Erdos-Szekeres 1935",
+        "SQRT2_BRITTLENESS 2026-03-29"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/1026",
+      "recorded_by": "h2_session_2026-03-29",
+      "recorded_date": "2026-03-29",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E1038->PHYS-CL-001",
+      "source_record_id": "mr-006",
+      "math_id": "1038",
+      "physics_id": "PHYS-CL-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Sublevel measure minimization over root measures on [-1,1] [Extremal measure = atom(0.828) at +1 plus discrete cloud(0.172) near -1; inf <= 1.8373; optimal alpha ~0.172] corresponds to Kepler Orbits [Minimum Roche lobe at mass ratio q via Eggleton (1983); L1 Lagrange point at barycentre; qualitatively predicts binary structure but quantitatively wrong: Eggleton minimizes at alpha~0.30 not 0.17]",
+      "transfer_operator_claimed": "ln|x-t| potential <-> gravitational potential; sublevel set <-> Roche lobe; x=0 boundary <-> L1 Lagrange point. Qualitative: correctly identifies binary endpoint concentration. Quantitative: Eggleton 3D formula overestimates optimal alpha by ~75% due to rotational terms absent in 1D polynomial problem.",
+      "breakdown_boundary": "Breaks at 3D vs 1D: Roche lobe is 3D equipotential with rotation; sublevel set is 1D Lebesgue measure. Rotational kinetic energy term in Roche potential has no polynomial analog. Eggleton predicts alpha_opt~0.30; actual is ~0.17.",
+      "falsification_condition": "The record asserts that Extremal measure = atom(0.828) at +1 plus discrete cloud(0.172) near -1; inf <= 1.8373; optimal alpha ~0.172 corresponds to Minimum Roche lobe at mass ratio q via Eggleton (1983); L1 Lagrange point at barycentre; qualitatively predicts binary structure but quantitatively wrong: Eggleton minimizes at alpha~0.30 not 0.17. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at 3D vs 1D: Roche lobe is 3D equipotential with rotation; sublevel set is 1D Lebesgue measure. Rotational kinetic energy term in Roche potential has no polynomial analog. Eggleton predicts alpha_opt~0.30; actual is ~0.17.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"EXP-MATH-ERDOS1038-001\",\"Eggleton 1983\",\"Saff-Totik 1997\",\"Borwein-Erdelyi-Kos 1999\"]",
+      "citations": [
+        "EXP-MATH-ERDOS1038-001",
+        "Eggleton 1983",
+        "Saff-Totik 1997",
+        "Borwein-Erdelyi-Kos 1999"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/1038",
+      "recorded_by": "h2_session_2026-03-30",
+      "recorded_date": "2026-03-30",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E1038->PHYS-CRYSTAL-001",
+      "source_record_id": "mr-003",
+      "math_id": "1038",
+      "physics_id": "PHYS-CRYSTAL-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Chebyshev sublevel set extremizer [Chebyshev minimizes L-inf norm; sqrt(2) ratio governs extremizer in coefficient space] corresponds to BCC-FCC Crystal Phase Transition [Bain path passes through BCT saddle at c/a = sqrt(2); minimum-energy transformation path]",
+      "transfer_operator_claimed": "Geometric extremizers share same constraint: orthogonal symmetry forces saddle rather than minimum",
+      "breakdown_boundary": "Breaks at continuous vs discrete: Chebyshev is continuous polynomials; phase transition is discrete lattice.",
+      "falsification_condition": "The record asserts that Chebyshev minimizes L-inf norm; sqrt(2) ratio governs extremizer in coefficient space corresponds to Bain path passes through BCT saddle at c/a = sqrt(2); minimum-energy transformation path. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at continuous vs discrete: Chebyshev is continuous polynomials; phase transition is discrete lattice.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Chebyshev 1853\",\"Bain 1924\",\"SQRT2_BRITTLENESS 2026-03-29\"]",
+      "citations": [
+        "Chebyshev 1853",
+        "Bain 1924",
+        "SQRT2_BRITTLENESS 2026-03-29"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/1038",
+      "recorded_by": "h2_session_2026-03-29",
+      "recorded_date": "2026-03-29",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E1038->PHYS-T-001",
+      "source_record_id": "mr-007",
+      "math_id": "1038",
+      "physics_id": "PHYS-T-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Infimum of sublevel measure functional M(mu) over probability measures on [-1,1] [Any mu != mu* has M(mu) > M(mu*); extremal at atom+cloud; proof requires convexity of M] corresponds to Carnot Cycle [Any non-reversible engine has eta < eta_Carnot; extremal at zero entropy production; proof via entropy convexity]",
+      "transfer_operator_claimed": "Proof architecture transfer: show deviation from extremal strictly worsens objective via convexity/entropy argument. Carnot uses dS >= 0; #1038 needs analogous functional inequality on logarithmic potential.",
+      "breakdown_boundary": "Carnot bound is tight (equality in reversible limit); #1038 infimum approached but possibly not achieved by finite measure. Carnot proof is thermodynamic; #1038 proof needs potential-theoretic convexity.",
+      "falsification_condition": "The record asserts that Any mu != mu* has M(mu) > M(mu*); extremal at atom+cloud; proof requires convexity of M corresponds to Any non-reversible engine has eta < eta_Carnot; extremal at zero entropy production; proof via entropy convexity. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Carnot bound is tight (equality in reversible limit); #1038 infimum approached but possibly not achieved by finite measure. Carnot proof is thermodynamic; #1038 proof needs potential-theoretic convexity.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"EXP-MATH-ERDOS1038-001\",\"Carnot 1824\",\"Curzon-Ahlborn 1975\"]",
+      "citations": [
+        "EXP-MATH-ERDOS1038-001",
+        "Carnot 1824",
+        "Curzon-Ahlborn 1975"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/1038",
+      "recorded_by": "h2_session_2026-03-30",
+      "recorded_date": "2026-03-30",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E106->PHYS-T-005",
+      "source_record_id": "mr-002",
+      "math_id": "106",
+      "physics_id": "PHYS-T-005",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Square packing extremizer in R^2 [square symmetry has coord-4 and zero off-axis slack: any perturbation finds lower-energy path] corresponds to Martensitic Transformation [BCC has square-section geometry with zero slack under shear along Bain path; metastable to FCC]",
+      "transfer_operator_claimed": "sqrt(2) governs both: nearest-neighbor in square lattice = a*sqrt(2)/2; Bain contraction = 1/sqrt(2)",
+      "breakdown_boundary": "Breaks at dimension: math is 2D packing; physics is 3D crystal. Quantum corrections absent in packing bound.",
+      "falsification_condition": "The record asserts that square symmetry has coord-4 and zero off-axis slack: any perturbation finds lower-energy path corresponds to BCC has square-section geometry with zero slack under shear along Bain path; metastable to FCC. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at dimension: math is 2D packing; physics is 3D crystal. Quantum corrections absent in packing bound.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Bain 1924\",\"Erdos 1986 square packing\",\"SQRT2_BRITTLENESS 2026-03-29\"]",
+      "citations": [
+        "Bain 1924",
+        "Erdos 1986 square packing",
+        "SQRT2_BRITTLENESS 2026-03-29"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/106",
+      "recorded_by": "h2_session_2026-03-29",
+      "recorded_date": "2026-03-29",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E114->PHYS-CL-001",
+      "source_record_id": "morph-unitarity-114-kepler",
+      "math_id": "114",
+      "physics_id": "PHYS-CL-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Polynomial lemniscate {|P(z)|=1} as unitarity manifold of Koopman operator for z↦P(z) [Perimeter of lemniscate = Haar-measure volume of unitary dynamics on L²(boundary)] corresponds to Kepler Orbits [Orbital circumference = phase-space volume of bound (energy-conserving) Kepler orbit]",
+      "transfer_operator_claimed": "K_t f(x) = f(φ_t(x)) restricted to {|P(z)|=1} ↔ Koopman operator restricted to energy shell H=E. Isometry ↔ energy conservation. Surjectivity ↔ time-reversibility. Both decompose unitarity into the same two halves.",
+      "breakdown_boundary": "Morphism breaks when dynamics are dissipative: |P(z)|<1 (basin of attraction → no unitarity) or H>0 (hyperbolic orbit → no bound state). Both systems lose unitarity at the same structural boundary.",
+      "falsification_condition": "The record asserts that Perimeter of lemniscate = Haar-measure volume of unitary dynamics on L²(boundary) corresponds to Orbital circumference = phase-space volume of bound (energy-conserving) Kepler orbit. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Morphism breaks when dynamics are dissipative: |P(z)|<1 (basin of attraction → no unitarity) or H>0 (hyperbolic orbit → no bound state). Both systems lose unitarity at the same structural boundary.",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Similarity 0.936. Agent job job-1775174206161-zupzxp independently decomposed unitarity into isometry+surjectivity. EHP verified n=3-13. SqueezeLemniscate.lean has Koopman_is_unitary proof. Julia-Fatou theory + Derrida-De Seze-Itzykson 1983 (Julia↔Lee-Yang).",
+      "citations": [
+        "Seze-Itzykson 1983"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/114",
+      "recorded_by": "mendozalab-session",
+      "recorded_date": "2026-04-06",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E114->PHYS-PT-001",
+      "source_record_id": "mr-009",
+      "math_id": "114",
+      "physics_id": "PHYS-PT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "EHP conjecture: inf of integral means spectrum β(t) for t<0 [β(t) = lim sup_{r→1} log ∫|f(re^{iθ})|^t dθ / log(1/(1-r)); EHP: β(-1) ≥ 0.23] corresponds to Logarithmic Capacity [cap(E) = lim_{n→∞} (leading coeff of Chebyshev poly of E)^{1/n}; governs growth of extremal polynomials on compact sets]",
+      "transfer_operator_claimed": "Sublevel set {|f| ≤ r} capacity controls integral mean growth; β(t) for t<0 measures how fast f can vanish, which is bounded by logarithmic capacity of the zero set. Certified IEEE 1788 interval arithmetic for n=3–13.",
+      "breakdown_boundary": "Breaks for non-univalent functions where sublevel topology changes; EHP requires Koebe-type distortion control that has no direct potential-theory analog",
+      "falsification_condition": "The record asserts that β(t) = lim sup_{r→1} log ∫|f(re^{iθ})|^t dθ / log(1/(1-r)); EHP: β(-1) ≥ 0.23 corresponds to cap(E) = lim_{n→∞} (leading coeff of Chebyshev poly of E)^{1/n}; governs growth of extremal polynomials on compact sets. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks for non-univalent functions where sublevel topology changes; EHP requires Koebe-type distortion control that has no direct potential-theory analog",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Hayman 1989\",\"Pommerenke 1975\",\"EXP-MM-EHP-007 n=3-13 certified\",\"Mendoza EHP preprint 2026\"]",
+      "citations": [
+        "Hayman 1989",
+        "Pommerenke 1975",
+        "EXP-MM-EHP-007 n=3-13 certified",
+        "Mendoza EHP preprint 2026"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/114",
+      "recorded_by": "h2_session_2026-04-01",
+      "recorded_date": "2026-04-01",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E114->PHYS-T-001",
+      "source_record_id": "morph-unitarity-114-carnot",
+      "math_id": "114",
+      "physics_id": "PHYS-T-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Lemniscate boundary as phase boundary between dissipative and explosive polynomial dynamics [Perimeter maximization = maximizing the codimension-1 measure of the critical boundary] corresponds to Carnot Cycle [Carnot efficiency = maximum work extractable at the phase boundary between heat reservoirs]",
+      "transfer_operator_claimed": "The lemniscate separates {|P|<1} (contraction/order) from {|P|>1} (expansion/disorder). The Carnot boundary separates T_cold from T_hot. Both: the boundary itself is where useful structure (unitarity/work) is maximized. Transfer: boundary measure ↔ efficiency.",
+      "breakdown_boundary": "Breaks when polynomial dynamics have no clean phase boundary (e.g., entire functions with no bounded Fatou component). Breaks for Carnot when irreversible processes dominate (no quasi-static limit).",
+      "falsification_condition": "The record asserts that Perimeter maximization = maximizing the codimension-1 measure of the critical boundary corresponds to Carnot efficiency = maximum work extractable at the phase boundary between heat reservoirs. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks when polynomial dynamics have no clean phase boundary (e.g., entire functions with no bounded Fatou component). Breaks for Carnot when irreversible processes dominate (no quasi-static limit).",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Similarity 0.933. Derrida-De Seze-Itzykson 1983 explicitly connected Julia set boundaries to Lee-Yang (thermodynamic) phase transitions.",
+      "citations": [
+        "Seze-Itzykson 1983"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/114",
+      "recorded_by": "mendozalab-session",
+      "recorded_date": "2026-04-06",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

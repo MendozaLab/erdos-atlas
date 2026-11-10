@@ -1,0 +1,230 @@
+{
+  "part": 11,
+  "of": 12,
+  "claim_range": [
+    81,
+    88
+  ],
+  "claims": [
+    {
+      "claim_id": "EMW-054->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-MW-054",
+      "math_id": "MW-054",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Banach-Ruziewicz [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/MW-054",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESIM-003->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-SIM-003",
+      "math_id": "SIM-003",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Quantum Diffusion [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SIM-003",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESIM-003->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-SIM-003",
+      "math_id": "SIM-003",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Quantum Diffusion [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SIM-003",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESIM-004->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-SIM-004",
+      "math_id": "SIM-004",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Ten Martini Problem (Almost Mathieu Operator) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SIM-004",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESIM-004->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-SIM-004",
+      "math_id": "SIM-004",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Ten Martini [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SIM-004",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESMA-007->PHYS-CL-001",
+      "source_record_id": "mr-008",
+      "math_id": "SMA-007",
+      "physics_id": "PHYS-CL-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Thomson/Riesz energy minimization over point configs on sphere/interval [Riesz s-energy E_s(mu) = int int |x-y|^{-s} dmu(x)dmu(y); equilibrium measure transitions from continuous to discrete as s > dim; Saff-Totik framework] corresponds to Kepler Orbits [N-body gravitational energy with 1/r potential; equilibrium configurations; Lagrange points at critical mass ratios]",
+      "transfer_operator_claimed": "Logarithmic kernel (s->0 Riesz limit) governs both #1038 sublevel sets and Thomson equilibrium. #1038 asks: which mu on [-1,1] minimizes |{V_mu < 0}|? Thomson asks: which config minimizes E_s? Connection: sublevel measure is a geometric functional of the same logarithmic potential field.",
+      "breakdown_boundary": "Different functionals: Thomson minimizes energy integral; #1038 minimizes Lebesgue measure of sublevel set. These are related but not identical. Connection works if sublevel measure can be bounded in terms of capacity or energy.",
+      "falsification_condition": "The record asserts that Riesz s-energy E_s(mu) = int int |x-y|^{-s} dmu(x)dmu(y); equilibrium measure transitions from continuous to discrete as s > dim; Saff-Totik framework corresponds to N-body gravitational energy with 1/r potential; equilibrium configurations; Lagrange points at critical mass ratios. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Different functionals: Thomson minimizes energy integral; #1038 minimizes Lebesgue measure of sublevel set. These are related but not identical. Connection works if sublevel measure can be bounded in terms of capacity or energy.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Thomson 1904\",\"Saff-Totik 1997\",\"Brauchart-Hardin-Saff 2012\",\"Totik 2014\",\"EXP-MATH-ERDOS1038-001\"]",
+      "citations": [
+        "Thomson 1904",
+        "Saff-Totik 1997",
+        "Brauchart-Hardin-Saff 2012",
+        "Totik 2014",
+        "EXP-MATH-ERDOS1038-001"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SMA-007",
+      "recorded_by": "h2_session_2026-03-30",
+      "recorded_date": "2026-03-30",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESMA-010->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-SMA-010",
+      "math_id": "SMA-010",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Pughs Closing Lemma (higher smoothness) [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SMA-010",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESMA-010->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-SMA-010",
+      "math_id": "SMA-010",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Pugh Closing (C^r) [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SMA-010",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

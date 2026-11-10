@@ -1,0 +1,235 @@
+{
+  "part": 5,
+  "of": 12,
+  "claim_range": [
+    33,
+    40
+  ],
+  "claims": [
+    {
+      "claim_id": "E50270->PHYS-SH-001",
+      "source_record_id": "MOR-CS-SALVO001-014-50270",
+      "math_id": "50270",
+      "physics_id": "PHYS-SH-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Topological entropy h_top(sigma)=lim (1/n) log(#n-subwords)=log lambda_Perron] corresponds to Symbolic Shift / Topological Shift [Lyapunov exponent of symbolic flow; growth rate of phase-space volume in Poincare section]",
+      "transfer_operator_claimed": "Substitution matrix M; lambda_Perron largest eigenvalue; h(sigma)=log lambda_Perron",
+      "breakdown_boundary": "Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
+      "falsification_condition": "The record asserts that Topological entropy h_top(sigma)=lim (1/n) log(#n-subwords)=log lambda_Perron corresponds to Lyapunov exponent of symbolic flow; growth rate of phase-space volume in Poincare section. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Pansiot 1984; Lind-Marcus 1995 Symbolic Dynamics; Parry-Tuncel 1973 entropy of symbolic shifts",
+      "citations": [
+        "Pansiot 1984",
+        "Lind-Marcus 1995",
+        "Parry-Tuncel 1973"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50270",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50271->PHYS-SM-001",
+      "source_record_id": "MOR-CS-SALVO001-015-50271",
+      "math_id": "50271",
+      "physics_id": "PHYS-SM-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Diffraction measure dmu(omega); pure-point vs singular-continuous decomposition; weak-mixing exponent] corresponds to Spectral Measure of Dynamical System [Power spectral density; Bragg peaks at Q in 2pi Z[lambda]; peak heights encode multiplicities]",
+      "transfer_operator_claimed": "Fourier coeffs mu_hat(k)=<chi_k,chi_0>_L2; eigenfunction expansion on l^2(N)",
+      "breakdown_boundary": "Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
+      "falsification_condition": "The record asserts that Diffraction measure dmu(omega); pure-point vs singular-continuous decomposition; weak-mixing exponent corresponds to Power spectral density; Bragg peaks at Q in 2pi Z[lambda]; peak heights encode multiplicities. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Bombieri-Taylor 1986; Baake 1997 spectral analysis of substitution tilings; Damanik 2005 p(n) controls Hausdorff dim",
+      "citations": [
+        "Bombieri-Taylor 1986",
+        "Baake 1997",
+        "Damanik 2005"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50271",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50272->PHYS-D-001",
+      "source_record_id": "MOR-CS-SALVO001-016-50272",
+      "math_id": "50272",
+      "physics_id": "PHYS-D-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Generating function G(x) for #subword occurrences; zeros/poles encode growth; algebraic degree=substitution matrix rank] corresponds to Diffraction Intensity / Fourier Structure Function [Form factor |S(Q)|^2 = diffraction intensity at Q; poles/zeros match tiling recurrence]",
+      "transfer_operator_claimed": "Substitution-induced automorphism on homology; G(x) as character of action on H_1(R/Z[lambda])",
+      "breakdown_boundary": "Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
+      "falsification_condition": "The record asserts that Generating function G(x) for #subword occurrences; zeros/poles encode growth; algebraic degree=substitution matrix rank corresponds to Form factor |S(Q)|^2 = diffraction intensity at Q; poles/zeros match tiling recurrence. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Allouche-Shallit 2003 generating functions for automatic sequences; Gahler-Rhyno 1996 form factor; OEIS A6697",
+      "citations": [
+        "Allouche-Shallit 2003",
+        "Gahler-Rhyno 1996"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50272",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50351->PHYS-HS-001",
+      "source_record_id": "MOR-CS-SALVO001-006-50351",
+      "math_id": "50351",
+      "physics_id": "PHYS-HS-001",
+      "asserted_strength": "validated",
+      "strength_reading": "has unstated status",
+      "claim": "None [block_sensitivity bs(f); subcube restriction degree bound] corresponds to Hypercube Spectral Gap [lambda_2(G_f)/lambda_max(G_f); signed adjacency spectrum gap]",
+      "transfer_operator_claimed": "Signed adjacency A_f; bs(f) <-> spectral radius bound; Huang uses lambda_2 <= sqrt(n)",
+      "breakdown_boundary": "Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
+      "falsification_condition": "The record asserts that block_sensitivity bs(f); subcube restriction degree bound corresponds to lambda_2(G_f)/lambda_max(G_f); signed adjacency spectrum gap. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Huang 2019 resolved sensitivity conjecture via signed hypercube eigenvalue; bs(f) degree = sqrt(n) * sensitivity",
+      "citations": [
+        "Huang 2019"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50351",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50352->PHYS-FS-001",
+      "source_record_id": "MOR-CS-SALVO001-007-50352",
+      "math_id": "50352",
+      "physics_id": "PHYS-FS-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Fourier concentration on level k; L1 weight sum_{|S|<=k}|f_hat(S)|] corresponds to Fourier Spectrum Concentration [Energy density in low-frequency modes; thermal stability under Fourier truncation]",
+      "transfer_operator_claimed": "Boolean f -> Fourier heat kernel sum_S |f_hat(S)| exp(-t|S|); sensitivity <-> Fourier spreading",
+      "breakdown_boundary": "Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
+      "falsification_condition": "The record asserts that Fourier concentration on level k; L1 weight sum_{|S|<=k}|f_hat(S)| corresponds to Energy density in low-frequency modes; thermal stability under Fourier truncation. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Tal 2014, Hatami 2017 sensitivity lower-bounds Fourier weight on high levels; conjectured bs<=s^2 => Fourier on levels 0..sqrt(n)",
+      "citations": [
+        "Tal 2014",
+        "Hatami 2017"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50352",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50353->PHYS-Q-002",
+      "source_record_id": "MOR-CS-SALVO001-008-50353",
+      "math_id": "50353",
+      "physics_id": "PHYS-Q-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [quantum decision tree depth; adversary bound Adv(f)] corresponds to Quantum Entanglement [entanglement cost (ebits); quantum query entropy]",
+      "transfer_operator_claimed": "Embed decision tree in quantum superposition; sensitivity -> quantum query LB via adversary method; Adv -> sqrt(query complexity)",
+      "breakdown_boundary": "Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
+      "falsification_condition": "The record asserts that quantum decision tree depth; adversary bound Adv(f) corresponds to entanglement cost (ebits); quantum query entropy. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Hoyer-Lee-Spalek 2007 quantum adversary method; conjectured strong sensitivity => adversary tight; bs(f)~Adv(f)^2",
+      "citations": [
+        "Hoyer-Lee-Spalek 2007"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50353",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E50354->PHYS-IS-001",
+      "source_record_id": "MOR-CS-SALVO001-009-50354",
+      "math_id": "50354",
+      "physics_id": "PHYS-IS-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [decision-tree backbone; subcube constraints (disjunction-of-ANDs)] corresponds to Ising Glass Free Energy [disorder-induced gap in F(T); replica-symmetry-breaking cost]",
+      "transfer_operator_claimed": "Random Ising couplings {J_ij(omega)} indexed by constraint locations; s(f) <-> T_g ~ log s(f)",
+      "breakdown_boundary": "Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
+      "falsification_condition": "The record asserts that decision-tree backbone; subcube constraints (disjunction-of-ANDs) corresponds to disorder-induced gap in F(T); replica-symmetry-breaking cost. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Impagliazzo-Wigderson 1998 pseudorandomness hardens LBs; Boolean hardness <-> spin-glass hardness",
+      "citations": [
+        "Impagliazzo-Wigderson 1998"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/50354",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E505->PHYS-F-001",
+      "source_record_id": "MOR-505-PHYS-F-001-1776365642682",
+      "math_id": "505",
+      "physics_id": "PHYS-F-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Borsuk diameter partition of bounded set in R^n [spectral gap ratio lambda_2/lambda_1 on S^{n-1}] corresponds to Gravity (Newtonian) [gravitational multipole expansion (spherical harmonics)]",
+      "transfer_operator_claimed": null,
+      "breakdown_boundary": null,
+      "falsification_condition": "The record asserts that spectral gap ratio lambda_2/lambda_1 on S^{n-1} corresponds to gravitational multipole expansion (spherical harmonics). It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-KVN-FINAL-ANCHORS: Harmonic dim grows exponentially vs linear Borsuk bound. Gap ratio -> 2 as n -> inf. Kahn-Kalai failure at n=64 predicted by harmonic/Borsuk ratio exceeding 10^8.",
+      "citations": [
+        "EXP-KVN-FINAL-ANCHORS: Harmonic dim grows exponentially vs linear Borsuk bound. Gap ratio -> 2 as n -> inf. Kahn-Kalai failure at n=64 predicted by harmonic/Borsuk ratio exceeding 10^8."
+      ],
+      "citations_verified": false,
+      "structural_defects": [
+        "no transfer_operator: the record names no mechanism, so no result can cross",
+        "no breakdown_boundary: the record does not say where the correspondence fails"
+      ],
+      "anchor": "https://www.erdosproblems.com/505",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

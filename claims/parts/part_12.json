@@ -1,0 +1,64 @@
+{
+  "part": 12,
+  "of": 12,
+  "claim_range": [
+    89,
+    90
+  ],
+  "claims": [
+    {
+      "claim_id": "ESMA-011->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-SMA-011",
+      "math_id": "SMA-011",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Is 1-D Dynamics Generally Hyperbolic? [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SMA-011",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "ESMA-011->PHYS-T-003",
+      "source_record_id": "MOR-DISS-001B-SMA-011",
+      "math_id": "SMA-011",
+      "physics_id": "PHYS-T-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "1-D Dynamics Hyperbolic? [Ruelle-Pollicott tau under truncation; crossover scaling law] corresponds to Critical Phenomena [Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws]",
+      "transfer_operator_claimed": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)",
+      "breakdown_boundary": "Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "falsification_condition": "The record asserts that Ruelle-Pollicott tau under truncation; crossover scaling law corresponds to Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Secondary reading of EXP-DISS-KVN-001; primary is PHYS-RMT-001",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/SMA-011",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

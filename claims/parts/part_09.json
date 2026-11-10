@@ -1,0 +1,236 @@
+{
+  "part": 9,
+  "of": 12,
+  "claim_range": [
+    65,
+    72
+  ],
+  "claims": [
+    {
+      "claim_id": "E80588->PHYS-RNG-001",
+      "source_record_id": "MOR-CS-SALVO001-010-80588",
+      "math_id": "80588",
+      "physics_id": "PHYS-RNG-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [AM proof length L; entropy production log(1/epsilon)] corresponds to Pseudorandom Generator Phase Transition [free-energy cost F_sep(L)=I(verifier;prover); entropy separation]",
+      "transfer_operator_claimed": "AM game <-> random-energy glass with N~2^L; PRG existence <-> phase boundary",
+      "breakdown_boundary": "Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
+      "falsification_condition": "The record asserts that AM proof length L; entropy production log(1/epsilon) corresponds to free-energy cost F_sep(L)=I(verifier;prover); entropy separation. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Impagliazzo-Wigderson 1998 PRG from weak OWF; conjectured AM subset NP iff entropy-efficient derandomization at L~sqrt(n)",
+      "citations": [
+        "Impagliazzo-Wigderson 1998"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80588",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80589->PHYS-CL-003",
+      "source_record_id": "MOR-CS-SALVO001-004-80589",
+      "math_id": "80589",
+      "physics_id": "PHYS-CL-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Randomness necessity; pseudorandom generator security; branching sensitivity] corresponds to Chaos / Lorenz System [Lyapunov exponent; ergodic mixing time]",
+      "transfer_operator_claimed": "Random bits <-> perturbation direction; derandomization cost <-> chaotic mixing time; BPP acceptance <-> basin volume at poly(n) cost",
+      "breakdown_boundary": "P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
+      "falsification_condition": "The record asserts that Randomness necessity; pseudorandom generator security; branching sensitivity corresponds to Lyapunov exponent; ergodic mixing time. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Aaronson 2005 BPP and PRGs; Trevisan-Vadhan 2000 pseudorandomness; Hastad 1999 hitting sets",
+      "citations": [
+        "Aaronson 2005",
+        "Trevisan-Vadhan 2000",
+        "Hastad 1999"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80589",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E80590->PHYS-T-002",
+      "source_record_id": "MOR-CS-SALVO001-019-80590",
+      "math_id": "80590",
+      "physics_id": "PHYS-T-002",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "None [Random k-SAT clause density alpha=m/n at k=3; threshold alpha_c~4.267; refutation hardness emergence] corresponds to Phase Transitions [Critical point of ferromagnetic-spin-glass transition; cavity-method replica prediction of SAT/UNSAT boundary]",
+      "transfer_operator_claimed": "Bethe-Peierls cavity recursion on factor graph; MPZ replica-symmetric free energy f(alpha,beta)",
+      "breakdown_boundary": "Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
+      "falsification_condition": "The record asserts that Random k-SAT clause density alpha=m/n at k=3; threshold alpha_c~4.267; refutation hardness emergence corresponds to Critical point of ferromagnetic-spin-glass transition; cavity-method replica prediction of SAT/UNSAT boundary. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "Mezard-Parisi-Zecchina 2002 Science 'Analytic and Algorithmic Solution of Random SAT'; cavity method; rigorous alpha_c=4.2667",
+      "citations": [
+        "Mezard-Parisi-Zecchina 2002"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/80590",
+      "recorded_by": "salvo-cs-001",
+      "recorded_date": "2026-04-19",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E89->PHYS-SP-001",
+      "source_record_id": "mr-005",
+      "math_id": "89",
+      "physics_id": "PHYS-SP-001",
+      "asserted_strength": "proved",
+      "strength_reading": "is established",
+      "claim": "Spectral gap lambda_2 of graph Laplacian L=D-A [lambda_2 governs connectivity and random walk mixing time via Cheeger inequality] corresponds to Spectral Gap (Laplacian) [E_1-E_0 governs decoherence time and phase transition proximity]",
+      "transfer_operator_claimed": "L=D-A IS the tight-binding Hamiltonian: lambda_2(L) in graph theory exactly equals E_1-E_0 in quantum mechanics on the same graph",
+      "breakdown_boundary": "Breaks at potential: exact only for tight-binding free-particle model; general potentials add terms with no graph analog.",
+      "falsification_condition": "The record asserts that lambda_2 governs connectivity and random walk mixing time via Cheeger inequality corresponds to E_1-E_0 governs decoherence time and phase transition proximity. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks at potential: exact only for tight-binding free-particle model; general potentials add terms with no graph analog.",
+      "evidence_kind": "citation_list",
+      "evidence_raw": "[\"Fiedler 1973\",\"Cheeger 1970\",\"Anderson-Morley 1985\"]",
+      "citations": [
+        "Fiedler 1973",
+        "Cheeger 1970",
+        "Anderson-Morley 1985"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/89",
+      "recorded_by": "h2_session_2026-03-29",
+      "recorded_date": "2026-03-29",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E910->PHYS-KVN-001",
+      "source_record_id": "MOR-KVN-910",
+      "math_id": "910",
+      "physics_id": "PHYS-KVN-001",
+      "asserted_strength": "partial",
+      "strength_reading": "is partially established",
+      "claim": "Connected subsets in R^n (#910) [Connected-subset structure of sets in R^n] corresponds to Koopman-von Neumann Operator [Koopman-invariant subspace decomposition (spectral projections)]",
+      "transfer_operator_claimed": "Spectral projection E_Delta : L^2 -> L^2_Delta onto spectral subintervals",
+      "breakdown_boundary": "Ergodic flows with trivial point spectrum",
+      "falsification_condition": "The record asserts that Connected-subset structure of sets in R^n corresponds to Koopman-invariant subspace decomposition (spectral projections). It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Ergodic flows with trivial point spectrum",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "chimera session 2026-04-16",
+      "citations": [
+        "chimera session 2026-04-16"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/910",
+      "recorded_by": "h2_chimera_tao_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E96->PHYS-C-004",
+      "source_record_id": "MOR-96-PHYS-C-004-1776365646328",
+      "math_id": "96",
+      "physics_id": "PHYS-C-004",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "unit distance pairs in convex n-gon [Koopman bandwidth of unit-distance observable = 2] corresponds to Charge Conservation [total interaction energy = number of unit pairs]",
+      "transfer_operator_claimed": null,
+      "breakdown_boundary": null,
+      "falsification_condition": "The record asserts that Koopman bandwidth of unit-distance observable = 2 corresponds to total interaction energy = number of unit pairs. It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
+      "evidence_kind": "citation_in_prose",
+      "evidence_raw": "EXP-KVN-FINAL-ANCHORS: Unit-distance observable on cyclic Koopman has bandwidth 2. Conservation argument gives E <= 2n = O(n). Recovers Pach-Sharir 1992 bound. WEAK physics signal (0.124).",
+      "citations": [
+        "Pach-Sharir 1992"
+      ],
+      "citations_verified": false,
+      "structural_defects": [
+        "no transfer_operator: the record names no mechanism, so no result can cross",
+        "no breakdown_boundary: the record does not say where the correspondence fails"
+      ],
+      "anchor": "https://www.erdosproblems.com/96",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "E97->PHYS-CL-003",
+      "source_record_id": "MOR-97-PHYS-CL-003-1776365647253",
+      "math_id": "97",
+      "physics_id": "PHYS-CL-003",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "equidistant vertex clusters in convex polygon [Lyapunov exponent of equidistance under vertex perturbation] corresponds to Chaos / Lorenz System [Lorenz sensitivity exponent]",
+      "transfer_operator_claimed": null,
+      "breakdown_boundary": null,
+      "falsification_condition": "The record asserts that Lyapunov exponent of equidistance under vertex perturbation corresponds to Lorenz sensitivity exponent. It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-KVN-FINAL-ANCHORS: Max equidistant vertices in random convex n-gons: 2 (n<=10), 3 (n<=50). Conjecture bound is 3. Equidistance generically unstable. Angular momentum (0.314) provides rotational symmetry constraint.",
+      "citations": [
+        "EXP-KVN-FINAL-ANCHORS: Max equidistant vertices in random convex n-gons: 2 (n<=10), 3 (n<=50). Conjecture bound is 3. Equidistance generically unstable. Angular momentum (0.314) provides rotational symmetry constraint."
+      ],
+      "citations_verified": false,
+      "structural_defects": [
+        "no transfer_operator: the record names no mechanism, so no result can cross",
+        "no breakdown_boundary: the record does not say where the correspondence fails"
+      ],
+      "anchor": "https://www.erdosproblems.com/97",
+      "recorded_by": "agent",
+      "recorded_date": "2026-04-16",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    },
+    {
+      "claim_id": "EAIM-045->PHYS-RMT-001",
+      "source_record_id": "MOR-DISS-001-AIM-045",
+      "math_id": "AIM-045",
+      "physics_id": "PHYS-RMT-001",
+      "asserted_strength": "conjectured",
+      "strength_reading": "is proposed but not established",
+      "claim": "Postcritically Finite Maps in Complex/Arithmetic Dynamics [Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation] corresponds to Marchenko-Pastur Spectral Envelope [Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*]",
+      "transfer_operator_claimed": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure",
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "falsification_condition": "The record asserts that Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation corresponds to Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "evidence_kind": "experiment_note",
+      "evidence_raw": "EXP-DISS-KVN-001 refined (2026-04-16)",
+      "citations": [
+        "EXP-DISS-KVN-001 refined (2026-04-16)"
+      ],
+      "citations_verified": false,
+      "structural_defects": [],
+      "anchor": "https://www.erdosproblems.com/AIM-045",
+      "recorded_by": "h2_discovery_session_2026-04-16",
+      "recorded_date": "2026-04-17",
+      "evaluation": {
+        "verdict": null,
+        "axes": null,
+        "note": null
+      }
+    }
+  ]
+}

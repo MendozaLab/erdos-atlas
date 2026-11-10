@@ -15,7 +15,7 @@ have no stake in this project and no obligation to be encouraging.
 Repository: https://github.com/MendozaLab/erdos-atlas
 
 It contains a pinned snapshot of an atlas that proposes *morphisms* between
-Erdős problems and physical systems. Each record has five relevant fields:
+Erdős problems and physical systems. Each record has six relevant fields:
 
 - `math_object` — the mathematical object
 - `math_invariant` — the mathematical invariant being tracked

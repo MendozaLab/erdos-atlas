@@ -15,9 +15,19 @@ capture date and the morphism count before you look at any claim. This is your
 denominator, and quoting a fraction against the wrong denominator is the easiest
 error to make here.
 
-**3. Evaluate every claim in `claims/CLAIMS_REGISTER.json`** using
-`rubric/MORPHISM_RUBRIC.md`. Work claim by claim. Do not aggregate early: the
-interesting failures are individual, and averages hide them.
+**3. Evaluate every claim** using `rubric/MORPHISM_RUBRIC.md`. Work claim by claim.
+Do not aggregate early: the interesting failures are individual, and averages hide
+them.
+
+**Reading the register.** `claims/CLAIMS_REGISTER.json` is ~166 KB and will be
+silently truncated by readers with a smaller limit — one reviewer received only 14
+of 90 records and reported on those. Do not rely on it alone:
+
+- `claims/INDEX.md` (6 KB) lists all 90 claim ids with strength and evidence kind.
+  It is small enough to read in full, and it is the checklist you should work from.
+- `claims/parts/part_01..12.json` (≤18 KB each) hold the full records, 8 per file.
+Read all twelve parts before concluding anything about the corpus.
+
 
 **4. Check anchors against the world.** For each claim that survives step 3, use
 `anchors/GROUND_TRUTH.md` to reach the original Erdős problem statement and the
