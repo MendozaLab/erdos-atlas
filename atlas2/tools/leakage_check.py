@@ -40,8 +40,16 @@ from sklearn.metrics import roc_auc_score
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from normalise_items import FIELDS, ROOT, SNAPSHOT  # noqa: E402
 
-ITEMS = ROOT / "atlas2" / "items" / "atlas2_items.json"
-LABELS = ROOT / "atlas2" / "items" / "atlas2_labels.json"
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("--items", default="atlas2_items.json", help="filename under atlas2/items/")
+ap.add_argument("--labels", default=None, help="defaults to matching *_labels/_eq file")
+_ARGS, _ = ap.parse_known_args()
+
+ITEMS = ROOT / "atlas2" / "items" / _ARGS.items
+_lab = _ARGS.labels or ("atlas2_labels_eq.json" if _ARGS.items.endswith("_eq.json") else "atlas2_labels.json")
+LABELS = ROOT / "atlas2" / "items" / _lab
 
 STOP = set("""a an the of in on at to for from by with without and or not is are was were be been
 being that this these those it its as into than then so such which who whom whose what when where

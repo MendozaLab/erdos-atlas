@@ -50,12 +50,24 @@ Two authoring sessions are separated *perfectly* by field lengths alone
 
 **Gate rules, binding:**
 
-1. **Lengths must be equalised** — each field rewritten to a matched length
-   distribution across classes — before any item is shown to a reviewer.
-2. After equalisation the gate re-runs, and **must show style-only and
-   length-only AUC < 0.65 for the class label**. Above that, the split leaks and
-   no scoring result is admissible.
-3. The gate report is committed with the items. A run without it is void.
+1. Length control happens at **authoring time, not afterwards**. Every gold, decoy
+   and trivial-exact item is written to the length profile of the frozen atlas
+   (per-field word counts inside its interquartile range). Authors are given the
+   profile; items outside it are returned, not normalised.
+2. Truncation is **not** a substitute. Sweeping the cap and re-scoring author
+   separation from lengths alone: cap 40 → AUC 0.996, cap 12 → 0.994, cap 8 (78% of
+   text retained) → 0.994, cap 5 (54% retained) → 1.000. The fingerprint is the
+   per-field length *profile*, which survives truncation because it is a shape, not
+   a total. See `tools/equalise_lengths.py`, retained only so the negative result
+   reproduces.
+3. The gate runs on the **`class` label** once items exist, and must show
+   style-only and length-only AUC **< 0.65**. Above that the split leaks and no
+   scoring result is admissible.
+4. The gate report is committed with the items. A run without it is void.
+5. The author-length leak measured on the atlas class alone cannot be fixed post
+   hoc and does not by itself invalidate the benchmark, because every atlas item
+   shares one class. It matters only if authorship correlates with class, which
+   rule 1 exists to prevent.
 
 ## Scoring protocol
 
