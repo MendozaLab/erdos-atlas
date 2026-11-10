@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MendozaLab/erdos-atlas/atlas2/schema/item.schema.json",
+  "title": "Atlas 2 blind item",
+  "description": "What a reviewer sees. Deliberately contains no class, no strength, no citations, no evidence, no record id, and no similarity scores. If any of those appear, the item has leaked.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "math_object",
+    "math_invariant",
+    "physics_object",
+    "physics_invariant",
+    "transfer_operator",
+    "breakdown_boundary"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,63}$",
+      "description": "Opaque, stable, and carrying no class information. Never the source record id."
+    },
+    "math_object": {
+      "type": "string",
+      "minLength": 3,
+      "description": "The mathematical object. Say what it is, not which problem it comes from."
+    },
+    "math_invariant": {
+      "type": "string",
+      "minLength": 3,
+      "description": "The invariant being tracked on the mathematical side."
+    },
+    "physics_object": {
+      "type": "string",
+      "minLength": 3
+    },
+    "physics_invariant": {
+      "type": "string",
+      "minLength": 3
+    },
+    "transfer_operator": {
+      "type": "string",
+      "minLength": 3,
+      "description": "The claimed mechanism carrying one side to the other. Named 'operator' by convention; may in fact be a map, a correspondence, a procedure or a number. The vagueness is under test, not corrected here."
+    },
+    "breakdown_boundary": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Where the correspondence is said to fail."
+    }
+  },
+  "examples": [
+    {
+      "item_id": "atlas_b2f1",
+      "math_object": "Maximum size of a Sidon subset of {1,...,N}",
+      "math_invariant": "All pairwise sums a+b are distinct for a != b",
+      "physics_object": "Radar pulse timing set",
+      "physics_invariant": "No two range-velocity pairs return an identical signal",
+      "transfer_operator": "Shannon sum-channel capacity ~ sqrt(N); the Singer construction attains this bound exactly",
+      "breakdown_boundary": "Breaks when Doppler is considered: the mathematics is a density in {1,...,N}, while the physics adds a velocity dimension absent from the Sidon problem"
+    }
+  ]
+}

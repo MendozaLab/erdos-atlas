@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/MendozaLab/erdos-atlas/atlas2/schema/label.schema.json",
+  "title": "Atlas 2 private label",
+  "description": "Never shown to a reviewer. Joined to the blind item by item_id. Items in the private split also carry a canary string so accidental publication is detectable.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["item_id", "class", "kind", "authored_by"],
+  "properties": {
+    "item_id": {"type": "string"},
+    "class": {
+      "type": "string",
+      "enum": ["gold", "trivial_exact", "decoy", "shuffled", "atlas", "established_non_transferring"],
+      "description": "established_non_transferring is the fourth class: a real dictionary from the literature that supplies no crossing result. Conflating it with gold is the error pre-registration exists to prevent."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["identity", "bijection", "statistical_limit", "proof_strategy", "shared_constant", "none", "unknown"],
+      "description": "The relation type. 'none' is correct for decoys and for vacuous items."
+    },
+    "crossing_result": {
+      "type": ["string", "null"],
+      "description": "The specific theorem or bound that crosses from one side to the other, or null. Required for gold; if null, the item is established_non_transferring, not gold."
+    },
+    "expected_axis2": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 4,
+      "description": "Optional author's expectation for Axis 2. Not a ground truth for AUROC; used only to check calibration."
+    },
+    "authored_by": {"type": "string"},
+    "source_record_id": {
+      "type": ["string", "null"],
+      "description": "The atlas record id this item derives from, for atlas and shuffled classes only."
+    },
+    "shuffle_variant": {
+      "type": ["string", "null"],
+      "enum": ["same_category", "adjacent_domain", "field_permutation", "random", null],
+      "description": "Which negative generator produced this item."
+    },
+    "private_split": {"type": "boolean"},
+    "canary": {
+      "type": ["string", "null"],
+      "description": "Present only in the private split; its appearance in public output is a leak."
+    }
+  }
+}

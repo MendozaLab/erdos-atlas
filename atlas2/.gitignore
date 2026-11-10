@@ -1,0 +1,6 @@
+# Labels are private. The repository is public, so publishing labels would break
+# blindness for every reviewer: `class` names the answer, and `authored_by`
+# fingerprints the writer (length alone separates authors at AUC 1.000).
+# Regenerate locally with the tools in tools/.
+items/*labels*.json
+items/*private*.json

@@ -123,3 +123,18 @@ it is a dated copy, not a live feed, and the atlas remains the source of truth.
 Prepared for external evaluation. The snapshot is pinned and `tools/validate.py`
 verifies it. Nothing in this repository is peer reviewed; `KNOWN_ISSUES.md` and
 `DATA_DEFECTS.md` state what is known to be wrong or missing.
+
+## Atlas 2 — analogy discrimination benchmark
+
+`atlas2/` is a separate layer. The atlas under `snapshot/` and `claims/` is
+**frozen**; Atlas 2 reads it and writes only inside `atlas2/`.
+
+It asks a narrower question: can a blind reviewer, using the rubric, separate an
+established correspondence from a vacuous one, and where do the atlas's own
+records fall between them? The atlas has no ground truth, so Atlas 2 supplies it on
+both sides and locates the atlas against that scale.
+
+Start at `atlas2/README.md`. The pre-registration is `atlas2/PREREGISTRATION.md`,
+and the first leakage result is `atlas2/reports/LEAKAGE_2026-11-10.md` — which
+currently **fails**: field lengths alone identify the authoring session with AUC
+1.000.

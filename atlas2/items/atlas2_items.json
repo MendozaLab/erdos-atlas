@@ -1,0 +1,744 @@
+{
+  "count": 82,
+  "items": [
+    {
+      "breakdown_boundary": "Breaks at dimensionality: WES is finite point sets in R^2; martensitic is infinite periodic lattice in R^3.",
+      "item_id": "atlas_07475fa80a",
+      "math_invariant": "square-geometry order type is the extremizer: zero-slack means any perturbation breaks convex position bound",
+      "math_object": "Weighted Erdos-Szekeres extremizer",
+      "physics_invariant": "BCC is the extremizer: any shear finds Bain path to FCC; zero slack in square geometry",
+      "physics_object": "Martensitic transformation saddle",
+      "transfer_operator": "sqrt(2) brittleness: both systems at saddle in config space; orthogonal geometry is the unique critical point"
+    },
+    {
+      "breakdown_boundary": "Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
+      "item_id": "atlas_0850fc4df1",
+      "math_invariant": "Diffraction measure dmu(omega); pure-point vs singular-continuous decomposition; weak-mixing exponent",
+      "math_object": "",
+      "physics_invariant": "Power spectral density; Bragg peaks at Q in 2pi Z[lambda]; peak heights encode multiplicities",
+      "physics_object": "Spectral Measure of Dynamical System",
+      "transfer_operator": "Fourier coeffs mu_hat(k)=<chi_k,chi_0>_L2; eigenfunction expansion on l^2(N)"
+    },
+    {
+      "breakdown_boundary": "coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
+      "item_id": "atlas_0d566be0b6",
+      "math_invariant": "Deterministic rejection-by-halting; complement acceptance in coNP definition",
+      "math_object": "",
+      "physics_invariant": "Quantum conjugation (Hermitian involution) on branch amplitudes; time-reversal symmetry in world-line branching",
+      "physics_object": "Quantum Superposition",
+      "transfer_operator": "Complement condition not(phi(x)) -> conjugate state |psi_bar>; rejection becomes superposition-measurable observable"
+    },
+    {
+      "breakdown_boundary": "Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
+      "item_id": "atlas_11bc9f8b83",
+      "math_invariant": "decision-tree backbone; subcube constraints (disjunction-of-ANDs)",
+      "math_object": "",
+      "physics_invariant": "disorder-induced gap in F(T); replica-symmetry-breaking cost",
+      "physics_object": "Ising Glass Free Energy",
+      "transfer_operator": "Random Ising couplings {J_ij(omega)} indexed by constraint locations; s(f) <-> T_g ~ log s(f)"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_13def7e724",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "ISP (MW-037)",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_15ddffeba1",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Quantum Diffusion",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Finite-height corrections at moderate gamma; asymptotic only",
+      "item_id": "atlas_1618029874",
+      "math_invariant": "Unfolded imaginary parts of non-trivial zeros of zeta(s) on critical line",
+      "math_object": "Prime series / Riemann zeros",
+      "physics_invariant": "Nearest-neighbour eigenvalue spacing of large GUE matrices; pair correlation R_2(r) = 1 - sinc^2(pi r)",
+      "physics_object": "Gaussian Unitary Ensemble (GUE)",
+      "transfer_operator": "Riemann-von Mangoldt unfold places zeros at unit mean density; compare to GUE pair correlation"
+    },
+    {
+      "breakdown_boundary": "Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
+      "item_id": "atlas_1b613e26f7",
+      "math_invariant": "Straight-line-program (PosSLP) complexity for sqrt-sum eval; algebraic degree of sqrt(a_i); Diophantine measure",
+      "math_object": "",
+      "physics_invariant": "Borel-summability radius of perturbation series; asymptoticity governs convergence of SLP algebraic-real arithmetic",
+      "physics_object": "Borel Summability / Asymptotic Convergence Radius",
+      "transfer_operator": "SLP composition depth <-> perturbation series order; spectral determinant det(lambda I - A) of mult. operator"
+    },
+    {
+      "breakdown_boundary": "Finite-N effects at gamma <= 400; conjecture only, requires Odlyzko-scale data",
+      "item_id": "atlas_1b68cc931a",
+      "math_invariant": "Fluctuation statistics of prime gaps p_{n+1} - p_n - log p_n",
+      "math_object": "Prime gaps",
+      "physics_invariant": "Number variance Sigma^2(L) and Dyson-Mehta Delta_3 of unfolded GUE eigenvalues",
+      "physics_object": "Gaussian Unitary Ensemble (GUE)",
+      "transfer_operator": "Explicit formula (von Mangoldt) connects prime-gap fluctuations to oscillatory sums over zeta-zeros"
+    },
+    {
+      "breakdown_boundary": "Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
+      "item_id": "atlas_1ca1d39011",
+      "math_invariant": "Generating function G(x) for #subword occurrences; zeros/poles encode growth; algebraic degree=substitution matrix rank",
+      "math_object": "",
+      "physics_invariant": "Form factor |S(Q)|^2 = diffraction intensity at Q; poles/zeros match tiling recurrence",
+      "physics_object": "Diffraction Intensity / Fourier Structure Function",
+      "transfer_operator": "Substitution-induced automorphism on homology; G(x) as character of action on H_1(R/Z[lambda])"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_2477d7208d",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Pugh Closing (C^r)",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Ergodic flows with trivial point spectrum",
+      "item_id": "atlas_264eb2ef0c",
+      "math_invariant": "Connected-subset structure of sets in R^n",
+      "math_object": "Connected subsets in R^n",
+      "physics_invariant": "Koopman-invariant subspace decomposition (spectral projections)",
+      "physics_object": "Koopman-von Neumann Operator",
+      "transfer_operator": "Spectral projection E_Delta : L^2 -> L^2_Delta onto spectral subintervals"
+    },
+    {
+      "breakdown_boundary": "Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
+      "item_id": "atlas_26d98fb0cb",
+      "math_invariant": "block_sensitivity bs(f); subcube restriction degree bound",
+      "math_object": "",
+      "physics_invariant": "lambda_2(G_f)/lambda_max(G_f); signed adjacency spectrum gap",
+      "physics_object": "Hypercube Spectral Gap",
+      "transfer_operator": "Signed adjacency A_f; bs(f) <-> spectral radius bound; Huang uses lambda_2 <= sqrt(n)"
+    },
+    {
+      "breakdown_boundary": "EHP is about function-theoretic growth; Carnot is about thermodynamic work. The convexity arguments are structurally parallel but the underlying spaces (Hardy space vs state space) are fundamentally different.",
+      "item_id": "atlas_2a44b41fa0",
+      "math_invariant": "β(t) ≥ β_0(t) for all univalent f; the extremal function minimizes growth — analogous to extremal engine minimizing entropy production",
+      "math_object": "EHP integral means spectrum β(t) infimum for univalent functions",
+      "physics_invariant": "η ≤ 1-Tc/Th for all heat engines; Carnot cycle achieves equality as the reversible (zero entropy production) limit",
+      "physics_object": "Carnot efficiency bound as extremal thermodynamic constraint",
+      "transfer_operator": "Proof architecture transfer: both are extremal bounds proved via convexity. Carnot uses dS ≥ 0; EHP needs log-convexity of integral means. The sublevel measure functional M(μ) connecting #1038 provides the intermediate object."
+    },
+    {
+      "breakdown_boundary": "lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
+      "item_id": "atlas_30d3b4836e",
+      "math_invariant": "Sorting network depth in O(n) gates; mixing time of comparator graph",
+      "math_object": "",
+      "physics_invariant": "Spectral gap lambda_1-lambda_2 of expander; mixing entropy production rate",
+      "physics_object": "Expander Mixing / Spectral Gap",
+      "transfer_operator": "Stable-sorted permutations <-> invariant measure on expander; comparator steps <-> random walk mixing"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_3214e4013f",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Banach-Ruziewicz Problem (resolved)",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "g -> infinity (constraint saturates into unconstrained lattice gas)",
+      "item_id": "atlas_36b5f22caa",
+      "math_invariant": "extremal density of B_2[g] in {1,...,N}; critical exponent 1/2 with constant c(g)",
+      "math_object": "B_h[g] sequences",
+      "physics_invariant": "lattice-gas transfer matrix T_{W,g} with local exclusion rule diff_count[d] <= g",
+      "physics_object": "Koopman-von Neumann Operator",
+      "transfer_operator": "Koopman operator of the shift on locally legal windows; T_{W,g} = restriction to periodic sector"
+    },
+    {
+      "breakdown_boundary": "Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
+      "item_id": "atlas_395e8f6c7c",
+      "math_invariant": "Subword complexity p(n)<=n+1; Sturmian slope theta from substitution matrix",
+      "math_object": "",
+      "physics_invariant": "Meyer set density (cut-and-project); rank 2 lattice; cyclotomic Pisot eigenvalue",
+      "physics_object": "Quasicrystal Substitution Geometry",
+      "transfer_operator": "Substitution matrix M=[[1,1],[0,1]] spectrum generates 1D aperiodic tiling via first-return partition"
+    },
+    {
+      "breakdown_boundary": "beta = 1 (Hagedorn / Riemann pole); critical strip requires analytic continuation",
+      "item_id": "atlas_3a8db2520c",
+      "math_invariant": "Dirichlet series Sum_{N>=1} a(N) N^{-beta}; alternating prime series",
+      "math_object": "Prime series",
+      "physics_invariant": "Canonical partition function Z(beta) of non-interacting Bose gas of primons with energies {log p}",
+      "physics_object": "Julia Primon Gas",
+      "transfer_operator": "Bijection {multisets of primons} <-> {positive integers} via unique factorization; log-energy E(state) = log(integer)"
+    },
+    {
+      "breakdown_boundary": "Fails at n=30 (golden ratio identity: sin(pi/10)+1=sin(pi/6)+sin(3pi/10)), n=42, n=60. All failures at n=2^a*3*p with many small prime factors.",
+      "item_id": "atlas_3d00afde75",
+      "math_invariant": "Spectral distance set D_n = {2sin(pi*m/n)} satisfies B2 (Sidon) for all n=3..29; first failure at n=30 via golden ratio identity",
+      "math_object": "Sidon set B2 property in additive combinatorics",
+      "physics_invariant": "Koopman eigenvalue pairwise distances for Z_n choreographies; failures at n=2*3*p (highly composite) where algebraic relations create sum collisions",
+      "physics_object": "N-body choreography with Z_n symmetry (Koopman eigenvalues at nth roots of unity)",
+      "transfer_operator": "D_n = {|lambda_j - lambda_k| : j<k} where lambda_k = exp(2pi*i*k/n) are Koopman eigenvalues of Z_n-choreography. Sidon bound |A|<=sqrt(N) constrains stable choreography count."
+    },
+    {
+      "breakdown_boundary": "",
+      "item_id": "atlas_45699bfee1",
+      "math_invariant": "valuation excess sum across k consecutive shifts",
+      "math_object": "carry chain in base-p shift-addition",
+      "physics_invariant": "precession period 24h/sin(lat)",
+      "physics_object": "Foucault precession (slow modulation of fast oscillation)",
+      "transfer_operator": ""
+    },
+    {
+      "breakdown_boundary": "Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
+      "item_id": "atlas_540bfb6379",
+      "math_invariant": "Random k-SAT clause density alpha=m/n at k=3; threshold alpha_c~4.267; refutation hardness emergence",
+      "math_object": "",
+      "physics_invariant": "Critical point of ferromagnetic-spin-glass transition; cavity-method replica prediction of SAT/UNSAT boundary",
+      "physics_object": "Phase Transitions",
+      "transfer_operator": "Bethe-Peierls cavity recursion on factor graph; MPZ replica-symmetric free energy f(alpha,beta)"
+    },
+    {
+      "breakdown_boundary": "Breaks at dimension: math is 2D packing; physics is 3D crystal. Quantum corrections absent in packing bound.",
+      "item_id": "atlas_5db8a7d6b6",
+      "math_invariant": "square symmetry has coord-4 and zero off-axis slack: any perturbation finds lower-energy path",
+      "math_object": "Square packing extremizer in R^2",
+      "physics_invariant": "BCC has square-section geometry with zero slack under shear along Bain path; metastable to FCC",
+      "physics_object": "Martensitic BCC crystal",
+      "transfer_operator": "sqrt(2) governs both: nearest-neighbor in square lattice = a*sqrt(2)/2; Bain contraction = 1/sqrt(2)"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_6047c4dae7",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Representation Stability",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_6dd068297f",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Banach-Ruziewicz",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Breaks at continuous vs discrete: Chebyshev is continuous polynomials; phase transition is discrete lattice.",
+      "item_id": "atlas_71bd99ae78",
+      "math_invariant": "Chebyshev minimizes L-inf norm; sqrt(2) ratio governs extremizer in coefficient space",
+      "math_object": "Chebyshev sublevel set extremizer",
+      "physics_invariant": "Bain path passes through BCT saddle at c/a = sqrt(2); minimum-energy transformation path",
+      "physics_object": "BCC->FCC phase transition (Bain path)",
+      "transfer_operator": "Geometric extremizers share same constraint: orthogonal symmetry forces saddle rather than minimum"
+    },
+    {
+      "breakdown_boundary": "alpha of infinite irrationality type (Liouville numbers)",
+      "item_id": "atlas_72e5821fda",
+      "math_invariant": "density/distribution of {n : ||alpha n^2|| < 1/log n}; additive basis of order 2",
+      "math_object": "Waring bases",
+      "physics_invariant": "Koopman point spectrum {e^{i 2 pi alpha n}} of harmonic oscillator with irrational frequency alpha",
+      "physics_object": "Koopman-von Neumann Operator",
+      "transfer_operator": "Weyl equidistribution: e_n(x) = exp(i 2 pi n x); sum_{n<=N} e_n(alpha m) <-> spectral projection on U_t eigenmode"
+    },
+    {
+      "breakdown_boundary": "Liouville-exceptional pairs (alpha, beta)",
+      "item_id": "atlas_7799e0eaaa",
+      "math_invariant": "lim inf n ||n alpha|| ||n beta||",
+      "math_object": "Littlewood conjecture",
+      "physics_invariant": "Two-frequency Koopman operator spectrum on T^2; atom-at-zero of spectral measure",
+      "physics_object": "Koopman-von Neumann Operator",
+      "transfer_operator": "Diagonal lift: f(x,y) |-> f(x + alpha t, y + beta t); spectrum = {e^{i 2 pi (m alpha + n beta) t}}"
+    },
+    {
+      "breakdown_boundary": "P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
+      "item_id": "atlas_7807bc996b",
+      "math_invariant": "Randomness necessity; pseudorandom generator security; branching sensitivity",
+      "math_object": "",
+      "physics_invariant": "Lyapunov exponent; ergodic mixing time",
+      "physics_object": "Chaos / Lorenz System",
+      "transfer_operator": "Random bits <-> perturbation direction; derandomization cost <-> chaotic mixing time; BPP acceptance <-> basin volume at poly(n) cost"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_7a31146085",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Quantum Diffusion",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_7fa6a9ffbb",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Markov Mixing",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_8369b6a428",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Representation Stability",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
+      "item_id": "atlas_844cf13e42",
+      "math_invariant": "Code covering radius / direct-product test robustness under correlation",
+      "math_object": "",
+      "physics_invariant": "MPS bond dimension / entanglement entropy under channel noise",
+      "physics_object": "Tensor Network Robustness",
+      "transfer_operator": "Locally-testable code -> tensor-network state; correlation -> entanglement decay"
+    },
+    {
+      "breakdown_boundary": "Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
+      "item_id": "atlas_86e2fa9ba3",
+      "math_invariant": "Automorphism group G(sigma) of aperiodic subshift closure; rank r=dim Z[lambda]/<min poly>",
+      "math_object": "",
+      "physics_invariant": "Symmetry rank of tiling automorphisms; group order encodes rotational/reflectional degeneracies",
+      "physics_object": "Substitution Dynamical System",
+      "transfer_operator": "SDS action T: omega -> sigma(omega); Ruelle transfer L f(x)=sum_{sigma y=x} e^phi(y) f(y)"
+    },
+    {
+      "breakdown_boundary": "Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
+      "item_id": "atlas_882df8fe5e",
+      "math_invariant": "Fourier concentration on level k; L1 weight sum_{|S|<=k}|f_hat(S)|",
+      "math_object": "",
+      "physics_invariant": "Energy density in low-frequency modes; thermal stability under Fourier truncation",
+      "physics_object": "Fourier Spectrum Concentration",
+      "transfer_operator": "Boolean f -> Fourier heat kernel sum_S |f_hat(S)| exp(-t|S|); sensitivity <-> Fourier spreading"
+    },
+    {
+      "breakdown_boundary": "Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
+      "item_id": "atlas_89aa3f6f1c",
+      "math_invariant": "quantum decision tree depth; adversary bound Adv(f)",
+      "math_object": "",
+      "physics_invariant": "entanglement cost (ebits); quantum query entropy",
+      "physics_object": "Quantum Entanglement",
+      "transfer_operator": "Embed decision tree in quantum superposition; sensitivity -> quantum query LB via adversary method; Adv -> sqrt(query complexity)"
+    },
+    {
+      "breakdown_boundary": "Morphism breaks when dynamics are dissipative: |P(z)|<1 (basin of attraction → no unitarity) or H>0 (hyperbolic orbit → no bound state). Both systems lose unitarity at the same structural boundary.",
+      "item_id": "atlas_8ab5faf33a",
+      "math_invariant": "Perimeter of lemniscate = Haar-measure volume of unitary dynamics on L²(boundary)",
+      "math_object": "Polynomial lemniscate {|P(z)|=1} as unitarity manifold of Koopman operator for z↦P(z)",
+      "physics_invariant": "Orbital circumference = phase-space volume of bound (energy-conserving) Kepler orbit",
+      "physics_object": "Kepler orbit as unitarity manifold of gravitational Hamiltonian",
+      "transfer_operator": "K_t f(x) = f(φ_t(x)) restricted to {|P(z)|=1} ↔ Koopman operator restricted to energy shell H=E. Isometry ↔ energy conservation. Surjectivity ↔ time-reversibility. Both decompose unitarity into the same two halves."
+    },
+    {
+      "breakdown_boundary": "Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
+      "item_id": "atlas_926f31a768",
+      "math_invariant": "SAT decision threshold m/n; cluster complexity at criticality in CNF-SAT",
+      "math_object": "",
+      "physics_invariant": "Order parameter in ferromagnetic phase transition; susceptibility divergence at T_c",
+      "physics_object": "Phase Transitions",
+      "transfer_operator": "m/n <-> inverse temperature beta; unsatisfied clause count = energy; threshold m/n ~ 4.27 for random 3-SAT"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_9632d87b90",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Ten Martini",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
+      "item_id": "atlas_9856294943",
+      "math_invariant": "Complement asymmetry: UNSAT witness production vs NP certificate verifiability",
+      "math_object": "",
+      "physics_invariant": "Entropy production rate; broken time-reversal symmetry",
+      "physics_object": "Entropy Production",
+      "transfer_operator": "NP certificate <-> forward-time entropy sink; coNP UNSAT proof <-> backward trajectory requiring dissipation"
+    },
+    {
+      "breakdown_boundary": "If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
+      "item_id": "atlas_99f4d7cc52",
+      "math_invariant": "Polynomial-time certification boundary; reduction network diameter; certificate-length scaling",
+      "math_object": "",
+      "physics_invariant": "Critical exponent in finite-size scaling near second-order transition",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Instance size n <-> linear dimension; certificate length <-> correlation length xi(T); NP-hardness <-> singular heat capacity at T_c"
+    },
+    {
+      "breakdown_boundary": "Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
+      "item_id": "atlas_9b6ef74d42",
+      "math_invariant": "AM proof length L; entropy production log(1/epsilon)",
+      "math_object": "",
+      "physics_invariant": "free-energy cost F_sep(L)=I(verifier;prover); entropy separation",
+      "physics_object": "Pseudorandom Generator Phase Transition",
+      "transfer_operator": "AM game <-> random-energy glass with N~2^L; PRG existence <-> phase boundary"
+    },
+    {
+      "breakdown_boundary": "Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
+      "item_id": "atlas_9df68c34cf",
+      "math_invariant": "One-way function image-preimage imbalance: |f^-1(y)| sparse, |range(f)| large",
+      "math_object": "",
+      "physics_invariant": "Erasure entropy production DeltaS>=k_B ln 2 per bit; Gibbs free energy barrier",
+      "physics_object": "Landauer Erasure / Reversibility Barrier",
+      "transfer_operator": "Reversible cost W_rev(n) vs irreversible W_irrev=W_rev+n k_B T ln 2 for n-bit inversion"
+    },
+    {
+      "breakdown_boundary": "Breaks at potential: exact only for tight-binding free-particle model; general potentials add terms with no graph analog.",
+      "item_id": "atlas_9e2172d751",
+      "math_invariant": "lambda_2 governs connectivity and random walk mixing time via Cheeger inequality",
+      "math_object": "Spectral gap lambda_2 of graph Laplacian L=D-A",
+      "physics_invariant": "E_1-E_0 governs decoherence time and phase transition proximity",
+      "physics_object": "Energy gap E_1-E_0 of quantum Hamiltonian H",
+      "transfer_operator": "L=D-A IS the tight-binding Hamiltonian: lambda_2(L) in graph theory exactly equals E_1-E_0 in quantum mechanics on the same graph"
+    },
+    {
+      "breakdown_boundary": "Density threshold where single ground-state dominates; pigeonhole forcing <-> Bose condensation at critical density",
+      "item_id": "atlas_9e71ef7d12",
+      "math_invariant": "Pigeonhole density forcing: among 2^n subsets, partition equality inevitable under sum constraint",
+      "math_object": "",
+      "physics_invariant": "Bose-Einstein occupancy constraint: identical-particle symmetry forces macroscopic state-sharing",
+      "physics_object": "Bose-Einstein Condensation / Occupancy Symmetry",
+      "transfer_operator": "Z_BE(mu,T) for indistinguishable particles; chemical potential mu adjusts occupancy to match sum constraint"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_a2f1fe99b8",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Markov Chain Mixing Times",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Breaks at Doppler/rate: math is density in {1,...,N}; physics adds velocity dimension not in Sidon conjecture. Thermal noise has no math analog.",
+      "item_id": "atlas_a3ef866225",
+      "math_invariant": "all pairwise sums a+b are distinct (a,b in A, a!=b)",
+      "math_object": "Sidon set in {1,...,N}",
+      "physics_invariant": "no two range-velocity pairs produce identical return signal",
+      "physics_object": "Radar pulse timing set",
+      "transfer_operator": "Shannon sum-channel capacity ~ sqrt(N); Singer construction achieves this bound exactly"
+    },
+    {
+      "breakdown_boundary": "Mapping assumes triangle-free process is well-modeled by mean-field theory; real process has correlations that may shift critical exponents.",
+      "item_id": "atlas_a40fc9b1a7",
+      "math_invariant": "Edge count at which triangle-free process terminates",
+      "math_object": "Triangle-free process on K_n",
+      "physics_invariant": "Critical temperature / order parameter discontinuity",
+      "physics_object": "Critical Phenomena / Phase Transitions",
+      "transfer_operator": "Triangle density as order parameter → discontinuous jump at critical edge density maps to first-order phase transition. Finite-size scaling exponent γ predicts variance peak scaling as n^γ."
+    },
+    {
+      "breakdown_boundary": "Breaks at continuous vs discrete: lemniscate is continuous polynomial geometry; Bain path is discrete lattice transformation. The √2 in #1038 (sublevel measure) provides the quantitative bridge that #509 alone lacks.",
+      "item_id": "atlas_a6076ea714",
+      "math_invariant": "Extremal polynomial z^n-1 has maximal symmetry (n-fold rotational); lemniscate components merge at critical radius — topological phase transition in sublevel set structure",
+      "math_object": "Lemniscate arclength extremizer: z^n-1 maximizes arclength among monic degree-n polynomials",
+      "physics_invariant": "Bain path: tetragonal distortion parameterized by c/a ratio; minimum-energy path passes through √2 saddle where cubic symmetry is maximally broken then restored",
+      "physics_object": "BCC→FCC phase transition: Bain path passes through extremal c/a = √2 saddle",
+      "transfer_operator": "Both are symmetry-constrained extremal problems where the optimizer transitions through a topological/geometric singularity. The Erdős-Pommerenke conjecture asserts z^n-1 is extremal — analogous to BCC→FCC being the minimum-energy path."
+    },
+    {
+      "breakdown_boundary": "",
+      "item_id": "atlas_a7f866b7d3",
+      "math_invariant": "spectral gap ratio lambda_2/lambda_1 on S^{n-1}",
+      "math_object": "Borsuk diameter partition of bounded set in R^n",
+      "physics_invariant": "gravitational multipole expansion (spherical harmonics)",
+      "physics_object": "Newtonian gravity (spherical harmonic eigenmodes)",
+      "transfer_operator": ""
+    },
+    {
+      "breakdown_boundary": "beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
+      "item_id": "atlas_aee62acb16",
+      "math_invariant": "0/1 knapsack capacity constraint + optimal value gap structure",
+      "math_object": "",
+      "physics_invariant": "Spin-glass disorder energy landscape fragmentation at RSB threshold",
+      "physics_object": "Spin Glass / Replica Symmetry Breaking",
+      "transfer_operator": "Z(beta)=sum_config exp(-beta E_disorder); replica trace Tr(Z^n)/n as n->0"
+    },
+    {
+      "breakdown_boundary": "",
+      "item_id": "atlas_b11567c176",
+      "math_invariant": "carry chain length in n+n base p",
+      "math_object": "carry chain in base-p self-addition (Kummer)",
+      "physics_invariant": "precession period 24h/sin(lat)",
+      "physics_object": "Foucault precession (slow modulation of fast oscillation)",
+      "transfer_operator": ""
+    },
+    {
+      "breakdown_boundary": "Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
+      "item_id": "atlas_b158bc585f",
+      "math_invariant": "Topological entropy h_top(sigma)=lim (1/n) log(#n-subwords)=log lambda_Perron",
+      "math_object": "",
+      "physics_invariant": "Lyapunov exponent of symbolic flow; growth rate of phase-space volume in Poincare section",
+      "physics_object": "Symbolic Shift / Topological Shift",
+      "transfer_operator": "Substitution matrix M; lambda_Perron largest eigenvalue; h(sigma)=log lambda_Perron"
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_b3f8c0c226",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "Postcritically Finite",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_b41030c17d",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Is 1-D Dynamics Generally Hyperbolic?",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Breaks down for non-regular or sparse triangle-free graphs where Alon bound is not tight. Also limited to k ≤ 9 where exact R(3,k) known.",
+      "item_id": "atlas_b6ebbbde63",
+      "math_invariant": "Spectral gap δ(G) of Ramsey-critical triangle-free graph",
+      "math_object": "Maximum triangle-free graph on R(3,k) vertices",
+      "physics_invariant": "Spectral gap Δ of discrete Laplacian",
+      "physics_object": "Spectral Gap (Laplacian)",
+      "transfer_operator": "Triangle-freeness as energy constraint → eigenvalue bound (Alon): λ₂ ≤ 2√(n-1) for triangle-free regular graphs. Phase transition at R(3,k) scale maps to spectral gap closing."
+    },
+    {
+      "breakdown_boundary": "Breaks when lemniscate has multiple components (disconnected sublevel sets); the Böttcher coordinate is only well-defined exterior to the connected lemniscate hull",
+      "item_id": "atlas_b747db8947",
+      "math_invariant": "Arclength of lemniscate {|p(z)|=1} for degree-n poly with leading coeff 1; conjectured extremal is p(z)=z^n-1 (Erdős–Pommerenke)",
+      "math_object": "Erdős #509: lemniscate arclength extremals on unit disk",
+      "physics_invariant": "cap({|p| ≤ 1}) = 1 for monic poly of degree n; Böttcher coordinate φ(z) = z·(p(z)/z^n)^{1/n} maps exterior conformally",
+      "physics_object": "Logarithmic capacity governing polynomial lemniscate geometry",
+      "transfer_operator": "Böttcher-Koopman duality: lemniscate arclength is controlled by the conformal map exterior to the sublevel set, whose dynamics are governed by logarithmic capacity. This connects #509 arclength extremals to #114 integral means via the same potential-theoretic infrastructure."
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_b8891a93d4",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "1-D Dynamics Hyperbolic?",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Different functionals: Thomson minimizes energy integral; #1038 minimizes Lebesgue measure of sublevel set. These are related but not identical. Connection works if sublevel measure can be bounded in terms of capacity or energy.",
+      "item_id": "atlas_b8b7ab74fc",
+      "math_invariant": "Riesz s-energy E_s(mu) = int int |x-y|^{-s} dmu(x)dmu(y); equilibrium measure transitions from continuous to discrete as s > dim; Saff-Totik framework",
+      "math_object": "Thomson/Riesz energy minimization over point configs on sphere/interval",
+      "physics_invariant": "N-body gravitational energy with 1/r potential; equilibrium configurations; Lagrange points at critical mass ratios",
+      "physics_object": "Gravitational N-body energy minimization (Kepler generalizations)",
+      "transfer_operator": "Logarithmic kernel (s->0 Riesz limit) governs both #1038 sublevel sets and Thomson equilibrium. #1038 asks: which mu on [-1,1] minimizes |{V_mu < 0}|? Thomson asks: which config minimizes E_s? Connection: sublevel measure is a geometric functional of the same logarithmic potential field."
+    },
+    {
+      "breakdown_boundary": "",
+      "item_id": "atlas_bb2237112f",
+      "math_invariant": "Lyapunov exponent of equidistance under vertex perturbation",
+      "math_object": "equidistant vertex clusters in convex polygon",
+      "physics_invariant": "Lorenz sensitivity exponent",
+      "physics_object": "Lorenz chaos (sensitive dependence on initial conditions)",
+      "transfer_operator": ""
+    },
+    {
+      "breakdown_boundary": "Secondary reading of ; primary is PHYS-RMT-001",
+      "item_id": "atlas_bd31f9ee2b",
+      "math_invariant": "Ruelle-Pollicott tau under truncation; crossover scaling law",
+      "math_object": "ISP",
+      "physics_invariant": "Universal exponent -1/2 in the noise-to-order-parameter crossover; identical form to critical-scaling laws",
+      "physics_object": "Critical Phenomena",
+      "transfer_operator": "Ulam-Galerkin + noise; data collapse under epsilon*sqrt(W)"
+    },
+    {
+      "breakdown_boundary": "Breaks for non-univalent functions where sublevel topology changes; EHP requires Koebe-type distortion control that has no direct potential-theory analog",
+      "item_id": "atlas_bda35e408b",
+      "math_invariant": "β(t) = lim sup_{r→1} log ∫|f(re^{iθ})|^t dθ / log(1/(1-r)); EHP: β(-1) ≥ 0.23",
+      "math_object": "EHP conjecture: inf of integral means spectrum β(t) for t<0",
+      "physics_invariant": "cap(E) = lim_{n→∞} (leading coeff of Chebyshev poly of E)^{1/n}; governs growth of extremal polynomials on compact sets",
+      "physics_object": "Logarithmic capacity of sublevel sets in potential theory",
+      "transfer_operator": "Sublevel set {|f| ≤ r} capacity controls integral mean growth; β(t) for t<0 measures how fast f can vanish, which is bounded by logarithmic capacity of the zero set. Certified IEEE 1788 interval arithmetic for n=3–13."
+    },
+    {
+      "breakdown_boundary": "Breaks when polynomial dynamics have no clean phase boundary (e.g., entire functions with no bounded Fatou component). Breaks for Carnot when irreversible processes dominate (no quasi-static limit).",
+      "item_id": "atlas_bf1cf2d93a",
+      "math_invariant": "Perimeter maximization = maximizing the codimension-1 measure of the critical boundary",
+      "math_object": "Lemniscate boundary as phase boundary between dissipative and explosive polynomial dynamics",
+      "physics_invariant": "Carnot efficiency = maximum work extractable at the phase boundary between heat reservoirs",
+      "physics_object": "Carnot cycle phase boundary between ordered (low-entropy) and disordered (high-entropy) thermodynamic states",
+      "transfer_operator": "The lemniscate separates {|P|<1} (contraction/order) from {|P|>1} (expansion/disorder). The Carnot boundary separates T_cold from T_hot. Both: the boundary itself is where useful structure (unitarity/work) is maximized. Transfer: boundary measure ↔ efficiency."
+    },
+    {
+      "breakdown_boundary": "a + b = c is non-local: constraint couples arbitrarily distant sites",
+      "item_id": "atlas_cb3dee8aed",
+      "math_invariant": "extremal density 1/2 (Cameron-Erdos, proved by Green 2004 / Sapozhenko 2003)",
+      "math_object": "Sum-free sets",
+      "physics_invariant": "attempted lattice-gas transfer matrix with local sum-free constraint",
+      "physics_object": "Koopman-von Neumann Operator",
+      "transfer_operator": "Window-local TM T_W: lambda_max(T_W) = 1 for all W (DEGENERATE). Local KvN bridge fails."
+    },
+    {
+      "breakdown_boundary": "alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
+      "item_id": "atlas_ce44cb1d82",
+      "math_invariant": "Tail exponent alpha of sum of i.i.d. unbounded-variance RVs (Nagaev moderate deviation)",
+      "math_object": "",
+      "physics_invariant": "Stability index alpha in Levy-stable distribution; heavy-tailed diffusion exponent",
+      "physics_object": "Stable Laws / Levy Flights",
+      "transfer_operator": "Heavy-tailed sum -> Levy-stable random walk; variance truncation -> jump-suppression threshold"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_ce958ef86d",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Postcritically Finite Maps in Complex/Arithmetic Dynamics",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Breaks at 3D vs 1D: Roche lobe is 3D equipotential with rotation; sublevel set is 1D Lebesgue measure. Rotational kinetic energy term in Roche potential has no polynomial analog. Eggleton predicts alpha_opt~0.30; actual is ~0.17.",
+      "item_id": "atlas_cf61a9e4e7",
+      "math_invariant": "Extremal measure = atom(0.828) at +1 plus discrete cloud(0.172) near -1; inf <= 1.8373; optimal alpha ~0.172",
+      "math_object": "Sublevel measure minimization over root measures on [-1,1]",
+      "physics_invariant": "Minimum Roche lobe at mass ratio q via Eggleton (1983); L1 Lagrange point at barycentre; qualitatively predicts binary structure but quantitatively wrong: Eggleton minimizes at alpha~0.30 not 0.17",
+      "physics_object": "Roche lobe volume minimization in binary star system",
+      "transfer_operator": "ln|x-t| potential <-> gravitational potential; sublevel set <-> Roche lobe; x=0 boundary <-> L1 Lagrange point. Qualitative: correctly identifies binary endpoint concentration. Quantitative: Eggleton 3D formula overestimates optimal alpha by ~75% due to rotational terms absent in 1D polynomial problem."
+    },
+    {
+      "breakdown_boundary": "P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
+      "item_id": "atlas_d35b44e9b2",
+      "math_invariant": "Space-time tradeoff; PSPACE reachability tree vs tape-reuse under certificate production",
+      "math_object": "",
+      "physics_invariant": "Landauer minimum dissipation per bit erased; reversibility cost under constant-factor memory",
+      "physics_object": "Landauer Erasure / Reversibility Barrier",
+      "transfer_operator": "PSPACE cells <-> degrees of freedom; work per reuse = k_B T ln 2; log-space => exponential erasures/decision"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_dbd55c871e",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Ten Martini Problem (Almost Mathieu Operator)",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Requires interacting primon gas to capture two-point gap correlations",
+      "item_id": "atlas_dcd0607238",
+      "math_invariant": "Gap sum Sum_{n<=N} d_n^2 <= C N (log N)^2 (Erdos conjecture #233); Lean-verified scaffold",
+      "math_object": "Gap sums",
+      "physics_invariant": "Second moment of log-energy differences in the primon gas; fluctuation-dissipation theorem",
+      "physics_object": "Julia Primon Gas",
+      "transfer_operator": "Heat-capacity C_V(beta) = beta^2 Var(log N) is the primon-gas mean-square gap analog"
+    },
+    {
+      "breakdown_boundary": "Finite temperature (T>0) destroys exact 1/2 density; torus changes exponent slightly",
+      "item_id": "atlas_dfe3918c99",
+      "math_invariant": "Cameron-Erdos count 2^{N/2+o(N)}; extremal sum-free family = all odds + shifts",
+      "math_object": "Sum-free sets",
+      "physics_invariant": "1D frustrated Ising-like chain with 3-body interaction; ground-state degeneracy 2^{N/2}",
+      "physics_object": "Frustrated Ising Chain (3-body)",
+      "transfer_operator": "NOT local TM. Proposed: non-local tensor contraction over sum triples (a,b,a+b); rank decomposition"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_e221f14e18",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Invariant Subspace Problem (Millennium-adjacent, MW-037)",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "Non-±1 coefficients break qubit analogy; fails for evaluation off unit circle; does not address L4 lower bound (BBMST 2019)",
+      "item_id": "atlas_e3edd6e395",
+      "math_invariant": "L4/L2^2 purity ratio = 4/3 (Rudin-Shapiro flatness limit)",
+      "math_object": "Rudin-Shapiro ±1 polynomial recursion on unit circle",
+      "physics_invariant": "Quantum state purity Tr(rho^2) = 4/3 under iterated Hadamard with phase",
+      "physics_object": "Iterated Hadamard gate sequence on qubit",
+      "transfer_operator": "R-S recursion matrix M_k(z)/sqrt(2) = phase-twisted Hadamard gate; M†M=2I on unit circle; Koopman propagator T_n = prod M_k/sqrt(2) is SU(2)-valued"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_e523b8cc5b",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Pughs Closing Lemma (higher smoothness)",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "g = 0 (degenerate: no pulses); Doppler-shifted echoes break translation invariance",
+      "item_id": "atlas_e8dac718d4",
+      "math_invariant": "B_2[g] sequences: difference multiset bounded by g",
+      "math_object": "B_h[g] sequences",
+      "physics_invariant": "Frequency-hopping radar codes tolerating up to g-fold pulse-pair collisions",
+      "physics_object": "Frequency-Hopping Radar Codes",
+      "transfer_operator": "A -> frequency-hopping pattern f_A(t); auto-ambiguity peak count <-> max difference multiplicity"
+    },
+    {
+      "breakdown_boundary": "epsilon_cross ~ 0.513 * W^(-0.591); H1 M_L falsified, H2 RMT confirmed",
+      "item_id": "atlas_ec59fcbca0",
+      "math_invariant": "Leading Ruelle-Pollicott resonance of the dissipative transfer operator under Ulam-Galerkin truncation",
+      "math_object": "Invariant Subspace Problem",
+      "physics_invariant": "Marchenko-Pastur spectral-radius envelope sigma_MP = epsilon*sqrt(W); crossover at 1 - tau*",
+      "physics_object": "Marchenko-Pastur Spectral Envelope",
+      "transfer_operator": "Ulam-Galerkin with Gaussian noise; crossover at 50% gap closure"
+    },
+    {
+      "breakdown_boundary": "",
+      "item_id": "atlas_ecc054f96d",
+      "math_invariant": "Koopman bandwidth of unit-distance observable = 2",
+      "math_object": "unit distance pairs in convex n-gon",
+      "physics_invariant": "total interaction energy = number of unit pairs",
+      "physics_object": "charge conservation (fixed-distance interaction)",
+      "transfer_operator": ""
+    },
+    {
+      "breakdown_boundary": "Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
+      "item_id": "atlas_f9a8eb656c",
+      "math_invariant": "Deterministic polynomial-time state trajectory; acceptance by halting configuration",
+      "math_object": "",
+      "physics_invariant": "Quantum superposition branch; computational history as coherent world-line in Hilbert space",
+      "physics_object": "Quantum Superposition",
+      "transfer_operator": "DTM step sequence -> unitary on quantum register; certificate existence -> measurement-collapse amplitude"
+    },
+    {
+      "breakdown_boundary": "|omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
+      "item_id": "atlas_fa0bf0defd",
+      "math_invariant": "Sturmian word binary sequence; balancing Delta p = max(p(n+1)-p(n))=1",
+      "math_object": "",
+      "physics_invariant": "Cut-and-project window omega in R^2 dual; projection density rho=|omega|/|Lambda*|",
+      "physics_object": "Quasicrystal Substitution Geometry",
+      "transfer_operator": "Canonical projection pi: (Z^2,L)->omega x phi(omega); inverse M recovers sequence recurrence"
+    },
+    {
+      "breakdown_boundary": "Breaks quantitatively: number variance coefficient is 46× GUE prediction (4.67 vs 0.101). Spacing distribution P(s) matches Poisson better than GUE by factor 500× in chi-squared. Structural form (logarithmic growth, level repulsion) is correct but primes carry excess arithmetic correlations absent from pure GUE. The morphism maps gap sums to number variance at the functional-form level, not at the coefficient level. For exact GUE matching, the correct comparison is zeta zeros (Montgomery-Odlyzko), not prime gaps directly.",
+      "item_id": "atlas_fa1c20ffe1",
+      "math_invariant": "Gap sum growth rate: conjectured O(N(log N)²). Cramér bound O(N(log N)⁴) conditional on RH. The second moment of prime spacing distribution.",
+      "math_object": "Prime gap sum: Σ_{n≤N} d_n² where d_n = p_{n+1} - p_n",
+      "physics_invariant": "GUE number variance σ²(L) ~ (1/π²) log L. The second moment of eigenvalue spacing. Controls fluctuations in counting function.",
+      "physics_object": "GUE number variance: Σ_{n≤N} (E_{n+1} - E_n)² for random matrix eigenvalues",
+      "transfer_operator": "Prime gap d_n maps to energy spacing via d_n → (log p_{n+1} - log p_n) ≈ d_n/p_n. Gap sum Σd_n² maps to number variance Σ(ΔE)². The exponent 2 in N(log N)² matches the GUE logarithmic growth rate. Montgomery (1973) pair correlation theorem provides the spectral-statistical bridge."
+    },
+    {
+      "breakdown_boundary": "Short-range correlations (twin primes) require interacting primon gas (proposed L4-08)",
+      "item_id": "atlas_fd8f6a2332",
+      "math_invariant": "Bounded prime gaps: liminf (p_{n+1} - p_n) < infty (Zhang 2013, Maynard-Tao 2013)",
+      "math_object": "Twin primes",
+      "physics_invariant": "Primon condensation near beta = 1: mean primon number diverges via PNT",
+      "physics_object": "Julia Primon Gas",
+      "transfer_operator": "Prime-gap explicit formula relates p_{n+1} - p_n to oscillatory sum over primes weighted by log p"
+    },
+    {
+      "breakdown_boundary": "Carnot bound is tight (equality in reversible limit); #1038 infimum approached but possibly not achieved by finite measure. Carnot proof is thermodynamic; #1038 proof needs potential-theoretic convexity.",
+      "item_id": "atlas_ffda343aab",
+      "math_invariant": "Any mu != mu* has M(mu) > M(mu*); extremal at atom+cloud; proof requires convexity of M",
+      "math_object": "Infimum of sublevel measure functional M(mu) over probability measures on [-1,1]",
+      "physics_invariant": "Any non-reversible engine has eta < eta_Carnot; extremal at zero entropy production; proof via entropy convexity",
+      "physics_object": "Carnot efficiency bound eta=1-Tc/Th over heat engine designs",
+      "transfer_operator": "Proof architecture transfer: show deviation from extremal strictly worsens objective via convexity/entropy argument. Carnot uses dS >= 0; #1038 needs analogous functional inequality on logarithmic potential."
+    }
+  ],
+  "schema": "atlas2/item.schema.json"
+}
