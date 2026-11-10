@@ -1,511 +1,532 @@
 {
   "objects": {
+    "PHYS-AI-001": {
+      "category": "AI/ML",
+      "description": "CNNs with hexagonal receptive fields vs square grids: hexagonal tiling has 13% fewer pixels for same coverage, isotropic neighborhoods, no axis-aligned bias. sqrt(3) geometry vs sqrt(2) geometry. Hexagonal CNNs outperform square CNNs on rotation-invariant tasks. Direct MDL argument: hexagonal is the minimum description of isotropic 2D structure.",
+      "h2_spoke": "H2ai",
+      "name": "Hexagonal CNN Architecture",
+      "physics_id": "PHYS-AI-001",
+      "ratio_signature": "sqrt3"
+    },
     "PHYS-BR-001": {
-      "added_date": "2026-04-19",
       "category": "Perturbation Theory / Algebraic Approximation",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Borel Summability / Asymptotic Convergence Radius",
       "physics_id": "PHYS-BR-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
+    },
+    "PHYS-BS-001": {
+      "category": "Bound States",
+      "description": "Hypothetical bound state of pure gluons. Non-abelian self-interaction. Predicted by QCD lattice ~1.7 GeV. Connected to Yang-Mills mass gap (Millennium Prize).",
+      "h2_spoke": null,
+      "name": "Glueball",
+      "physics_id": "PHYS-BS-001",
+      "ratio_signature": null
+    },
+    "PHYS-C-001": {
+      "category": "Conservation Laws",
+      "description": "First law of thermodynamics / Noether's theorem from time translation symmetry. Total energy of isolated system is constant. dE/dt = 0.",
+      "h2_spoke": null,
+      "name": "Energy Conservation",
+      "physics_id": "PHYS-C-001",
+      "ratio_signature": null
+    },
+    "PHYS-C-002": {
+      "category": "Conservation Laws",
+      "description": "Noether's theorem from spatial translation symmetry. dp/dt = 0 for isolated systems.",
+      "h2_spoke": null,
+      "name": "Momentum Conservation",
+      "physics_id": "PHYS-C-002",
+      "ratio_signature": null
+    },
+    "PHYS-C-003": {
+      "category": "Conservation Laws",
+      "description": "Noether's theorem from rotational symmetry. dL/dt = 0. Governs orbital mechanics, quantum spin.",
+      "h2_spoke": null,
+      "name": "Angular Momentum Conservation",
+      "physics_id": "PHYS-C-003",
+      "ratio_signature": null
     },
     "PHYS-C-004": {
-      "added_date": "2026-03-29",
       "category": "Conservation Laws",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,10.0,0.0,1.0,0.0,0.0,15.0]",
       "name": "Charge Conservation",
       "physics_id": "PHYS-C-004",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Translational\",\"growth\":\"Conserved (bounded)\",\"constraint\":\"Sum/density conservation\",\"R_kin\":10.0,\"S_vn\":0.0,\"Hys_width\":0.0}"
+      "ratio_signature": null
+    },
+    "PHYS-C-005": {
+      "category": "Conservation Laws",
+      "description": null,
+      "h2_spoke": null,
+      "name": "Baryon Number Conservation",
+      "physics_id": "PHYS-C-005",
+      "ratio_signature": null
+    },
+    "PHYS-C-006": {
+      "category": "Conservation Laws",
+      "description": null,
+      "h2_spoke": null,
+      "name": "Lepton Number Conservation",
+      "physics_id": "PHYS-C-006",
+      "ratio_signature": null
     },
     "PHYS-CL-001": {
-      "added_date": "2026-03-29",
       "category": "Classical",
       "description": "Two-body gravitational problem: elliptical orbits. T^2 proportional to a^3. Conserved Runge-Lenz vector gives closed orbits.",
       "h2_spoke": null,
-      "hs_vector": "[0.0,4.0,1.0,3.0,0.0,1.0,1.0,0.0,10.0,0.0,0.6,0.0,0.0,12.0]",
       "name": "Kepler Orbits",
       "physics_id": "PHYS-CL-001",
-      "ratio_signature": null,
-      "shannon_entropy": 2.3105,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Dynamical\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Action extremum\",\"R_kin\":10.0,\"S_vn\":0.0,\"Hys_width\":0.0}"
+      "ratio_signature": null
     },
     "PHYS-CL-002": {
-      "added_date": "2026-03-29",
       "category": "Classical",
       "description": "Gravitational three-body dynamics. No general closed-form solution. Chaotic trajectories, sensitive dependence on initial conditions.",
       "h2_spoke": null,
-      "hs_vector": "[1.0,3.0,4.0,7.0,1.0,1.0,1.0,0.0,1.0,0.85,0.3,0.35,0.3,4.0]",
       "name": "Three-Body Problem",
       "physics_id": "PHYS-CL-002",
-      "ratio_signature": null,
-      "shannon_entropy": 3.0744,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Dynamical\",\"growth\":\"Extremal\",\"constraint\":\"Order/monotonicity\",\"extremal\":\"Action extremum\",\"R_kin\":1.0,\"S_vn\":0.85,\"Hys_width\":0.35}"
+      "ratio_signature": null
     },
     "PHYS-CL-003": {
-      "added_date": "2026-03-29",
       "category": "Classical",
       "description": "Strange attractor, butterfly effect, positive Lyapunov exponent. Paradigm of deterministic chaos.",
       "h2_spoke": null,
-      "hs_vector": "[3.0,4.0,4.0,3.0,1.0,0.0,1.0,0.0,0.5,0.9,0.15,0.4,0.35,3.0]",
       "name": "Chaos / Lorenz System",
       "physics_id": "PHYS-CL-003",
-      "ratio_signature": null,
-      "shannon_entropy": 3.0908,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Dynamical\",\"growth\":\"Asymptotic\",\"constraint\":\"Order/monotonicity\",\"extremal\":\"Action extremum\",\"R_kin\":0.5,\"S_vn\":0.9,\"Hys_width\":0.4}"
+      "ratio_signature": null
+    },
+    "PHYS-CL-004": {
+      "category": "Classical",
+      "description": "Differential gravitational force across extended body. F_tidal ~ (2GMr)/R^3. Causes ocean tides, Roche limit.",
+      "h2_spoke": null,
+      "name": "Tidal Forces",
+      "physics_id": "PHYS-CL-004",
+      "ratio_signature": null
     },
     "PHYS-CRYSTAL-001": {
-      "added_date": "2026-03-29",
       "category": "Thermodynamic",
       "description": "Body-centered cubic (coord-8) to face-centered cubic (coord-12) transition under pressure/temperature. BCC sqrt(2)-neighbor geometry is brittle under shear; FCC/HCP hexagonal-close-packed geometry is robust. The sqrt(2)/sqrt(3) ratio distinguishes brittle from stable lattice geometry. Bain path is the minimal-energy transformation path.",
       "h2_spoke": "H2m",
-      "hs_vector": "[3.0,2.0,2.0,4.0,0.0,1.0,1.0,0.0,2.0,0.7,0.3,0.5,0.45,5.0]",
       "name": "BCC-FCC Crystal Phase Transition",
       "physics_id": "PHYS-CRYSTAL-001",
-      "ratio_signature": "sqrt2",
-      "shannon_entropy": 2.85,
-      "source": "h2_session",
-      "structural_fingerprint": "{\"symmetry\":\"Cubic->hexagonal\",\"growth\":\"Phase-switch\",\"constraint\":\"Coordination-number\",\"extremal\":\"Lattice-energy minimum\",\"ratio\":\"sqrt2_to_sqrt3\",\"R_kin\":2.0,\"S_vn\":0.7,\"Hys_width\":0.5}"
+      "ratio_signature": "sqrt2"
     },
     "PHYS-D-001": {
-      "added_date": "2026-04-19",
       "category": "Spectral/Crystallography",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Diffraction Intensity / Fourier Structure Function",
       "physics_id": "PHYS-D-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-EX-001": {
-      "added_date": "2026-04-19",
       "category": "Discrete Dynamical Systems",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Expander Mixing / Spectral Gap",
       "physics_id": "PHYS-EX-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-F-001": {
-      "added_date": "2026-03-29",
       "category": "Forces",
       "description": "Universal gravitational attraction F = GMm/r^2. Long-range 1/r^2 law.",
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,1.0,3.0,0.0,1.0,1.0,0.0,8.0,0.1,0.7,0.0,0.0,12.0]",
       "name": "Gravity (Newtonian)",
       "physics_id": "PHYS-F-001",
-      "ratio_signature": null,
-      "shannon_entropy": 2.0918,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Gauge\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Potential minimum\",\"R_kin\":8.0,\"S_vn\":0.1,\"Hys_width\":0.0}"
+      "ratio_signature": null
+    },
+    "PHYS-F-002": {
+      "category": "Forces",
+      "description": "Unified electric and magnetic force. U(1) gauge symmetry, photon-mediated. Maxwell equations.",
+      "h2_spoke": null,
+      "name": "Electromagnetism",
+      "physics_id": "PHYS-F-002",
+      "ratio_signature": null
+    },
+    "PHYS-F-003": {
+      "category": "Forces",
+      "description": "SU(3) color force binding quarks. Asymptotic freedom, confinement, gluon-mediated.",
+      "h2_spoke": null,
+      "name": "Strong Nuclear Force",
+      "physics_id": "PHYS-F-003",
+      "ratio_signature": null
+    },
+    "PHYS-F-004": {
+      "category": "Forces",
+      "description": "SU(2) force responsible for beta decay. W/Z boson mediated, parity-violating, short-range.",
+      "h2_spoke": null,
+      "name": "Weak Nuclear Force",
+      "physics_id": "PHYS-F-004",
+      "ratio_signature": null
     },
     "PHYS-FS-001": {
-      "added_date": "2026-04-19",
       "category": "Harmonic Analysis",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Fourier Spectrum Concentration",
       "physics_id": "PHYS-FS-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
+    },
+    "PHYS-GR-001": {
+      "category": "General Relativity",
+      "description": "Belinsky-Khalatnikov-Lifshitz dynamics near a space-time singularity. Geometry undergoes chaotic oscillations (Mixmaster universe). In the billiard limit, dynamics maps to a particle bouncing in a hyperbolic triangle. Chaotic energy spectrum decomposes as product over primes in certain models, recovering primeon-gas-like partition function from pure geometry. Hossenfelder 2026 review.",
+      "h2_spoke": null,
+      "name": "BKL Singularity / Gravitational Billiards",
+      "physics_id": "PHYS-GR-001",
+      "ratio_signature": "BKL oscillation"
+    },
+    "PHYS-HP-001": {
+      "category": "Spectral Theory / Number Theory",
+      "description": "Conjectured self-adjoint operator H whose eigenvalues are the nontrivial zeros of ζ(s) on the critical line. If such H exists and is a quantum Hamiltonian, then RH follows from self-adjointness (real eigenvalues). The central conjecture linking quantum mechanics to prime distribution since Hilbert-Pólya (1914/1930s).",
+      "h2_spoke": null,
+      "name": "Hilbert-Pólya Operator",
+      "physics_id": "PHYS-HP-001",
+      "ratio_signature": "Self-adjoint spectrum"
+    },
+    "PHYS-HP-002": {
+      "category": "Spectral Theory / Quantum Chaos",
+      "description": "Specific candidate for Hilbert-Pólya: H = xp (position × momentum). Classical trajectories are hyperbolic (unstable). Quantization requires boundary conditions that regularize; the resulting spectrum should approximate ζ-zeros. Berry-Keating (1999). Connects quantum chaos, semiclassical methods, and prime distribution.",
+      "h2_spoke": null,
+      "name": "Berry-Keating Hamiltonian",
+      "physics_id": "PHYS-HP-002",
+      "ratio_signature": "Berry-Keating xp"
     },
     "PHYS-HS-001": {
-      "added_date": "2026-04-19",
       "category": "Graph Spectroscopy",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Hypercube Spectral Gap",
       "physics_id": "PHYS-HS-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-IS-001": {
-      "added_date": "2026-04-19",
       "category": "Spin Disorder",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Ising Glass Free Energy",
       "physics_id": "PHYS-IS-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-KVN-001": {
-      "added_date": "2026-04-17",
       "category": "Bridges",
       "description": "Unitary lift of Hamiltonian flow to L^2(M, mu). Fills the central void of the physics ring in TF-IDF embedding.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Koopman-von Neumann Operator",
       "physics_id": "PHYS-KVN-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-LD-001": {
-      "added_date": "2026-04-19",
       "category": "Thermodynamic Irreversibility",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Landauer Erasure / Reversibility Barrier",
       "physics_id": "PHYS-LD-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
+    },
+    "PHYS-N-001": {
+      "category": "Neuroscience",
+      "description": "Hexagonally arranged place-field firing in entorhinal cortex. sqrt(3)-spacing geometry is MDL-optimal for 2D coverage: achieves maximum coverage density with minimum cell count. Multiple spatial scales (modules) form Sidon-like non-repeating sum structure for path integration. Brittleness/robustness analogy: square grid would give ambiguous position readout.",
+      "h2_spoke": "H2n",
+      "name": "Grid Cell Navigation",
+      "physics_id": "PHYS-N-001",
+      "ratio_signature": "sqrt3"
+    },
+    "PHYS-NT-001": {
+      "category": "Number Theory / Statistical Mechanics",
+      "description": "Statistical mechanical system where each prime p contributes an independent oscillator with energy log p. Partition function Z(β) = Π_p (1 - p^{-β})^{-1} = ζ(β). Phase transition at β=1 (pole of zeta). Energy levels E = Σ a_p log p. Introduced by Spector (1990), Julia (1994). Bridge between multiplicative number theory and thermodynamics.",
+      "h2_spoke": null,
+      "name": "Primeon Gas",
+      "physics_id": "PHYS-NT-001",
+      "ratio_signature": "Euler product"
     },
     "PHYS-PRIMON-001": {
-      "added_date": "2026-04-17",
       "category": "Arithmetic / Thermodynamics",
       "description": "Non-interacting Bose gas with one mode per prime p and single-primon energy E_p = log p. Z(beta) = zeta(beta). Hagedorn transition at beta=1. Ref: Julia, Les Houches 1990.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Julia Primon Gas",
       "physics_id": "PHYS-PRIMON-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-PT-001": {
-      "added_date": "2026-03-29",
       "category": "Potential Theory",
       "description": "Logarithmic capacity of a set E in the complex plane: cap(E) = exp(-V_E) where V_E is the Robin constant. Governs polynomial approximation, conformal mapping, equilibrium measures. Chebyshev constant = cap(E) for intervals. Direct connection to extremal polynomial problems (#1038, Chebyshev sublevel sets) and potential-theoretic Erdos problems (#671). The bridge between complex analysis and combinatorics via equilibrium measure.",
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,3.0,3.0,0.0,1.0,1.0,0.0,5.0,0.4,0.5,0.0,0.0,8.0]",
       "name": "Logarithmic Capacity",
       "physics_id": "PHYS-PT-001",
-      "ratio_signature": "log",
-      "shannon_entropy": 2.65,
-      "source": "h2_session",
-      "structural_fingerprint": "{\"symmetry\":\"Conformal\",\"growth\":\"Logarithmic\",\"constraint\":\"Equilibrium-measure\",\"extremal\":\"Robin-constant\",\"ratio\":\"log\",\"R_kin\":5.0,\"S_vn\":0.4,\"Hys_width\":0.0}"
+      "ratio_signature": "log"
     },
     "PHYS-Q-001": {
-      "added_date": "2026-03-29",
       "category": "Quantum",
       "description": "Core QM principle. System in linear combination of eigenstates until measured. Interference effects.",
       "h2_spoke": null,
-      "hs_vector": "[1.0,0.0,1.0,2.0,1.0,1.0,1.0,0.0,8.0,0.5,0.3,0.0,0.0,4.0]",
       "name": "Quantum Superposition",
       "physics_id": "PHYS-Q-001",
-      "ratio_signature": null,
-      "shannon_entropy": 2.6418,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Unitary\",\"growth\":\"Extremal\",\"constraint\":\"Sum/density\",\"extremal\":\"Ground state\",\"R_kin\":8.0,\"S_vn\":0.5,\"Hys_width\":0.0}"
+      "ratio_signature": null
     },
     "PHYS-Q-002": {
-      "added_date": "2026-03-29",
       "category": "Quantum",
       "description": "Non-separable correlations. Bell inequality violation. Monogamy of entanglement. Resource for quantum computation.",
       "h2_spoke": null,
-      "hs_vector": "[3.0,3.0,4.0,2.0,1.0,1.0,1.0,0.0,6.0,0.7,0.2,0.0,0.0,3.0]",
       "name": "Quantum Entanglement",
       "physics_id": "PHYS-Q-002",
-      "ratio_signature": null,
-      "shannon_entropy": 3.0738,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Unitary\",\"growth\":\"Asymptotic\",\"constraint\":\"Order/monotonicity\",\"extremal\":\"Ground state\",\"R_kin\":6.0,\"S_vn\":0.7,\"Hys_width\":0.0}"
+      "ratio_signature": null
+    },
+    "PHYS-Q-003": {
+      "category": "Quantum",
+      "description": "Particle penetrates classically forbidden barrier. T ~ exp(-2*kappa*a). Alpha decay, STM, tunnel diodes.",
+      "h2_spoke": null,
+      "name": "Quantum Tunneling",
+      "physics_id": "PHYS-Q-003",
+      "ratio_signature": null
+    },
+    "PHYS-Q-004": {
+      "category": "Quantum",
+      "description": "QED radiative correction ~1058 MHz. Vacuum fluctuations plus self-energy. First precision test of QED.",
+      "h2_spoke": null,
+      "name": "Lamb Shift",
+      "physics_id": "PHYS-Q-004",
+      "ratio_signature": null
     },
     "PHYS-QC-001": {
-      "added_date": "2026-04-19",
       "category": "Aperiodic Order",
       "description": "Pisot substitution tilings with singular-continuous diffraction; deterministic aperiodic order, non-repeating but long-range correlated.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Quasicrystal Substitution Geometry",
       "physics_id": "PHYS-QC-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-QE-001": {
-      "added_date": "2026-04-19",
       "category": "Quantum Statistics / Pigeonhole Forcing",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Bose-Einstein Condensation / Occupancy Symmetry",
       "physics_id": "PHYS-QE-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
+    },
+    "PHYS-R-001": {
+      "category": "Resonances",
+      "description": "Universal model F=-kx. Springs, pendulums, molecular vibrations, photon modes. Archetype of periodic motion.",
+      "h2_spoke": null,
+      "name": "Harmonic Oscillator",
+      "physics_id": "PHYS-R-001",
+      "ratio_signature": null
     },
     "PHYS-R-002": {
-      "added_date": "2026-03-29",
       "category": "Resonances",
       "description": "Pendulum demonstrating Earth rotation via precession. Period = 24h/sin(latitude). Slow modulation of fast oscillation.",
       "h2_spoke": null,
-      "hs_vector": "[3.0,4.0,3.0,3.0,0.0,1.0,1.0,0.0,9.0,0.05,0.7,0.05,0.03,11.0]",
       "name": "Foucault Pendulum",
       "physics_id": "PHYS-R-002",
-      "ratio_signature": null,
-      "shannon_entropy": 2.7097,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Periodic\",\"growth\":\"Asymptotic\",\"constraint\":\"Divisibility/modular\",\"extremal\":\"Resonance peak\",\"R_kin\":9.0,\"S_vn\":0.05,\"Hys_width\":0.05}"
+      "ratio_signature": null
+    },
+    "PHYS-R-003": {
+      "category": "Resonances",
+      "description": "Electrical resonance: omega=1/sqrt(LC). Energy oscillates between electric and magnetic fields. Foundation of radio.",
+      "h2_spoke": null,
+      "name": "LC Circuit",
+      "physics_id": "PHYS-R-003",
+      "ratio_signature": null
+    },
+    "PHYS-R-004": {
+      "category": "Resonances",
+      "description": "Acoustic resonance of air in cavity with neck. f=(c/2pi)*sqrt(A/(V*L)). Bottles, musical instruments.",
+      "h2_spoke": null,
+      "name": "Helmholtz Resonator",
+      "physics_id": "PHYS-R-004",
+      "ratio_signature": null
     },
     "PHYS-RADAR-001": {
-      "added_date": "2026-04-17",
       "category": "Signal Processing",
       "description": "Frequency-hopping patterns with bounded pulse-pair collisions. Side-lobe suppression from B_h[g] constraint. Ambiguity function framework.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Frequency-Hopping Radar Codes",
       "physics_id": "PHYS-RADAR-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-RMT-001": {
-      "added_date": "2026-04-05",
       "category": "Random Matrix Theory",
       "description": "Spectral-radius envelope sigma_MP = epsilon*sqrt(W) of the noisy Ulam-Galerkin operator. Crossover matched to the gap 1 - tau*. Previously labeled GUE Random Matrix Ensemble; refined after EXP-DISS-KVN-001.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Marchenko-Pastur Spectral Envelope",
       "physics_id": "PHYS-RMT-001",
-      "ratio_signature": "Wigner surmise",
-      "shannon_entropy": 2.9,
-      "source": "primeon_gas_analysis_2026-04-05",
-      "structural_fingerprint": null
+      "ratio_signature": "Wigner surmise"
     },
     "PHYS-RMT-GUE-001": {
-      "added_date": "2026-04-17",
       "category": "Random Matrix Theory / Quantum Chaos",
       "description": "N x N Hermitian random matrices with complex Gaussian entries. Wigner surmise spacing. Connected to Riemann zeros via Montgomery-Odlyzko. Ref: Dyson 1962, Mehta 3rd ed.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Gaussian Unitary Ensemble (GUE)",
       "physics_id": "PHYS-RMT-GUE-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-RNG-001": {
-      "added_date": "2026-04-19",
       "category": "Derandomization",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Pseudorandom Generator Phase Transition",
       "physics_id": "PHYS-RNG-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
+    },
+    "PHYS-S-001": {
+      "category": "Symmetries",
+      "description": "Abelian gauge group of electromagnetism. Phase rotation of charged fields. Charge quantization.",
+      "h2_spoke": null,
+      "name": "U(1) Gauge Symmetry",
+      "physics_id": "PHYS-S-001",
+      "ratio_signature": null
+    },
+    "PHYS-S-002": {
+      "category": "Symmetries",
+      "description": "Non-abelian gauge group of the weak force. Spontaneously broken by Higgs giving mass to W/Z bosons.",
+      "h2_spoke": null,
+      "name": "SU(2) Symmetry",
+      "physics_id": "PHYS-S-002",
+      "ratio_signature": null
+    },
+    "PHYS-S-003": {
+      "category": "Symmetries",
+      "description": "Non-abelian gauge group of the strong force. Three color charges. Confinement: only color singlets observed.",
+      "h2_spoke": null,
+      "name": "SU(3) Color Symmetry",
+      "physics_id": "PHYS-S-003",
+      "ratio_signature": null
+    },
+    "PHYS-S-004": {
+      "category": "Symmetries",
+      "description": "Symmetry group SO(3,1) of special relativity. Boosts plus rotations. Spacetime interval invariant.",
+      "h2_spoke": null,
+      "name": "Lorentz Symmetry",
+      "physics_id": "PHYS-S-004",
+      "ratio_signature": null
+    },
+    "PHYS-S-005": {
+      "category": "Symmetries",
+      "description": "Charge-Parity-Time reversal. Exact symmetry in all QFTs. Connects particles to antiparticles.",
+      "h2_spoke": null,
+      "name": "CPT Symmetry",
+      "physics_id": "PHYS-S-005",
+      "ratio_signature": null
+    },
+    "PHYS-S-006": {
+      "category": "Symmetries",
+      "description": "Local symmetry principle. Core principle of Standard Model requiring gauge fields.",
+      "h2_spoke": null,
+      "name": "Gauge Invariance",
+      "physics_id": "PHYS-S-006",
+      "ratio_signature": null
     },
     "PHYS-SG-001": {
-      "added_date": "2026-04-19",
       "category": "Disorder-driven Phase Transition",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Spin Glass / Replica Symmetry Breaking",
       "physics_id": "PHYS-SG-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-SH-001": {
-      "added_date": "2026-04-19",
       "category": "Dynamical Systems",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Symbolic Shift / Topological Shift",
       "physics_id": "PHYS-SH-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-SIG-001": {
-      "added_date": "2026-03-29",
       "category": "Signal Processing",
       "description": "Pulse timing positions forming a Sidon set guarantee unambiguous radar: no two range-velocity pairs produce the same return. Uniquely decodable sum-channel code. Max density Sidon set = max radar pulses per bandwidth. Singer construction achieves channel capacity ~sqrt(N). Physics: information channel capacity. Math: Sidon set density conjecture h(N)~sqrt(N).",
       "h2_spoke": "H2ai",
-      "hs_vector": "[3.0,3.0,1.0,2.0,1.0,1.0,1.0,0.0,8.0,0.2,0.8,0.0,0.0,12.0]",
       "name": "Radar Ambiguity / Sidon Codes",
       "physics_id": "PHYS-SIG-001",
-      "ratio_signature": "sqrt_N",
-      "shannon_entropy": 2.5,
-      "source": "h2_session",
-      "structural_fingerprint": "{\"symmetry\":\"Additive\",\"growth\":\"sqrt(N)-optimal\",\"constraint\":\"Unique-decode\",\"extremal\":\"Channel-capacity\",\"ratio\":\"sqrt_N\",\"R_kin\":8.0,\"S_vn\":0.2,\"Hys_width\":0.0}"
+      "ratio_signature": "sqrt_N"
     },
     "PHYS-SM-001": {
-      "added_date": "2026-04-19",
       "category": "Spectral Theory",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Spectral Measure of Dynamical System",
       "physics_id": "PHYS-SM-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-SP-001": {
-      "added_date": "2026-03-29",
       "category": "Spectral Theory",
       "description": "Gap between smallest eigenvalue (0) and second-smallest (lambda_2) of graph Laplacian. Governs mixing time of random walks, connectivity, expanders. Fiedler value. Cheeger inequality: h^2/2 <= lambda_2 <= 2h. Direct math-physics bridge: same spectral gap appears in quantum Hamiltonians (ground state vs first excited), random matrix theory, and Erdos spectral graph problems (#89 cluster).",
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,3.0,4.0,1.0,1.0,1.0,1.0,4.0,0.5,0.4,0.0,0.0,7.0]",
       "name": "Spectral Gap (Laplacian)",
       "physics_id": "PHYS-SP-001",
-      "ratio_signature": "cheeger",
-      "shannon_entropy": 2.8,
-      "source": "h2_session",
-      "structural_fingerprint": "{\"symmetry\":\"Spectral\",\"growth\":\"Eigenvalue-gap\",\"constraint\":\"Cheeger-inequality\",\"extremal\":\"Lambda2-minimum\",\"ratio\":\"cheeger\",\"R_kin\":4.0,\"S_vn\":0.5,\"Hys_width\":0.0}"
+      "ratio_signature": "cheeger"
     },
     "PHYS-SPIN-002": {
-      "added_date": "2026-04-17",
       "category": "Statistical Mechanics",
       "description": "1D frustrated Ising-like chain with 3-body interaction J(s_a + s_b - s_{a+b}). Ground-state degeneracy 2^{N/2} matches sum-free count.",
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Frustrated Ising Chain (3-body)",
       "physics_id": "PHYS-SPIN-002",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "original",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-SR-001": {
-      "added_date": "2026-04-19",
       "category": "Anomalous Diffusion",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Stable Laws / Levy Flights",
       "physics_id": "PHYS-SR-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-SS-001": {
-      "added_date": "2026-04-19",
       "category": "Symbolic Dynamics",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Substitution Dynamical System",
       "physics_id": "PHYS-SS-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     },
     "PHYS-T-001": {
-      "added_date": "2026-03-29",
       "category": "Thermodynamic",
       "description": "Ideal heat engine. Maximum efficiency eta=1-T_cold/T_hot. Reversible limit of thermodynamics.",
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,1.0,2.0,0.0,1.0,1.0,0.0,10.0,0.2,0.5,0.0,0.0,8.0]",
       "name": "Carnot Cycle",
       "physics_id": "PHYS-T-001",
-      "ratio_signature": null,
-      "shannon_entropy": 2.1088,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Free energy minimum\",\"R_kin\":10.0,\"S_vn\":0.2,\"Hys_width\":0.0}"
+      "ratio_signature": null
     },
     "PHYS-T-002": {
-      "added_date": "2026-03-29",
       "category": "Thermodynamic",
       "description": "Abrupt change in matter state. First-order: latent heat. Second-order: critical exponents, universality.",
       "h2_spoke": null,
-      "hs_vector": "[3.0,2.0,1.0,3.0,1.0,1.0,1.0,0.0,2.0,0.8,0.3,0.4,0.35,6.0]",
       "name": "Phase Transitions",
       "physics_id": "PHYS-T-002",
-      "ratio_signature": null,
-      "shannon_entropy": 3.2055,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Asymptotic\",\"constraint\":\"Sum/density\",\"extremal\":\"Free energy minimum\",\"R_kin\":2.0,\"S_vn\":0.8,\"Hys_width\":0.4}"
+      "ratio_signature": null
     },
     "PHYS-T-003": {
-      "added_date": "2026-03-29",
       "category": "Thermodynamic",
       "description": "Universal behavior near second-order transitions. Power-law scaling, critical exponents. RG theory, universality classes.",
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,3.0,6.0,1.0,1.0,1.0,0.0,1.0,0.9,0.1,0.3,0.25,3.0]",
       "name": "Critical Phenomena",
       "physics_id": "PHYS-T-003",
-      "ratio_signature": null,
-      "shannon_entropy": 2.7927,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Conserved\",\"constraint\":\"Divisibility/modular\",\"extremal\":\"Free energy minimum\",\"R_kin\":1.0,\"S_vn\":0.9,\"Hys_width\":0.3}"
+      "ratio_signature": null
     },
     "PHYS-T-004": {
-      "added_date": "2026-03-29",
       "category": "Thermodynamic",
       "description": "Second law: dS/dt >= 0. Irreversibility, arrow of time. Near equilibrium: sigma = sum J_k * X_k.",
       "h2_spoke": null,
-      "hs_vector": "[0.0,0.0,1.0,2.0,1.0,0.0,1.0,0.0,7.0,0.7,0.4,0.2,0.15,7.0]",
       "name": "Entropy Production",
       "physics_id": "PHYS-T-004",
-      "ratio_signature": null,
-      "shannon_entropy": 2.4206,
-      "source": "original",
-      "structural_fingerprint": "{\"symmetry\":\"Statistical\",\"growth\":\"Conserved\",\"constraint\":\"Sum/density\",\"extremal\":\"Free energy minimum\",\"R_kin\":7.0,\"S_vn\":0.7,\"Hys_width\":0.2}"
+      "ratio_signature": null
     },
     "PHYS-T-005": {
-      "added_date": "2026-03-29",
       "category": "Thermodynamic",
       "description": "Diffusionless solid-state phase transition: BCC->FCC/BCT via Bain correspondence. sqrt(2) contraction along one axis, sqrt(2) expansion transversely. Square geometry is metastable (zero off-axis slack); hexagonal geometry stable. Mechanism: coord-4 lattice has no slack under shear. Same geometric mechanism as square-packing brittleness in math.",
       "h2_spoke": null,
-      "hs_vector": "[3.0,2.0,2.0,3.0,0.0,1.0,1.0,0.0,1.5,0.75,0.25,0.55,0.5,4.0]",
       "name": "Martensitic Transformation",
       "physics_id": "PHYS-T-005",
-      "ratio_signature": "sqrt2",
-      "shannon_entropy": 2.9,
-      "source": "h2_session",
-      "structural_fingerprint": "{\"symmetry\":\"Broken-cubic\",\"growth\":\"Phase-switch\",\"constraint\":\"Geometric-packing\",\"extremal\":\"Bain-path saddle\",\"ratio\":\"sqrt2\",\"R_kin\":1.5,\"S_vn\":0.75,\"Hys_width\":0.55}"
+      "ratio_signature": "sqrt2"
     },
     "PHYS-TN-001": {
-      "added_date": "2026-04-19",
       "category": "Quantum Information",
       "description": null,
       "h2_spoke": null,
-      "hs_vector": null,
       "name": "Tensor Network Robustness",
       "physics_id": "PHYS-TN-001",
-      "ratio_signature": null,
-      "shannon_entropy": null,
-      "source": "salvo-cs-001",
-      "structural_fingerprint": null
+      "ratio_signature": null
     }
   },
   "source": "https://erdosatlas-api.dev-ef7.workers.dev/api/query/physics/<id>"

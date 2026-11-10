@@ -199,3 +199,27 @@ maintenance task, and is deliberately not attempted here.
 `/Volumes/2024_18tb/...` which is not mounted; embedding needed
 `HF_HOME=/tmp/hf-home`. The external drive being absent will break any future
 run of the embedding pipeline until it is remounted or the env var is set.
+
+## 2026-11-10 — incomplete records filtered, physics listing endpoint
+
+**Incomplete records.** `/api/morphisms/:id` now hides `record_status='incomplete'`
+by default, alongside the existing refuted filter. Both opt in via a shared flag:
+`?include=refuted`, `?include=incomplete`, or `?include=refuted,incomplete`.
+Verified: `/api/morphisms/96` returns 0 by default and 1 with the flag.
+
+**Physics coverage.** Added `GET /api/physics`, which lists all 66 objects. There
+was no listing route, so consumers could only reach physics through morphisms and
+the corpus appeared 39-of-66 complete. Snapshot now captures 66 of 66.
+
+**Citation extraction.** 29 of the 77 prose notes contained author-year
+references that were never parsed out (e.g. "Bohman 2009 and Fiz
+Pontiveros-Griffiths-Morris 2020", "Derrida-De Seze-Itzykson 1983"). Added
+`citations_extracted` and backfilled 59 spans across 29 records. Coverage went
+from 13 of 90 (14%) to **42 of 90 (47%)**. Extracted spans are labelled
+`citation_in_prose` and are explicitly not equivalent to curated `citations`;
+they are unverified pointers, not evidence.
+
+Worker version `7aa1774d-c92e-4e47-9758-f54a4db6e4f9`.
+
+Snapshot after: 90 morphisms, 64 problems, 66 physics objects, validator clean
+with no coverage warnings.

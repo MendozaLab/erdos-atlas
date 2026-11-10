@@ -22,15 +22,30 @@ VERB = {
 }
 
 
-def classify_evidence(raw):
+def parse_extracted(raw):
+    """citations_extracted is a JSON array string parsed from the prose note."""
+    if not raw:
+        return []
+    try:
+        val = json.loads(raw)
+        return val if isinstance(val, list) else []
+    except (json.JSONDecodeError, TypeError):
+        return []
+
+
+def classify_evidence(raw, extracted=None):
     """The `evidence` column is TEXT but holds two incompatible things.
 
     Some records store a JSON-serialised list of citations; others store a
     free-text experiment note. A few store the literal string "test morphism".
     Return (kind, citations) so the register does not present a note as a citation.
+
+    When a prose note has author-year references parsed out of it, those are
+    reported as a distinct kind so nobody mistakes a regex extraction for a
+    curated citation list.
     """
     if raw is None or raw == "":
-        return "absent", []
+        return ("citation_in_prose", extracted) if extracted else ("absent", [])
     if isinstance(raw, list):
         return "citation_list", raw
     text = str(raw).strip()
@@ -43,6 +58,8 @@ def classify_evidence(raw):
             return "unparseable_json", []
     if "test morphism" in text.lower():
         return "test_placeholder", []
+    if extracted:
+        return "citation_in_prose", extracted
     return "experiment_note", [text]
 
 
@@ -99,7 +116,9 @@ def main():
     claims = []
     for m in sorted(morphisms, key=lambda x: (str(x.get("math_id")), str(x.get("physics_id")), str(x.get("id")))):
         mid = str(m.get("math_id"))
-        kind, cites = classify_evidence(m.get("evidence"))
+        kind, cites = classify_evidence(
+            m.get("evidence"), parse_extracted(m.get("citations_extracted"))
+        )
         claims.append({
             "claim_id": f"E{m.get('math_id')}->{m.get('physics_id')}",
             "source_record_id": m.get("id"),

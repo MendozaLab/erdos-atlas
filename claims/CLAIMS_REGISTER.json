@@ -3,7 +3,8 @@
   "claim_count": 90,
   "evidence_kind_counts": {
     "citation_list": 13,
-    "experiment_note": 77
+    "citation_in_prose": 29,
+    "experiment_note": 48
   },
   "structural_defect_counts": {
     "no transfer_operator": 5,
@@ -168,10 +169,10 @@
       "transfer_operator_claimed": "K_t f(x) = f(φ_t(x)) restricted to {|P(z)|=1} ↔ Koopman operator restricted to energy shell H=E. Isometry ↔ energy conservation. Surjectivity ↔ time-reversibility. Both decompose unitarity into the same two halves.",
       "breakdown_boundary": "Morphism breaks when dynamics are dissipative: |P(z)|<1 (basin of attraction → no unitarity) or H>0 (hyperbolic orbit → no bound state). Both systems lose unitarity at the same structural boundary.",
       "falsification_condition": "The record asserts that Perimeter of lemniscate = Haar-measure volume of unitary dynamics on L²(boundary) corresponds to Orbital circumference = phase-space volume of bound (energy-conserving) Kepler orbit. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Morphism breaks when dynamics are dissipative: |P(z)|<1 (basin of attraction → no unitarity) or H>0 (hyperbolic orbit → no bound state). Both systems lose unitarity at the same structural boundary.",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Similarity 0.936. Agent job job-1775174206161-zupzxp independently decomposed unitarity into isometry+surjectivity. EHP verified n=3-13. SqueezeLemniscate.lean has Koopman_is_unitary proof. Julia-Fatou theory + Derrida-De Seze-Itzykson 1983 (Julia↔Lee-Yang).",
       "citations": [
-        "Similarity 0.936. Agent job job-1775174206161-zupzxp independently decomposed unitarity into isometry+surjectivity. EHP verified n=3-13. SqueezeLemniscate.lean has Koopman_is_unitary proof. Julia-Fatou theory + Derrida-De Seze-Itzykson 1983 (Julia↔Lee-Yang)."
+        "Seze-Itzykson 1983"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -225,10 +226,10 @@
       "transfer_operator_claimed": "The lemniscate separates {|P|<1} (contraction/order) from {|P|>1} (expansion/disorder). The Carnot boundary separates T_cold from T_hot. Both: the boundary itself is where useful structure (unitarity/work) is maximized. Transfer: boundary measure ↔ efficiency.",
       "breakdown_boundary": "Breaks when polynomial dynamics have no clean phase boundary (e.g., entire functions with no bounded Fatou component). Breaks for Carnot when irreversible processes dominate (no quasi-static limit).",
       "falsification_condition": "The record asserts that Perimeter maximization = maximizing the codimension-1 measure of the critical boundary corresponds to Carnot efficiency = maximum work extractable at the phase boundary between heat reservoirs. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Breaks when polynomial dynamics have no clean phase boundary (e.g., entire functions with no bounded Fatou component). Breaks for Carnot when irreversible processes dominate (no quasi-static limit).",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Similarity 0.933. Derrida-De Seze-Itzykson 1983 explicitly connected Julia set boundaries to Lee-Yang (thermodynamic) phase transitions.",
       "citations": [
-        "Similarity 0.933. Derrida-De Seze-Itzykson 1983 explicitly connected Julia set boundaries to Lee-Yang (thermodynamic) phase transitions."
+        "Seze-Itzykson 1983"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -390,10 +391,11 @@
       "transfer_operator_claimed": "Triangle density as order parameter → discontinuous jump at critical edge density maps to first-order phase transition. Finite-size scaling exponent γ predicts variance peak scaling as n^γ.",
       "breakdown_boundary": "Mapping assumes triangle-free process is well-modeled by mean-field theory; real process has correlations that may shift critical exponents.",
       "falsification_condition": "The record asserts that Edge count at which triangle-free process terminates corresponds to Critical temperature / order parameter discontinuity. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Mapping assumes triangle-free process is well-modeled by mean-field theory; real process has correlations that may shift critical exponents.",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Physics similarity 0.745. Bohman 2009 and Fiz Pontiveros-Griffiths-Morris 2020 both analyze the process using differential equations — structural parallel to mean-field physics.",
       "citations": [
-        "Physics similarity 0.745. Bohman 2009 and Fiz Pontiveros-Griffiths-Morris 2020 both analyze the process using differential equations — structural parallel to mean-field physics."
+        "Bohman 2009",
+        "Pontiveros-Griffiths-Morris 2020"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -728,10 +730,12 @@
       "transfer_operator_claimed": "m/n <-> inverse temperature beta; unsatisfied clause count = energy; threshold m/n ~ 4.27 for random 3-SAT",
       "breakdown_boundary": "Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
       "falsification_condition": "The record asserts that SAT decision threshold m/n; cluster complexity at criticality in CNF-SAT corresponds to Order parameter in ferromagnetic phase transition; susceptibility divergence at T_c. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Below threshold satisfiable (disordered); above UNSAT (ordered); P=NP would smooth boundary",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Mezard-Parisi-Zecchina 2002 replica cavity; Achlioptas 2005 threshold; Selman 1996 phase transition",
       "citations": [
-        "Mezard-Parisi-Zecchina 2002 replica cavity; Achlioptas 2005 threshold; Selman 1996 phase transition"
+        "Mezard-Parisi-Zecchina 2002",
+        "Achlioptas 2005",
+        "Selman 1996"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -755,10 +759,12 @@
       "transfer_operator_claimed": "NP certificate <-> forward-time entropy sink; coNP UNSAT proof <-> backward trajectory requiring dissipation",
       "breakdown_boundary": "NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
       "falsification_condition": "The record asserts that Complement asymmetry: UNSAT witness production vs NP certificate verifiability corresponds to Entropy production rate; broken time-reversal symmetry. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: NP=coNP requires symmetric proof-disproving costs; equivalent to reversible computation without Landauer cost",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Bennett 1982 reversible computation; Aaronson 2005 entropy-computation coupling; Vitanyi-Li 2000 Kolmogorov symmetry",
       "citations": [
-        "Bennett 1982 reversible computation; Aaronson 2005 entropy-computation coupling; Vitanyi-Li 2000 Kolmogorov symmetry"
+        "Bennett 1982",
+        "Aaronson 2005",
+        "Vitanyi-Li 2000"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -782,10 +788,11 @@
       "transfer_operator_claimed": "DTM step sequence -> unitary on quantum register; certificate existence -> measurement-collapse amplitude",
       "breakdown_boundary": "Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
       "falsification_condition": "The record asserts that Deterministic polynomial-time state trajectory; acceptance by halting configuration corresponds to Quantum superposition branch; computational history as coherent world-line in Hilbert space. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Deterministic path = single branch of quantum tree; NP superposition permits unitary-free amplitude",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Deutsch 1985 quantum computing model; Aharonov-Vazirani 2013 BQP vs NP structure; P subset NP embedding",
       "citations": [
-        "Deutsch 1985 quantum computing model; Aharonov-Vazirani 2013 BQP vs NP structure; P subset NP embedding"
+        "Deutsch 1985",
+        "Aharonov-Vazirani 2013"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -809,10 +816,10 @@
       "transfer_operator_claimed": "Complement condition not(phi(x)) -> conjugate state |psi_bar>; rejection becomes superposition-measurable observable",
       "breakdown_boundary": "coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
       "falsification_condition": "The record asserts that Deterministic rejection-by-halting; complement acceptance in coNP definition corresponds to Quantum conjugation (Hermitian involution) on branch amplitudes; time-reversal symmetry in world-line branching. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: coNP containment = involutory structure of quantum measurement; classical complement <-> quantum-observable equivalence",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Aharonov-Vazirani 2013 coNP witness structure in quantum setting; P subset coNP embedding",
       "citations": [
-        "Aharonov-Vazirani 2013 coNP witness structure in quantum setting; P subset coNP embedding"
+        "Aharonov-Vazirani 2013"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -836,10 +843,12 @@
       "transfer_operator_claimed": "Substitution matrix M=[[1,1],[0,1]] spectrum generates 1D aperiodic tiling via first-return partition",
       "breakdown_boundary": "Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
       "falsification_condition": "The record asserts that Subword complexity p(n)<=n+1; Sturmian slope theta from substitution matrix corresponds to Meyer set density (cut-and-project); rank 2 lattice; cyclotomic Pisot eigenvalue. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pisot/non-Pisot: |lambda_2|<1 => quasiperiodic Meyer; >=1 => singular-continuous (Bombieri-Taylor)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Queffelec 1987; Bombieri-Taylor 1986 aperiodic tilings; Senechal 1995 quasicrystals",
       "citations": [
-        "Queffelec 1987; Bombieri-Taylor 1986 aperiodic tilings; Senechal 1995 quasicrystals"
+        "Queffelec 1987",
+        "Bombieri-Taylor 1986",
+        "Senechal 1995"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -863,10 +872,12 @@
       "transfer_operator_claimed": "Canonical projection pi: (Z^2,L)->omega x phi(omega); inverse M recovers sequence recurrence",
       "breakdown_boundary": "|omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
       "falsification_condition": "The record asserts that Sturmian word binary sequence; balancing Delta p = max(p(n+1)-p(n))=1 corresponds to Cut-and-project window omega in R^2 dual; projection density rho=|omega|/|Lambda*|. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: |omega| critical for pure-point diffraction; below threshold, fractal spectrum (Hof 1995)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Baake-Grimm 2013 Aperiodic Order; Hof 1995 diffraction; Pansiot 1984 linear p(n) iff Sturmian",
       "citations": [
-        "Baake-Grimm 2013 Aperiodic Order; Hof 1995 diffraction; Pansiot 1984 linear p(n) iff Sturmian"
+        "Baake-Grimm 2013",
+        "Hof 1995",
+        "Pansiot 1984"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -890,10 +901,12 @@
       "transfer_operator_claimed": "SDS action T: omega -> sigma(omega); Ruelle transfer L f(x)=sum_{sigma y=x} e^phi(y) f(y)",
       "breakdown_boundary": "Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
       "falsification_condition": "The record asserts that Automorphism group G(sigma) of aperiodic subshift closure; rank r=dim Z[lambda]/<min poly> corresponds to Symmetry rank of tiling automorphisms; group order encodes rotational/reflectional degeneracies. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Periodic iff G(sigma)=Z; aperiodic iff rank>=2 with nontrivial Pontryagin duality",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Queffelec 1987; Durand 2011 tiling automorphism groups; Ruelle 1989 thermodynamic formalism",
       "citations": [
-        "Queffelec 1987; Durand 2011 tiling automorphism groups; Ruelle 1989 thermodynamic formalism"
+        "Queffelec 1987",
+        "Durand 2011",
+        "Ruelle 1989"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -917,10 +930,12 @@
       "transfer_operator_claimed": "Substitution matrix M; lambda_Perron largest eigenvalue; h(sigma)=log lambda_Perron",
       "breakdown_boundary": "Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
       "falsification_condition": "The record asserts that Topological entropy h_top(sigma)=lim (1/n) log(#n-subwords)=log lambda_Perron corresponds to Lyapunov exponent of symbolic flow; growth rate of phase-space volume in Poincare section. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Entropy 0 (periodic, lambda<=1) vs positive (aperiodic, lambda>1); Perron number onset",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Pansiot 1984; Lind-Marcus 1995 Symbolic Dynamics; Parry-Tuncel 1973 entropy of symbolic shifts",
       "citations": [
-        "Pansiot 1984; Lind-Marcus 1995 Symbolic Dynamics; Parry-Tuncel 1973 entropy of symbolic shifts"
+        "Pansiot 1984",
+        "Lind-Marcus 1995",
+        "Parry-Tuncel 1973"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -944,10 +959,12 @@
       "transfer_operator_claimed": "Fourier coeffs mu_hat(k)=<chi_k,chi_0>_L2; eigenfunction expansion on l^2(N)",
       "breakdown_boundary": "Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
       "falsification_condition": "The record asserts that Diffraction measure dmu(omega); pure-point vs singular-continuous decomposition; weak-mixing exponent corresponds to Power spectral density; Bragg peaks at Q in 2pi Z[lambda]; peak heights encode multiplicities. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pisot => pure-point (discrete Bragg); non-Pisot => singular-continuous (no Bragg, fractal dim)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Bombieri-Taylor 1986; Baake 1997 spectral analysis of substitution tilings; Damanik 2005 p(n) controls Hausdorff dim",
       "citations": [
-        "Bombieri-Taylor 1986; Baake 1997 spectral analysis of substitution tilings; Damanik 2005 p(n) controls Hausdorff dim"
+        "Bombieri-Taylor 1986",
+        "Baake 1997",
+        "Damanik 2005"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -971,10 +988,11 @@
       "transfer_operator_claimed": "Substitution-induced automorphism on homology; G(x) as character of action on H_1(R/Z[lambda])",
       "breakdown_boundary": "Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
       "falsification_condition": "The record asserts that Generating function G(x) for #subword occurrences; zeros/poles encode growth; algebraic degree=substitution matrix rank corresponds to Form factor |S(Q)|^2 = diffraction intensity at Q; poles/zeros match tiling recurrence. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Pole at x=1/lambda_Perron; real roots <-> phase transitions in diffraction envelope",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Allouche-Shallit 2003 generating functions for automatic sequences; Gahler-Rhyno 1996 form factor; OEIS A6697",
       "citations": [
-        "Allouche-Shallit 2003 generating functions for automatic sequences; Gahler-Rhyno 1996 form factor; OEIS A6697"
+        "Allouche-Shallit 2003",
+        "Gahler-Rhyno 1996"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -998,10 +1016,10 @@
       "transfer_operator_claimed": "Signed adjacency A_f; bs(f) <-> spectral radius bound; Huang uses lambda_2 <= sqrt(n)",
       "breakdown_boundary": "Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
       "falsification_condition": "The record asserts that block_sensitivity bs(f); subcube restriction degree bound corresponds to lambda_2(G_f)/lambda_max(G_f); signed adjacency spectrum gap. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity collapse bs(f)>>s(f)^2 <-> spectral gap closure; phase boundary at s(f)~sqrt(n)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Huang 2019 resolved sensitivity conjecture via signed hypercube eigenvalue; bs(f) degree = sqrt(n) * sensitivity",
       "citations": [
-        "Huang 2019 resolved sensitivity conjecture via signed hypercube eigenvalue; bs(f) degree = sqrt(n) * sensitivity"
+        "Huang 2019"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1025,10 +1043,11 @@
       "transfer_operator_claimed": "Boolean f -> Fourier heat kernel sum_S |f_hat(S)| exp(-t|S|); sensitivity <-> Fourier spreading",
       "breakdown_boundary": "Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
       "falsification_condition": "The record asserts that Fourier concentration on level k; L1 weight sum_{|S|<=k}|f_hat(S)| corresponds to Energy density in low-frequency modes; thermal stability under Fourier truncation. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity explosion <-> Fourier delocalization (S_F > log_2 n); critical at k~sqrt(n)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Tal 2014, Hatami 2017 sensitivity lower-bounds Fourier weight on high levels; conjectured bs<=s^2 => Fourier on levels 0..sqrt(n)",
       "citations": [
-        "Tal 2014, Hatami 2017 sensitivity lower-bounds Fourier weight on high levels; conjectured bs<=s^2 => Fourier on levels 0..sqrt(n)"
+        "Tal 2014",
+        "Hatami 2017"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1052,10 +1071,10 @@
       "transfer_operator_claimed": "Embed decision tree in quantum superposition; sensitivity -> quantum query LB via adversary method; Adv -> sqrt(query complexity)",
       "breakdown_boundary": "Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
       "falsification_condition": "The record asserts that quantum decision tree depth; adversary bound Adv(f) corresponds to entanglement cost (ebits); quantum query entropy. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Sensitivity plateau s(f)~n^c, c in (1/2,1) <-> entanglement threshold; critical at c=2/3",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Hoyer-Lee-Spalek 2007 quantum adversary method; conjectured strong sensitivity => adversary tight; bs(f)~Adv(f)^2",
       "citations": [
-        "Hoyer-Lee-Spalek 2007 quantum adversary method; conjectured strong sensitivity => adversary tight; bs(f)~Adv(f)^2"
+        "Hoyer-Lee-Spalek 2007"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1079,10 +1098,10 @@
       "transfer_operator_claimed": "Random Ising couplings {J_ij(omega)} indexed by constraint locations; s(f) <-> T_g ~ log s(f)",
       "breakdown_boundary": "Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
       "falsification_condition": "The record asserts that decision-tree backbone; subcube constraints (disjunction-of-ANDs) corresponds to disorder-induced gap in F(T); replica-symmetry-breaking cost. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Cost phase transition at T_c ~ log sqrt(n); below, no frustration (bs<=s^2); above, exponential cost",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Impagliazzo-Wigderson 1998 pseudorandomness hardens LBs; Boolean hardness <-> spin-glass hardness",
       "citations": [
-        "Impagliazzo-Wigderson 1998 pseudorandomness hardens LBs; Boolean hardness <-> spin-glass hardness"
+        "Impagliazzo-Wigderson 1998"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1547,10 +1566,12 @@
       "transfer_operator_claimed": "Heavy-tailed sum -> Levy-stable random walk; variance truncation -> jump-suppression threshold",
       "breakdown_boundary": "alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
       "falsification_condition": "The record asserts that Tail exponent alpha of sum of i.i.d. unbounded-variance RVs (Nagaev moderate deviation) corresponds to Stability index alpha in Levy-stable distribution; heavy-tailed diffusion exponent. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: alpha=2 (finite variance) <-> Brownian limit; alpha<2 => superdiffusive (non-ergodic regime)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Gnedenko-Kolmogorov 1954 limit laws; Petrov 1975 moderate-deviation asymptotics; Mantegna-Stanley 1995 Levy flights in markets",
       "citations": [
-        "Gnedenko-Kolmogorov 1954 limit laws; Petrov 1975 moderate-deviation asymptotics; Mantegna-Stanley 1995 Levy flights in markets"
+        "Gnedenko-Kolmogorov 1954",
+        "Petrov 1975",
+        "Mantegna-Stanley 1995"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1574,10 +1595,12 @@
       "transfer_operator_claimed": "Instance size n <-> linear dimension; certificate length <-> correlation length xi(T); NP-hardness <-> singular heat capacity at T_c",
       "breakdown_boundary": "If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
       "falsification_condition": "The record asserts that Polynomial-time certification boundary; reduction network diameter; certificate-length scaling corresponds to Critical exponent in finite-size scaling near second-order transition. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: If P=NP, scaling exponents collapse to mean-field; if P!=NP, critical exponents remain non-trivial",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Achlioptas 2004 algorithmic phase transitions; Biroli-Monasson 2001 critical phenomena in random CSP; Zecchina 2002",
       "citations": [
-        "Achlioptas 2004 algorithmic phase transitions; Biroli-Monasson 2001 critical phenomena in random CSP; Zecchina 2002"
+        "Achlioptas 2004",
+        "Biroli-Monasson 2001",
+        "Zecchina 2002"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1601,10 +1624,11 @@
       "transfer_operator_claimed": "Z(beta)=sum_config exp(-beta E_disorder); replica trace Tr(Z^n)/n as n->0",
       "breakdown_boundary": "beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
       "falsification_condition": "The record asserts that 0/1 knapsack capacity constraint + optimal value gap structure corresponds to Spin-glass disorder energy landscape fragmentation at RSB threshold. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: beta_c where single-state ansatz fails; RSB onset at barrier height ~ log(exponential degeneracy)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Mertens 2000 PRE 'Easiest Hard Problem'; Borgs-Chayes-Pittel 2001 random optimization; knapsack hardness <-> replica instability",
       "citations": [
-        "Mertens 2000 PRE 'Easiest Hard Problem'; Borgs-Chayes-Pittel 2001 random optimization; knapsack hardness <-> replica instability"
+        "Mertens 2000",
+        "Borgs-Chayes-Pittel 2001"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1628,10 +1652,11 @@
       "transfer_operator_claimed": "Locally-testable code -> tensor-network state; correlation -> entanglement decay",
       "breakdown_boundary": "Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
       "falsification_condition": "The record asserts that Code covering radius / direct-product test robustness under correlation corresponds to MPS bond dimension / entanglement entropy under channel noise. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Covering radius rho <-> critical channel capacity; rho->inf = product structure collapse",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Cirac-Verstraete 2009 MPS robustness; Dinur-Reingold 2006 direct-product testing exhibits entanglement-like noise response",
       "citations": [
-        "Cirac-Verstraete 2009 MPS robustness; Dinur-Reingold 2006 direct-product testing exhibits entanglement-like noise response"
+        "Cirac-Verstraete 2009",
+        "Dinur-Reingold 2006"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1682,10 +1707,10 @@
       "transfer_operator_claimed": "SLP composition depth <-> perturbation series order; spectral determinant det(lambda I - A) of mult. operator",
       "breakdown_boundary": "Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
       "falsification_condition": "The record asserts that Straight-line-program (PosSLP) complexity for sqrt-sum eval; algebraic degree of sqrt(a_i); Diophantine measure corresponds to Borel-summability radius of perturbation series; asymptoticity governs convergence of SLP algebraic-real arithmetic. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Borel-transform singularity; Koiran PosSLP LB <-> essential singularity blocking polynomial approximation",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Koiran 2010 JACM; Ghys on real algebraic approximation; Borel summability as complexity proxy",
       "citations": [
-        "Koiran 2010 JACM; Ghys on real algebraic approximation; Borel summability as complexity proxy"
+        "Koiran 2010"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1709,10 +1734,11 @@
       "transfer_operator_claimed": "Stable-sorted permutations <-> invariant measure on expander; comparator steps <-> random walk mixing",
       "breakdown_boundary": "lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
       "falsification_condition": "The record asserts that Sorting network depth in O(n) gates; mixing time of comparator graph corresponds to Spectral gap lambda_1-lambda_2 of expander; mixing entropy production rate. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: lambda_1-lambda_2 < log n => depth >= n^alpha, alpha>0 (phase transition in sortability)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Ajtai-Komlos-Szemeredi 1983 sorting networks via expanders; Reingold-Wigderson-Wigderson 2000 eigenvalue bounds govern mixing",
       "citations": [
-        "Ajtai-Komlos-Szemeredi 1983 sorting networks via expanders; Reingold-Wigderson-Wigderson 2000 eigenvalue bounds govern mixing"
+        "Ajtai-Komlos-Szemeredi 1983",
+        "Reingold-Wigderson-Wigderson 2000"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1736,10 +1762,12 @@
       "transfer_operator_claimed": "PSPACE cells <-> degrees of freedom; work per reuse = k_B T ln 2; log-space => exponential erasures/decision",
       "breakdown_boundary": "P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
       "falsification_condition": "The record asserts that Space-time tradeoff; PSPACE reachability tree vs tape-reuse under certificate production corresponds to Landauer minimum dissipation per bit erased; reversibility cost under constant-factor memory. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: P!=PSPACE iff poly(n)-time/poly(n)-space cannot accumulate exponential work; collision violates info-geometric bound",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Bennett 1982 Landauer-Bennett; Aaronson-Susskind 2016 holographic complexity; Chakraborty 2018 entropy gap",
       "citations": [
-        "Bennett 1982 Landauer-Bennett; Aaronson-Susskind 2016 holographic complexity; Chakraborty 2018 entropy gap"
+        "Bennett 1982",
+        "Aaronson-Susskind 2016",
+        "Chakraborty 2018"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1763,10 +1791,11 @@
       "transfer_operator_claimed": "Reversible cost W_rev(n) vs irreversible W_irrev=W_rev+n k_B T ln 2 for n-bit inversion",
       "breakdown_boundary": "Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
       "falsification_condition": "The record asserts that One-way function image-preimage imbalance: |f^-1(y)| sparse, |range(f)| large corresponds to Erasure entropy production DeltaS>=k_B ln 2 per bit; Gibbs free energy barrier. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Computational irreversibility: when preimage search cost > erasure dissipation, OWF existence thermodynamically forced",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Bennett 1973 IBM JRD logical reversibility; Reif 1985 optical computing limits; OWF <-> dissipation duality",
       "citations": [
-        "Bennett 1973 IBM JRD logical reversibility; Reif 1985 optical computing limits; OWF <-> dissipation duality"
+        "Bennett 1973",
+        "Reif 1985"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1790,10 +1819,10 @@
       "transfer_operator_claimed": "AM game <-> random-energy glass with N~2^L; PRG existence <-> phase boundary",
       "breakdown_boundary": "Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
       "falsification_condition": "The record asserts that AM proof length L; entropy production log(1/epsilon) corresponds to free-energy cost F_sep(L)=I(verifier;prover); entropy separation. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Critical entropy L* ~ poly(n); derandomization iff F_sep(L*)<k_B T_crit; threshold set by OWF hardness",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Impagliazzo-Wigderson 1998 PRG from weak OWF; conjectured AM subset NP iff entropy-efficient derandomization at L~sqrt(n)",
       "citations": [
-        "Impagliazzo-Wigderson 1998 PRG from weak OWF; conjectured AM subset NP iff entropy-efficient derandomization at L~sqrt(n)"
+        "Impagliazzo-Wigderson 1998"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1817,10 +1846,12 @@
       "transfer_operator_claimed": "Random bits <-> perturbation direction; derandomization cost <-> chaotic mixing time; BPP acceptance <-> basin volume at poly(n) cost",
       "breakdown_boundary": "P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
       "falsification_condition": "The record asserts that Randomness necessity; pseudorandom generator security; branching sensitivity corresponds to Lyapunov exponent; ergodic mixing time. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: P=BPP iff exponential Lyapunov separation is non-essential for ensemble hardness over poly(n)",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Aaronson 2005 BPP and PRGs; Trevisan-Vadhan 2000 pseudorandomness; Hastad 1999 hitting sets",
       "citations": [
-        "Aaronson 2005 BPP and PRGs; Trevisan-Vadhan 2000 pseudorandomness; Hastad 1999 hitting sets"
+        "Aaronson 2005",
+        "Trevisan-Vadhan 2000",
+        "Hastad 1999"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1844,10 +1875,10 @@
       "transfer_operator_claimed": "Bethe-Peierls cavity recursion on factor graph; MPZ replica-symmetric free energy f(alpha,beta)",
       "breakdown_boundary": "Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
       "falsification_condition": "The record asserts that Random k-SAT clause density alpha=m/n at k=3; threshold alpha_c~4.267; refutation hardness emergence corresponds to Critical point of ferromagnetic-spin-glass transition; cavity-method replica prediction of SAT/UNSAT boundary. It is refuted if that transfer does not act on the objects named, or if no result can cross between the two sides using it. The record's own stated limit: Condensation onset alpha_c where single-spin-flip escapes are exponentially rare; RSB solution for alpha>alpha_c",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "Mezard-Parisi-Zecchina 2002 Science 'Analytic and Algorithmic Solution of Random SAT'; cavity method; rigorous alpha_c=4.2667",
       "citations": [
-        "Mezard-Parisi-Zecchina 2002 Science 'Analytic and Algorithmic Solution of Random SAT'; cavity method; rigorous alpha_c=4.2667"
+        "Mezard-Parisi-Zecchina 2002"
       ],
       "citations_verified": false,
       "structural_defects": [],
@@ -1927,10 +1958,10 @@
       "transfer_operator_claimed": null,
       "breakdown_boundary": null,
       "falsification_condition": "The record asserts that Koopman bandwidth of unit-distance observable = 2 corresponds to total interaction energy = number of unit pairs. It is refuted if no transfer operator can be supplied, since a correspondence without one carries no result. The record states no breakdown boundary, which is itself a weakness.",
-      "evidence_kind": "experiment_note",
+      "evidence_kind": "citation_in_prose",
       "evidence_raw": "EXP-KVN-FINAL-ANCHORS: Unit-distance observable on cyclic Koopman has bandwidth 2. Conservation argument gives E <= 2n = O(n). Recovers Pach-Sharir 1992 bound. WEAK physics signal (0.124).",
       "citations": [
-        "EXP-KVN-FINAL-ANCHORS: Unit-distance observable on cyclic Koopman has bandwidth 2. Conservation argument gives E <= 2n = O(n). Recovers Pach-Sharir 1992 bound. WEAK physics signal (0.124)."
+        "Pach-Sharir 1992"
       ],
       "citations_verified": false,
       "structural_defects": [

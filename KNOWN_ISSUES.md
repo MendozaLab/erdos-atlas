@@ -30,14 +30,15 @@ defect to be fixed, and it has been.
 
 The denominator is now simply **90 claims over 64 problems**. No caveat needed.
 
-## 2. Physics objects are captured only by reachability
+## 2. FIXED 2026-11-10 — physics objects were captured only by reachability
 
-`/api/health` declares `physics: 66`. The snapshot holds **39**, because objects
-were collected only if a captured morphism referenced them. There is no physics
-listing endpoint: `/api/physics`, `/api/objects/physics` and `/api/physics/top`
-all return 404.
+`/api/health` declares 66 physics objects and the snapshot used to hold 39,
+because there was no listing endpoint at all (`/api/physics`,
+`/api/objects/physics`, `/api/physics/top` all returned 404) so objects could
+only be discovered through captured morphisms — and only 39 were referenced.
 
-This is a capture limitation, not evidence that the other 27 objects are unused.
+A `/api/physics` route now lists the whole table, and the snapshot captures
+**66 of 66**. The 27 that were missing were never absent, only unreachable.
 
 ## 3. There is no full problem catalogue
 

@@ -27,7 +27,11 @@ be served.
 ## D2 — FIXED 2026-11-10 — `evidence` conflated two different things
 
 Resolved: `citations` and `evidence_note` are now separate columns, backfilled
-(13 citation rows, 77 notes) and exposed through the API. `evidence` is retained
+(13 citation rows, 77 notes) and exposed through the API. A third column
+`citations_extracted` holds author-year references parsed out of the prose
+notes: 29 of the 77 contained them (59 spans), so 42 of 90 records now carry a
+citation reference rather than 13. Extraction is regex-based and unverified —
+it is labelled `citation_in_prose`, never `citation_list`. `evidence` is retained
 for compatibility. The defect record below is kept as written.
 
 The column was TEXT in all records, but its contents were not the same kind of

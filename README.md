@@ -59,9 +59,10 @@ without one.
 | Claims in this snapshot | **90** | captured at a pinned commit |
 | Records in the source table | **90** | all reachable — see `KNOWN_ISSUES.md` §1 |
 | Problems carrying claims | **64** | |
-| Claims with at least one citation | **13** (14%) | the other 77 carry an experiment note |
-| Claims with no transfer operator | **5** (6%) | marked `incomplete`; served with that status visible |
-| Physics objects in snapshot | **39** of 66 declared | captured by reachability only |
+| Claims with a citation reference | **42** (47%) | 13 curated + 29 parsed from prose |
+| Claims with no citation reference | **48** (53%) | carry an experiment note only |
+| Claims with no transfer operator | **5** (6%) | marked `incomplete`, hidden from default results |
+| Physics objects in snapshot | **66** of 66 | full table via `/api/physics` |
 
 The honest headline for any corpus-level statement is **90 served claims** over 64
 problems. Not 92, and not 1011.

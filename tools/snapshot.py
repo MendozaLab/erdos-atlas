@@ -36,9 +36,9 @@ def get(path, timeout=25):
 
 
 def fetch_morphisms(pid):
-    # ?include=refuted so the snapshot captures everything the table holds;
-    # the API hides locally refuted morphisms from default results.
-    status, body = get(f"/api/morphisms/{pid}?include=refuted")
+    # Include refuted and incomplete records so the snapshot captures everything
+    # the table holds; the API hides both from default results.
+    status, body = get(f"/api/morphisms/{pid}?include=refuted,incomplete")
     if status != 200 or not isinstance(body, dict):
         return pid, []
     return pid, body.get("morphisms", []) or []
@@ -87,14 +87,24 @@ def main():
           f"{len(phys_ids)} distinct physics ids", flush=True)
 
     print("physics objects ...", flush=True)
+    # /api/physics lists the whole table, so coverage is no longer limited to
+    # objects reachable from captured morphisms.
+    status, body = get("/api/physics")
     physics = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = {ex.submit(get, f"/api/query/physics/{p}"): p for p in phys_ids}
-        for f in concurrent.futures.as_completed(futs):
-            p = futs[f]
-            status, body = f.result()
-            if status == 200 and isinstance(body, dict):
-                physics[p] = body.get("physics_object") or body
+    if status == 200 and isinstance(body, dict):
+        for obj in body.get("physics_objects", []) or []:
+            pid = obj.get("physics_id")
+            if pid:
+                physics[pid] = obj
+    else:
+        print("  /api/physics unavailable; falling back to reachability", flush=True)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as ex:
+            futs = {ex.submit(get, f"/api/query/physics/{p}"): p for p in phys_ids}
+            for f in concurrent.futures.as_completed(futs):
+                p = futs[f]
+                st, bdy = f.result()
+                if st == 200 and isinstance(bdy, dict):
+                    physics[p] = bdy.get("physics_object") or bdy
 
     payloads = {
         "morphisms.json": {
