@@ -146,3 +146,56 @@ SIM-003 2  SIM-004 2  SMA-007 1  SMA-010 2  SMA-011 2   = 19 records restored
 /api/morphisms/166              -> 1 (conjectured)
 /api/morphisms/166?include=refuted -> 2 (refuted-locally, conjectured)
 ```
+
+## 2026-11-10 — vector refresh and Lean registry reconcile
+
+**C4 vector staleness.** The live search path reads `atlas_vectors`
+(provider=`leandojo`) and queries index `erdosatlas-leandojo`. Both dated to
+2026-04-15, and the `leandojo` rows carried **no `text_hash` at all** — the
+staleness-detection mechanism only ever worked for `deepmind-statements`, a
+provider the query path does not read.
+
+Added `--provider` to `embed_fc_statements.py` (it hardcoded the dead provider),
+re-embedded all 1,011 formal-conjectures statements, and wrote them as
+provider=`leandojo`:
+
+| | before | after |
+|---|---|---|
+| leandojo rows | 5,596 | 5,629 |
+| rows with `text_hash` | 0 | 1,011 |
+| newest | 2026-04-15 | 2026-11-10 |
+
+D1 updated in 41 batches; index upsert enqueued for 1,011 vectors
+(mutation `d3939945`). Verified `/api/query/math/30` returns 20 semantic matches
+and `/api/query/invariant?q=sidon` returns 10 math + 5 physics.
+
+Remaining and deliberate: 4,618 non-FC `leandojo` vectors are still April-era and
+hashless. Refreshing them needs statement text for the whole corpus, not just the
+formal-conjectures subset.
+
+**C6 Lean registry.** `lean_filesystem_audit.py` writes local
+`erdos_problems.db :: lean_proofs`, not D1 `lean_proof_registry`. It had not run
+since March partly because **it cannot run on the default Python 3.9** — it uses
+`int | None` annotations. Ran it under pyenv 3.11.6.
+
+Reconcile: 675 -> 846 rows, 100 -> 115 problems, 744 rows now carry
+`fs_content_hash`, 616 resolve to existing files. Best-of-breed: 67 CLEAN,
+7 one-sorry, 3 NEAR, 37 ARCHITECTURE.
+
+Backfilled `fs_content_hash` into D1 `lean_proof_registry` for the 10 rows that
+match the local scan by (problem_id, file_name); 493 -> 499 hashed.
+
+**A near-miss worth recording.** I nearly marked the other 64 unhashed rows
+`GHOST_NO_FILE`. Spotlight shows those `DDC_Aristotle_*.lean` files exist — the
+scan keys on problem-id-in-path and those filenames do not encode one, so the
+scan never saw them. Marking them missing would have been false.
+
+The registry remains a *publication ledger* (zenodo_doi, arxiv_id, proof_grade,
+portfolio_tier) that a filesystem scan cannot derive, and it is still served by
+nothing. Consolidation with `scoring_lean_artifacts` is a design decision, not a
+maintenance task, and is deliberately not attempted here.
+
+**Environment findings.** `~/.cache/huggingface/hub` is a symlink into
+`/Volumes/2024_18tb/...` which is not mounted; embedding needed
+`HF_HOME=/tmp/hf-home`. The external drive being absent will break any future
+run of the embedding pipeline until it is remounted or the env var is set.
